@@ -1,0 +1,244 @@
+*{
+	outline: 1px solid red;
+
+}
+img{
+	max-width: 100%;
+}
+h1{
+	font-size: 4em;
+	font-weight: bolder;
+}
+h2{
+	font-weight: bold;
+}
+#studentName{
+	    color: hsl(232, 21%, 14%);
+
+}
+.img-thumbnail{
+	height: 8em;
+    width: 8em;
+    border-radius: 3em;
+}
+.schedule{
+	text-align: center;
+}
+.header{
+	background-color: #1D1F2c;
+	margin: 0
+}
+/*.btn{
+	border-color: 1px solid white;
+}*/
+.btn-text{
+	margin-bottom: 20px;
+	text-align: center;
+	/*font-size: 3em;*/
+	width: 100%;
+	text-align: justify;
+	padding-left: 30px;
+
+}
+
+.class-head{
+	/*background-color: hsl(235, 94%, 24%);*/
+	background:linear-gradient(rgb(4, 13, 119), rgb(5, 4, 3));
+	text-align: center;
+	font-size: 4em;
+	color: hsl(39, 100%, 50%);
+}
+
+.econo{
+	color:hsl(232, 21%, 14%);
+	background:linear-gradient(rgb(9, 9, 8), rgb(4, 13, 119));
+	height: 4em;
+	font-size: 2em;
+	color: hsl(39, 100%, 50%);
+}
+
+/*.eng{
+	color: white;
+	background-color: hsl(232, 21%, 14%);
+}
+.his{
+	color: white;
+	background-color: hsl(232, 21%, 14%);
+}
+
+.math{
+	color: white;
+	background-color: hsl(232, 21%, 14%);
+}	
+
+.bio{
+
+	color: white;
+	background-color: hsl(232, 21%, 14%);
+}
+.pe{
+	color: white;
+	background-color: hsl(232, 21%, 14%);
+}*/
+.container-fluid{
+	margin-right: 0;
+	width: 100%;
+	margin-left: 0;
+}
+.panel-body{
+	font-size:8em;
+}
+.panel-footer{
+	font-size: 2.5em;
+	background-color: teal;
+}
+
+.classes{
+	font-size:2em;
+}
+
+html, body
+{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    /*background: linear-gradient(to bottom, rgb(29, 31, 44)10%, rgba(29, 31, 44, 0.96)21%, rgba(59,70,124,0.7) ), url(../images/coach.png),url(../images/alert1.png);*/
+}
+.header{
+font-size: 5em;
+}
+
+.nvd3.nv-pie.nv-chart-donut2 .nv-pie-title
+{
+    fill: gray;
+}
+
+.nvd3.nv-pie.nv-chart-donut1 .nv-pie-title
+{
+    opacity: 0.4;
+    fill: green;
+}
+
+.c-menu {
+    z-index: 200;
+    background-color: hsla(26, 79%, 56%, 0.69);
+    transition: transform .3s;
+}
+.c-button{
+	position: relative;
+	top: 18px;
+    color: rgb(255,122,0);
+    border:none;                   
+
+}
+.c-menu__link{
+font-size: 3em;
+}
+footer{
+	
+	
+}
+.nav-row{
+	text-align: center;
+	padding-top: 2.5em;
+	height: 10em;
+
+}
+
+.navbar-fixed-bottom .glyphicon{
+	color: rgb(255,122,0);
+	font-size: 5em;
+}
+.myAlert {
+	position: relative;
+	color: rgb(255,122,0);
+	top: 32px;
+}
+.alert-badge{
+	background-color: red;
+	color:white;	
+	    font-size: 1em;
+    border-radius: 1em;
+}
+
+.c-menu__close {
+    color: hsl(0, 100%, 100%);
+    background-color: hsla(26, 79%, 56%, 0.69);
+    border: none;
+    cursor: pointer;
+    height: 15em;
+}
+.c-mask, .c-menu {
+    position: fixed;
+}
+/*///////////////////////////////////////*/
+.alert{
+	border: 1px solid rgb(63,67,95);
+	background-color: rgb(29,31,44);
+	color: white;
+	font-size: bold;
+	height: 13em;
+}
+.alert h3{
+	color: rgb(255,122,0);
+}
+#myModalLabel{
+	color: rgb(255,122,0);
+}
+.modal-header{
+	background-color: rgb(29,31,44);
+	border: 1px solid rgb(63,67,95);
+}
+/*.glyphicon{
+	color: #428bca;
+	font-size: 80%;
+}
+.glyphicon:hover{
+	color: rgb(255,122,0);
+	cursor: pointer;
+}*/
+
+.active{
+	color: green;
+}
+.no-act{
+	color: red;
+}
+#tc{
+	color: rgb(255,122,0);
+	background-color: rgb(63,67,95);
+	padding: 1%;
+	font-weight: bolder;
+}
+#hw{
+	color: rgb(255,122,0);
+	background-color: rgb(63,67,95);
+	padding: 1%;
+	font-weight: bolder;
+}
+#ps{
+	color: rgb(255,122,0);
+	background-color: rgb(63,67,95);
+	padding: 1%;
+	font-weight: bolder;
+}
+
+.outter{
+	font-size: 3em;
+}
+.glyphicon-envelope{
+	font-size:2em;
+	float: right;
+}
+.gradeBackground{
+	    background-color: hsl(0, 0%, 27%);
+}
+/*.panel-heading{
+	font-size: 2em;
+	background-color: teal;
+}*/
+
+
+
+
+
