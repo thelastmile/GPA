@@ -1,0 +1,280 @@
+*{
+/*	outline: 1px solid red;*/
+}
+body {
+	background: #fff6e4;
+}
+img{
+	max-width: 100%;
+}
+h1{
+	font-size: 4em;
+	font-weight: bolder;
+}
+h2{
+	font-weight: bold;
+}
+a:hover {
+	color: #fff;
+}
+.logo-container {
+	text-align: center;
+}
+.logo-img {
+	width: 3em;
+}
+#studentName{
+	padding: .7em 0;
+	color: #5b5d9b;
+	font-weight: 300;
+}
+.schedule{
+	text-align: center;
+}
+.header{
+	background-color: #5b5d9b;
+	margin: 0
+}
+.btn{
+	border-color: 1px solid black;
+	background: #fcce84;
+	outline: none !important;
+}
+.btn:hover {
+	color: #fff !important;
+}
+.btn-text{
+	margin-bottom: 20px;
+	text-align: center;
+	/*font-size: 3em;*/
+	width: 100%;
+	text-align: justify;
+	padding-left: 30px;
+
+}
+.class-head{
+	padding-top: .7em;
+	padding-bottom: .7em;
+	font-size:3em;
+	background-color: #5b5d9b;
+	text-align: center;
+	color: #fff;
+}
+
+.econo{
+	color: white;
+/*	background-color: hsl(232, 21%, 14%);*/
+}
+
+.eng{
+	color: white;
+/*	background-color: hsl(232, 21%, 14%);*/
+}
+.his{
+	color: white;
+/*	background-color: hsl(232, 21%, 14%);*/
+}
+
+.math{
+	color: white;
+/*	background-color: hsl(232, 21%, 14%);*/
+}	
+
+.bio{
+	color: white;
+/*	background-color: hsl(232, 21%, 14%);*/
+}
+.pe{
+	color: white;
+/*	background-color: hsl(232, 21%, 14%);*/
+}
+.container-fluid{
+	margin-right: 0;
+	width: 100%;
+	margin-left: 0;
+}
+
+/* Accordian Styles */
+.well {
+	box-shadow: none;
+	background: #fbe8c3;
+	border: none;
+}
+.panel-body{
+	font-size:8em;
+}
+.panel-default {
+	border: none;
+	border-radius: 1.5em;
+	overflow: hidden;
+}
+.panel-footer{
+	font-size: 2.5em;
+	background-color: #5b5d9b;
+	color: #fff;
+}
+.list-group-item {
+	font-size: 2em;
+	color: #fff !important;
+	border: none;
+	margin: .5em 0 !important;
+}
+.list-group-item-success {
+	background: #50b6aa;
+}
+.list-group-item-success:hover {
+	background: #50b6aa !important;
+}
+.list-group-item-warning {
+	background: #ffa183;
+}
+.list-group-item-warning:hover {
+	background: #ffa183 !important;
+}
+.list-group-item-danger {
+	background: #e35464;
+}
+.list-group-item-danger:hover {
+	background: #e35464 !important;
+}
+.classes{
+
+	font-size:2em;
+}
+
+html, body
+{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    /*background: linear-gradient(to bottom, rgb(29, 31, 44)10%, rgba(29, 31, 44, 0.96)21%, rgba(59,70,124,0.7) ), url(../images/coach.png),url(../images/alert1.png);*/
+}
+.header{
+font-size: 5em;
+}
+
+.nvd3.nv-pie.nv-chart-donut2 .nv-pie-title
+{
+    fill: gray;
+}
+
+.nvd3.nv-pie.nv-chart-donut1 .nv-pie-title
+{
+    opacity: 0.4;
+    fill: green;
+}
+
+.c-menu {
+    z-index: 200;
+    background-color: hsla(26, 79%, 56%, 0.69);
+    transition: transform .3s;
+}
+.c-button{
+/*	position: relative;
+	top: 18px;*/
+    color: #fff;
+    border:none;                   
+
+}
+.c-menu__link{
+font-size: 3em;
+}
+footer{
+	
+	
+}
+.nav-row{
+	text-align: center;
+	padding-top: 2.5em;
+	height: 10em;
+
+}
+
+.navbar-fixed-bottom .glyphicon{
+	color: #fff;
+	font-size: 5em;
+}
+.navbar-default {
+	background: #5b5d9b;
+}
+.myAlert {
+	position: relative;
+	color: #fff;
+	top: 12px;
+}
+.badge{
+	z-index: 2;
+	position: absolute;
+	top: .5em;
+	left: .8em;
+	background-color: #ee3f50;	
+	font-size: .7em;
+	line-height: 1.24em;
+	width: 1.4em;
+    height: 1.4em;
+    border-radius: 1em;
+}
+
+.c-menu__close {
+    color: hsl(0, 100%, 100%);
+    background-color: hsla(26, 79%, 56%, 0.69);
+    border: none;
+    cursor: pointer;
+    height: 15em;
+}
+.c-mask, .c-menu {
+    position: fixed;
+}
+
+
+/*///////////////////////////////////////*/
+.alert{
+	border: 1px solid rgb(63,67,95);
+	background-color: rgb(29,31,44);
+	color: white;
+	font-size: bold;
+	height: 13em;
+}
+.alert h3{
+	color: rgb(255,122,0);
+}
+#myModalLabel{
+	color: rgb(255,122,0);
+}
+.modal-header{
+	background-color: rgb(29,31,44);
+	border: 1px solid rgb(63,67,95);
+}
+/*.glyphicon{
+	color: #428bca;
+	font-size: 80%;
+}
+.glyphicon:hover{
+	color: rgb(255,122,0);
+	cursor: pointer;
+}*/
+
+.active{
+	color: green;
+}
+.no-act{
+	color: red;
+}
+#tc{
+	color: rgb(255,122,0);
+	background-color: rgb(63,67,95);
+	padding: 1%;
+	font-weight: bolder;
+}
+#hw{
+	color: rgb(255,122,0);
+	background-color: rgb(63,67,95);
+	padding: 1%;
+	font-weight: bolder;
+}
+#ps{
+	color: rgb(255,122,0);
+	background-color: rgb(63,67,95);
+	padding: 1%;
+	font-weight: bolder;
+}

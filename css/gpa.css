@@ -1,36 +1,31 @@
 *{
-	outline: 1px solid red;
+	/*outline: 1px solid red;*/
 
 }
 img{
-	max-width: 100%;
+	/*max-width: 100%;*/
 }
 h1{
-	font-size: 4em;
+	font-size: 5em;
 	font-weight: bolder;
 }
 h2{
 	font-weight: bold;
 }
 #studentName{
-	    color: hsl(232, 21%, 14%);
+	color: rgb(255,122,0);
 
-}
-.img-thumbnail{
-	height: 8em;
-    width: 8em;
-    border-radius: 3em;
 }
 .schedule{
 	text-align: center;
 }
 .header{
-	background-color: #1D1F2c;
-	margin: 0
+	/*background-color: #1D1F2c;*/
+	/*margin: 0*/
 }
-/*.btn{
-	border-color: 1px solid white;
-}*/
+.btn{
+	border-color: 1px solid black;
+}
 .btn-text{
 	margin-bottom: 20px;
 	text-align: center;
@@ -42,22 +37,17 @@ h2{
 }
 
 .class-head{
-	/*background-color: hsl(235, 94%, 24%);*/
-	background:linear-gradient(rgb(4, 13, 119), rgb(5, 4, 3));
+	background-color: hsl(29, 100%, 50%);
 	text-align: center;
 	font-size: 4em;
-	color: hsl(39, 100%, 50%);
 }
 
 .econo{
-	color:hsl(232, 21%, 14%);
-	background:linear-gradient(rgb(9, 9, 8), rgb(4, 13, 119));
-	height: 4em;
-	font-size: 2em;
-	color: hsl(39, 100%, 50%);
+	color: white;
+	background-color: hsl(232, 21%, 14%);
 }
 
-/*.eng{
+.eng{
 	color: white;
 	background-color: hsl(232, 21%, 14%);
 }
@@ -79,7 +69,7 @@ h2{
 .pe{
 	color: white;
 	background-color: hsl(232, 21%, 14%);
-}*/
+}
 .container-fluid{
 	margin-right: 0;
 	width: 100%;
@@ -154,11 +144,8 @@ footer{
 	color: rgb(255,122,0);
 	top: 32px;
 }
-.alert-badge{
-	background-color: red;
-	color:white;	
-	    font-size: 1em;
-    border-radius: 1em;
+.badge{
+	background-color: red;	
 }
 
 .c-menu__close {
@@ -189,21 +176,8 @@ footer{
 	background-color: rgb(29,31,44);
 	border: 1px solid rgb(63,67,95);
 }
-/*.glyphicon{
-	color: #428bca;
-	font-size: 80%;
-}
-.glyphicon:hover{
-	color: rgb(255,122,0);
-	cursor: pointer;
-}*/
 
-.active{
-	color: green;
-}
-.no-act{
-	color: red;
-}
+
 #tc{
 	color: rgb(255,122,0);
 	background-color: rgb(63,67,95);
@@ -222,23 +196,3 @@ footer{
 	padding: 1%;
 	font-weight: bolder;
 }
-
-.outter{
-	font-size: 3em;
-}
-.glyphicon-envelope{
-	font-size:2em;
-	float: right;
-}
-.gradeBackground{
-	    background-color: hsl(0, 0%, 27%);
-}
-/*.panel-heading{
-	font-size: 2em;
-	background-color: teal;
-}*/
-
-
-
-
-

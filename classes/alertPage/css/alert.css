@@ -1,0 +1,132 @@
+*{
+	/*outline: 1px solid red;*/
+}
+hr{
+	width: 100%!important;
+	border:1.5px solid rgb(255,122,0)!important; 
+}
+
+.popover-content{
+	width: 20em;
+}
+
+
+h3{
+	text-align: center
+}
+#gpa{
+	font-weight: bold;
+	font-size: 3em;
+}
+.customize{
+	float: right;
+	clear: auto;
+}
+.boost{
+	font-size: 3em; 
+}
+.switch input:checked + label{
+	background-color: #29D44F;
+}
+.switch input + label{
+	margin-left: 0;
+	margin-right: 0;
+}
+input[type="checkbox"] + label{
+	display: inline-block;
+	margin-bottom: 0;
+	vertical-align: baseline;
+}
+.switch label{
+	color: transparent;
+	background-color: red;
+}
+.switch label{
+	height: 3rem;
+	width: 5rem;
+}
+.switch label{
+	cursor:pointer;
+	position: relative;
+	text-indent: 100%
+}
+label{
+	font-size: 1rem;
+	font-weight: normal;
+	line-height: 1.5;
+}
+.switch{
+	border: none;
+	margin-bottom: 1.5rem;
+	outline: 0;
+	padding: 0;
+	position: relative;
+	-webkit-user-select: none;
+	text-align: center;
+
+}
+.switch input:checked + label:after{
+	left:3rem;
+}
+.switch label:after{
+	background: white;
+	height: 1.5rem;
+	width: 1.5rem;
+}
+.switch label:after{
+	background: white;
+	content: "";
+	display: block;
+	height: 2.5rem;
+	left: .25rem;
+	position: absolute;
+	top: .25rem;
+	width: 1.5rem;
+	transform: translate3d(0,0,0);
+	border-radius: 50%;
+}
+.switch input{
+	left: 10px;
+	opacity: 0;
+	padding: 0;
+	position: absolute;
+	top: 9px;
+}
+.status{
+	font-weight: bolder;
+	font-size: 1.5em;
+	margin-left: 35%;
+}
+label{
+	border-radius: 40%;
+}
+
+
+
+/*/////////////////////*/
+.strings{
+	font-size: 3em;
+	font-weight: bold;
+}
+.color{
+	color: rgb(255,122,0);
+	font-size: 3em;
+	font-weight: bold;
+}
+#save{
+	margin-bottom: 10%;
+}
+.gold{
+	color: rgb(255,122,0);
+}
+.directions{
+	font-size: 2em;
+	font-weight: bolder;
+}
+.header{
+	background-color: #1D1F2c;
+	margin: 0
+}
+#studentName{
+	color: rgb(255,122,0);
+}

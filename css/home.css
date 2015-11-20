@@ -1,0 +1,90 @@
+*{
+	/*outline: 1px solid red;*/
+}
+.goal,.current{
+	text-align: center;
+	width: 70%;
+	margin-left: 25%;
+	border: 3px dotted #2864A9;
+	padding: 2%;
+	background-color: #EEEEEE;
+}
+.pad{
+	padding: 2%;
+}
+.warnings{
+	text-align: center;
+}
+.warnings ul li{
+	list-style: none;
+	font-size: 2em;
+}
+.warnings ul li a{
+	text-decoration: none;
+}
+.bad{
+   /*text-shadow: 1px 1px 2px black, 0 0 1em red, 0 0 0.2em red;*/
+   color: red!important;
+   font-size: 75%;
+   /*font: 1.5em Georgia, "Bitstream Charter", "URW Bookman L", "Century Schoolbook L", serif;*/
+}
+.mid{
+	/*text-shadow: 1px 1px 2px black, 0 0 1em yellow, 0 0 0.2em yellow;*/
+  color: yellow!important;
+  font-size: 75%;
+  /*font: 1.5em Georgia, "Bitstream Charter", "URW Bookman L", "Century Schoolbook L", serif;*/
+}
+.good{
+  /*text-shadow: 1px 1px 2px lightgreen, 0 0 1em green, 0 0 0.2em green;*/
+  color: green!important;
+  font-size: 75%;
+  /*font: 1.5em Georgia, "Bitstream Charter", "URW Bookman L", "Century Schoolbook L", serif;*/
+}
+
+.attention{
+	background-color: #2864A9;
+	color: white;
+	font-size: 1em;
+	font-weight: 900;
+	border: 2px solid #EEEEEE;
+	border-radius: 5%;
+}
+.back{
+	/*background-color: #50B6AA;*/
+}
+body{
+	 /*background: linear-gradient(to bottom, rgb(29, 31, 44)10%, rgba(29, 31, 44, 0.96)21%, rgba(59,70,124,0.7) ), url(../../image/coach.png),url(../../image/alert1.png)!important;*/
+}
+
+.test{
+	margin-bottom: 10%;
+}
+.gd{
+	background-color: green;
+}
+.md{
+	background-color: yellow;
+}
+.bd{
+	background-color: red;
+}
+text {
+  font: 12px sans-serif;
+  font-weight: bolder;
+}
+svg {
+  display: block;
+}
+#chart1, svg {
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  width: 100%;
+}
+hr{
+	width: 80%;
+	border: 1px solid #2864A9;
+}
+.marTop{
+	margin-top: 25%!important;
+}

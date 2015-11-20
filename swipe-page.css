@@ -1,0 +1,123 @@
+/* Set the background image sources */
+*{
+	/*outline: 1px solid red;*/
+}
+.ui-btn{
+	background: #2864A9!important;
+	background-image: none!important;
+}
+.ui-content{
+	margin-top: 18%;
+	width: 90%;
+	margin-left: 4%;
+}
+/*.control{
+	position: absolute;
+	left: 40%;
+	bottom: 100%;
+}*/
+.navbar-default{
+	background-color: #2864A9;
+	border-color:#EEEEEE;
+}
+/*#newyork { background-image: url("../_assets/img/newyork.jpg")!important; }*/
+/*#buenosaires { background-image: url("../_assets/img/buenosaires.jpg"); }*/
+/*#paris { background-image: url("../_assets/img/paris.jpg"); }*/
+#capetown { background-image: url("../_assets/img/capetown.jpg"); }
+#seoul { background-image: url("../_assets/img/seoul.jpg"); }
+#sydney { background-image: url("../_assets/img/sydney.jpg"); }
+/* Background settings */
+.demo-page {
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+/* Transparent footer */
+.demo-page .ui-footer {
+	background: none;
+	border: none;
+	bottom: 0;
+}
+/* The footer won't have a height because there are only two absolute positioned elements in it.
+So we position the buttons from the bottom. */
+.control.ui-btn-left,
+.trivia-btn.ui-btn-right {
+	top: auto;
+	bottom: 7px;
+	margin: 0;
+}
+/* Custom styling for the trivia source */
+small {
+	font-size: .75em;
+	color: #666;
+}
+.ui-bar-b{
+	background:#2864A9;
+	/*background-image: linear-gradient( #6facd5 , #497bae);*/
+  /*border-color: #456f9a;*/
+  color: #fff;
+  text-shadow: 0 1px 0 #3e6790;
+  font-weight: bold;
+}
+img{
+	width: 25%;
+	height: auto;
+}
+#alert{
+	position: absolute;
+	left: 35%;
+	color: #2864A9;
+	padding: 0;
+}
+.badge{
+	position: relative;
+	left: 1em;
+	background-color: red; 
+}
+#logo{
+	margin-left: 55%;
+	
+}
+.secColor{
+	background: #EEEEEE;
+}
+.report{
+	color: #2864A9;
+	text-align: center;
+}
+.strings{
+	color: #2864A9;
+}
+.base{
+	color: #EEEEEE;
+}
+
+.goal,.current{
+	height: 5em;
+}
+.prev{
+	position: absolute;
+	bottom: 90%;
+	left: 2%;
+}
+.next{
+	position: absolute;
+	left: 90%;
+	bottom: 90%
+}
+.ui-header-fullscreen{
+	opacity: 1;
+}
+#menu,#search,#home,#class,#profile,#help{
+	color: #2864A9;
+}
+.bottom{
+	margin-bottom: 10%;
+}
+.team{
+	color: #2864A9;
+	font-size: .6em;
+}
+.team a:hover{
+	color: black;
+}

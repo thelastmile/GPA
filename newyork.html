@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home Page</title>
+	<link rel="stylesheet" type="text/css" hre="css/main_lib/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> 
+  <script src="css/js/jquery.min.js"></script>
+
+	<link rel="stylesheet" href="css/themes/default/jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" href="css/themes/theme-classic/theme-classic.css">
+  <link rel="stylesheet" href="swipe-page.css">
+	<!-- <link rel="stylesheet" href="css/jquery-ui.icon-font.css"> -->
+	<!-- //body content -->
+	<link rel="stylesheet" href="css/home.css">
+	<script src="js/jquery.js"></script>
+	<script src="_assets/js/index.js"></script>
+	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+	<script src="swipe-page.js"></script>
+
+	<!-- //Graphs -->
+	<script src="css/main_lib/d3.min.js" charset="utf-8"></script>
+	<script src="css/main_lib/nv.d3.js"></script>
+  <link href="css/nv.d3.css" rel="stylesheet" type="text/css">
+  <script src="js/home/home.js"></script> 
+	<script src="js/home/customize.js"></script> 
+</head>
+
+
+<body>
+<div id="header" data-role="header" data-id="header" data-position="fixed" data-fullscreen="true" data-tap-toggle="false">
+
+  <div id="o-wrapper" class="o-wrapper">
+  </div>
+
+    <div class="row header">
+      <div class="col-xs-2 col-md-2">
+				<a id="menu" href="#panel-overlay">
+					<span class="ui-icon-bars ui-btn-icon-top  ui-corner-all"></span>
+				</a>
+      </div>
+    	<div class="col-xs-6 col-md-6">
+    		<img id="logo" src="image/logo.png">
+    	</div>
+			<div class="col-xs-2 col-md-2">
+				<a id="alert" href="inbox/inbox.html" class="ui-icon-alert ui-btn-icon-top ui-corner-all ui-btn-b"><span class="badge">2</span></a>
+
+			</div>
+			<div class="col-xs-2 col-md-2">
+						<a id="search" class="">
+		          <span class="ui-icon-search ui-btn-icon-top ui-corner-all"></span>
+		        </a>
+			</div>
+    </div>
+    <h1>Home</h1>
+
+</div><!-- /header -->
+
+<div data-role="page" id="newyork" class="demo-page" data-title="Home" data-dom-cache="true" data-theme="ui-page-theme-b" data-next="buenosaires">  
+	<div role="main" class="ui-content bottom">
+    <div class="row-fluid">
+      <div class="col-xs-6 col-md-6 col-lg-6 pad">
+        <div class="goal">
+          <span class="strings">Goal GPA</span><br>
+          <span id="goalGpa" class="strings"></span>
+        </div>
+      </div>
+      <div class="col-xs-6 col-md-6 col-lg-6 pad">
+        <div class="current">
+          <span class="strings">Current GPA</span><br>
+          <span id="currentGpa" class="strings"></span>
+        </div>
+      </div>
+  </div><!-- end of row -->
+
+  <div class="row-fluid">
+    <div class="col-xs-12 col-md-12 col-lg-12">
+      <div class="warnings">
+        <h1 class="attention">Needs Work:</h1>
+          <li class="back"><a href="#" class="bad">Math<span id="mathGrade"> C-</span> </a></li>
+          <li class="back"><a href="#" class="mid">English<span id="englishGrade"> B-</span> </a></li>
+        <br>
+        <h1 class="attention">Strongest Subjects:</h1>
+          <li><a href="" class="good">History <span id="historyGrade"> A</span></a></li>
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <div class="row-fluid">
+    <div class="col-xs-12 col-md-12">
+  	<h1 class="report">Semester Overview</h1>
+      <div id="chart1" class='with-transitions'>
+          <svg></svg>
+      </div>
+    </div>
+  </div>
+
+	<div class="team bottom">
+    <a href="">TEAM GPA</a>
+    <a href="">Copyright 2015 GPA.org</a>
+  </div>
+
+  </div><!-- /content -->
+
+  <div data-role="panel" id="panel-overlay" data-display="overlay">
+		<ul data-role="listview">
+			<li data-icon="delete"><a href="#" data-rel="close">Close</a></li>
+			<li><a href="#">List item</a></li>
+			<li><a href="#">List item</a></li>
+			<li><a href="#">List item</a></li>
+		</ul>
+		<br>
+		<button class="ui-btn ui-corner-all ui-shadow">Button</button>
+	</div>
+</div><!-- /page -->
+ 
+    
+<nav class="navbar navbar-default navbar-fixed-bottom">
+  <div class="row nav-row">
+				<div data-role="controlgroup" class="control ui-btn-top" data-type="horizontal" data-mini="true">
+		      <a href="#" class="prev ui-btn ui-btn-icon-notext ui-icon-carat-l ui-btn-inline ui-corner-all">Previous</a>
+		      <a href="#" class="next ui-btn ui-btn-icon-notext ui-icon-carat-r ui-btn-inline ui-corner-all">Next</a>
+		    </div>
+      <div class="col-xs-3 col-md-2 col-lg-3">
+
+	        <a href="newyork.html" id="" class="">
+	        <span id="home" class="ui-icon-home ui-btn-icon-top ui-corner-all"></span>
+	        </a>
+      </div>
+      
+      <div class="col-xs-3 col-md-2 col-lg-3">
+        <a href="buenosaires.html" id="class" class="">
+          <span class="ui-icon-bullets ui-btn-icon-top ui-corner-all"></span>
+        </a>
+	    </div>
+     
+      <div class="col-xs-3 col-md-2 col-lg-3 ">
+        <a href="capetown.html" id="profile" class="">
+          <span class="ui-icon-user ui-btn-icon-top ui-corner-all"></span>
+        </a>
+      </div>
+
+    <div class="col-xs-3 col-md-2 col-lg-3">
+	    <a href="paris.html" tabindex="0" id = "settings help" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?"> 
+				<span class="ui-icon-gear ui-btn-icon-top ui-corner-all"></span>
+      </a>
+    </div>
+
+  </div>
+</nav>
+</body>
+</html>
