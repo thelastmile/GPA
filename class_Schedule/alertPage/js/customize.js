@@ -2,6 +2,8 @@ $(document).ready(function(){
 /////IF THE LOCAL STORAGE IS EMPTY UNCOMMENT THE populateStorage() TO POPULATE AND COMMENT IT BACK OUT////
 // populateStorage()
 
+	// modal popover
+	$('#dir').popover();
 	//pull array from local storage
 	var currAlerts = JSON.parse(localStorage.alert);
 	//create variables to store new changes
@@ -11,12 +13,13 @@ $(document).ready(function(){
 ///////////////////////////GRADE POINT AVERAGE//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	$('#gpa').text(currAlerts[0].currAlert)
 		var gpa = Number($('#gpa').text());
-
 	$('#increaseGpa').on('click',function(){
 		if(gpa < 4.4){
 			gpa += .1;
 			var	newAlert = gpa;
 			$('#gpa').html(newAlert.toFixed(1))
+		}else{
+			// alert('You have reach the max.')embed max and min on side
 		}
 	});
 	$('#decreaseGpa').on('click',function(){
@@ -24,16 +27,24 @@ $(document).ready(function(){
 			gpa -= .1;
 			var newAlert = gpa;
 			$('#gpa').html(newAlert.toFixed(1))
+		}else{
+			// alert('You have reach the minium.')
 		}
 	});
 	//activate or deactivate
 	$('#active1').on('click',function(){
 		if($('#active1').prop('checked') === true ){
 			currAlerts1 = true;
-			currAlerts[0].active = currAlerts1; 
+			currAlerts[0].active = currAlerts1;// saves the new changes
+			$('#status1').removeClass('no-act').addClass('active')
+			var newMess = "On";
+			$('#status1').html(newMess)
 		}else {
 			currAlerts1 = false;
 			currAlerts[0].active = currAlerts1;
+			$('#status1').removeClass('active').addClass('no-act')
+			var mess = "Off"
+			$('#status1').html(mess)
 		}
 	})//end of grade point average
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////UPCOMING TEST/QUIZ////////////////////////////////////////
@@ -62,10 +73,16 @@ $(document).ready(function(){
 	$('#active2').on('click',function(){
 		if($('#active2').prop('checked') === true){
 			currAlerts2 = true;		
+			$('#status2').removeClass('no-act').addClass('active');
 			currAlerts[1].active = currAlerts3;	
+			var newMess = "On";
+			$('#status2').html(newMess)
 		}else {
 			currAlerts2 = false;
 			currAlerts[1].active = currAlerts3;	
+			$('#status2').removeClass('active').addClass('no-act')
+			var mess = "Off"
+			$('#status2').html(mess)
 		}
 	});//end of upcoming test
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////ATTENDANCE//////////////////////////////////////////////
@@ -74,14 +91,19 @@ $(document).ready(function(){
 	$('#daysMissed').html(upDate2)
 
 	// box to activate/deactivate
-	$('#flip-checkbox-3').on('click',function(){
-		if($('#flip-checkbox-3').prop('checked') === true){
+	$('#active3').on('click',function(){
+		if($('#active3').prop('checked') === true){
 			currAlerts3 = true;	
 			currAlerts[2].active = currAlerts2;	
-			
+			$('#status3').removeClass('no-act').addClass('active')
+			var newMess = "On";
+			$('#status3').html(newMess)
 		}else {
 			currAlerts3 = false;
 			currAlerts[2].active = currAlerts2;	
+			$('#status3').removeClass('active').addClass('no-act')
+			var mess = "Off"
+			$('#status3').html(mess)
 		}
 	});
 	$('#addDays').on('click',function(){
@@ -127,15 +149,19 @@ $('#decreaseAssign').on('click',function(){
 	}
 });
 // box to activate/deactivate
-$('#flip-checkbox-4').on('click',function(){
-	if($('#flip-checkbox-4').prop('checked') === true){
+$('#active4').on('click',function(){
+	if($('#active4').prop('checked') === true){
 		currAlerts4 = true;	
 		currAlerts[3].active = currAlerts5;		
-		
+		$('#status4').removeClass('no-act').addClass('active');
+		var newMess = "On";
+		$('#status4').html(newMess)
 	}else {
 		currAlerts[3].active = currAlerts5;		
 		currAlerts4 = false;
-		
+		$('#status4').removeClass('active').addClass('no-act')
+		var mess = "Off"
+		$('#status4').html(mess)
 	}
 });// END OF ASSIGNMENTS
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////PRACTICES MISSED///////////////////////////////////////
@@ -143,13 +169,19 @@ $('#flip-checkbox-4').on('click',function(){
 	var upDateMiss = pracMiss; 
 	$('#pracMiss').html(upDateMiss);
 	// box to activate/deactivate
-	$('#flip-checkbox-6').on('click',function(){
-		if($('#flip-checkbox-6').prop('checked') === true){
+	$('#active5').on('click',function(){
+		if($('#active5').prop('checked') === true){
 			currAlerts5 = true;
 			currAlerts[4].active = currAlerts5;		
+			$('#status5').removeClass('no-act').addClass('active');
+			var newMess = "On";
+			$('#status5').html(newMess)
 		}else {
 			currAlerts5 = false;
 			currAlerts[4].active = currAlerts5;		
+			$('#status5').removeClass('active').addClass('no-act')
+			var mess = "Off"
+			$('#status5').html(mess)
 		}
 	});
 	$('#addPrac').on('click',function(){
@@ -175,13 +207,19 @@ $('#flip-checkbox-4').on('click',function(){
 	var game = gameDay; 
 	$('#gameDay').html(game)
 	// box to activate/deactivate
-	$('#flip-checkbox-1').on('click',function(){
-		if($('#flip-checkbox-1').prop('checked') === true){
+	$('#active6').on('click',function(){
+		if($('#active6').prop('checked') === true){
 			currAlerts6 = true;
 			currAlerts[5].active = currAlerts6;		
+			$('#status6').removeClass('no-act').addClass('active');
+			var newMess = "On";
+			$('#status6').html(newMess)
 		}else {
 			currAlerts6 = false;
 			currAlerts[5].active = currAlerts6;		
+			$('#status6').removeClass('active').addClass('no-act')
+			var mess = "Off"
+			$('#status6').html(mess)
 		}
 	});
 	$('#add').on('click',function(){
@@ -203,7 +241,7 @@ $('#flip-checkbox-4').on('click',function(){
 		}
 	});//END OF GAME DAY
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-console.log(currAlerts)
+
 ///ONLY USED TO POPULATE STORAGE IF THE STORAGE IS EMPTY//////////
 function populateStorage() {
   localStorage.setItem('alert',JSON.stringify([
@@ -214,6 +252,7 @@ function populateStorage() {
   	{pracMiss:10,active:true},
   	{gameDate:5,active:true}]))
 }
+
 $('#save').on('click',function(){
 	saveChanges()
 	var newGPA = Number($('#gpa').text());
@@ -222,7 +261,6 @@ $('#save').on('click',function(){
 	var newMissAssign = Number($('#missedAssign').text());
 	var newPrac = Number($('#pracMiss').text());
 	var newGame = Number($('#gameDay').text());
-
 	localStorage.setItem('alert',JSON.stringify(
 		[
 		{currAlert:newGPA,active:currAlerts1},
@@ -232,15 +270,14 @@ $('#save').on('click',function(){
 		{pracMiss:newPrac,active:currAlerts5},
 		{gameDate:newGame,active:currAlerts6}
 	]))
-console.log(localStorage.alert)
 })
 function checkActive(){
 	for (var i = 0; i < currAlerts.length; i++) {
 		if(currAlerts[i].active === true){
-			console.log(currAlerts[0].active)
-			// var test = $('#flip-checkbox-')
 			$('#active' + (i+1)).prop('checked','true');
-			
+			$('#status' + (i+1)).removeClass('no-act').addClass('active')
+			var newMess = "On";
+			$('#status' + (i+1)).html(newMess)
 		}else if(currAlerts[i].active === false){
 			$('#status' + (i+1)).removeClass('active').addClass('no-act')
 			var mess = "Off";
@@ -257,9 +294,8 @@ function saveChanges(){
 	currAlerts5 = currAlerts[4].active;
 	currAlerts6 = currAlerts[5].active;
 }
-// getData(currAlerts)
 
-})//END
+})
 
 
 

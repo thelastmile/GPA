@@ -4,43 +4,352 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Paris</title>
+	<link rel="stylesheet" type="text/css" hre="css/main_lib/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> 
+
 	<link rel="stylesheet" href="../css/themes/default/jquery.mobile-1.4.5.min.css">
-	<link rel="stylesheet" href="../_assets/css/jqm-demos.css">
+  <link rel="stylesheet" href="css/themes/theme-classic/theme-classic.css">
 	<link rel="stylesheet" href="swipe-page.css">
-	<link rel="shortcut icon" href="../favicon.ico">
+
+  <link rel="stylesheet" href="css/home.css">
 	<script src="../js/jquery.js"></script>
 	<script src="../_assets/js/index.js"></script>
+	<link rel="stylesheet" href="../_assets/css/jqm-demos.css">
 	<script src="../js/jquery.mobile-1.4.5.min.js"></script>
 	<script src="swipe-page.js"></script>
+
+	<script src="css/main_lib/d3.min.js" charset="utf-8"></script>
+  <script src="css/main_lib/nv.d3.js"></script>
+  <script src="js/graph.js"></script>
+  <script src="js/class/class.js"></script>
+  <link href="css/nv.d3.css" rel="stylesheet" type="text/css">
+	<script src="js/home/localStorage_test.js"></script>
+	<link rel="stylesheet" href="css/class.css">
 </head>
 <body>
 
 <div id="header" data-role="header" data-id="header" data-position="fixed" data-fullscreen="true" data-tap-toggle="false">
-	<h1>Paris</h1>
-    <a href="./" data-ajax="false" data-direction="reverse" data-icon="delete" data-iconpos="notext" data-shadow="false" data-icon-shadow="false">Back</a>
+	  <div class="row header">
+
+      <div class="col-xs-6 col-md-6 noPad">
+        <img id="logo" src="image/gpawht.png">
+      </div>
+      <div class="col-xs-2 col-md-2 links">
+        <a id="menu" href="#panel-overlay1" class="nav_btn  ui-icon-bars ui-btn-icon-notext">
+        </a>
+      </div>
+      <div class="col-xs-2 col-md-2 links">
+        <a id="alert" href="inbox/inbox.html" class="nav_btn  ui-icon-alert ui-btn-icon-notext">
+          <span class="alertNum">2</span>
+        </a>
+      </div>
+      <div class="col-xs-2 col-md-2 links">
+        <a href="#" class="nav_btn ui-icon-mail ui-btn-icon-notext">
+          <span class="alertInbox">4</span>
+        </a>
+        
+      </div>
+    
+    </div>
+    <!-- <h1>Home</h1> -->
+
 </div><!-- /header -->
 
-<div data-role="page" id="paris" class="demo-page" data-title="Paris" data-dom-cache="true" data-theme="b" data-prev="buenosaires" data-next="capetown">
+<div data-role="page" id="paris" class="demo-page" data-title="Class Schedule" data-dom-cache="true" data-theme="b" data-prev="buenosaires" data-next="capetown">
 
 	<div role="main" class="ui-content">
+		<div class="row-fluid">
+	    <div class="col-xs-12 col-md-12">
+	        <center>
+	          <h1>Jason Jones</h1>
+	          <h3>Progress Report</h3>
+	        </center>
+	    </div>
+	  </div><!-- end of row-fluid -->
 
-		<div id="trivia-paris" class="trivia ui-content" data-role="popup" data-position-to="window" data-tolerance="50,30,30,30" data-theme="a">
-        	<a href="#" data-rel="back" class="ui-btn ui-btn-right ui-btn-b ui-btn-icon-notext ui-icon-delete ui-corner-all">Close</a>
-			<p>Each year, 44 million tourists visit Paris and the surrounding Ile de France region. Paris is year after year the most visited city in the world. <small>source:&nbsp;parisdigest.com</small></p>
-        </div>
+<div data-role="collapsibleset" data-content-theme="b">
+	<div id="eco" data-role="collapsible">
+		<h3>Economics</h3>
+		<div class="container-fluid scoreboard">
+			<div class="row-fluid">
+	      <div class="col-xs-6 col-md-6 col-lg-6 pad">
+	        <div class="goal">
+	          <span class="strings">Goal</span><br>
+	          <span id="goalGrade" class="strings">A-</span>
+	        </div>
+	      </div>
+	      <div class="col-xs-6 col-md-6 col-lg-6 pad">
+	        <div class="current">
+	          <span class="strings">Current</span><br>
+	          <span id="currentGrade" class="strings">C-</span>
+	        </div>
+	      </div>
+		  </div><!-- end of row -->
+		</div>
+		<hr>
+		<label for="textinput-f">Contact Mrs. Johnson:</label>
+			<input id="eco-teacher" type="text" name="textinput-f" id="textinput-f" placeholder="Message" value="">
+				<div data-role="controlgroup">
+					<input type="checkbox" name="checkbox-1-a" id="checkbox-1-a">
+						<label for="checkbox-1-a">Homework <span class="right">85%</span></label>
+					<input type="checkbox" name="checkbox-2-a" id="checkbox-2-a">
+						<label for="checkbox-2-a">Quizes/Test <span class="right">70%</span></label>
+					<input type="checkbox" name="checkbox-3-a" id="checkbox-3-a">
+						<label for="checkbox-3-a">Extra Credit <span class="right">10%</span></label>
+				</div>
+	</div>
+	
+	<div id="eng" data-role="collapsible">
+		<h3>English</h3>
+
+		<div class="container-fluid scoreboard">
+			<div class="row-fluid">
+	      <div class="col-xs-6 col-md-6 col-lg-6 pad">
+	        <div class="goal">
+	          <span class="strings">Goal</span><br>
+	          <span id="goalGrade" class="strings">A-</span>
+	        </div>
+	      </div>
+	      <div class="col-xs-6 col-md-6 col-lg-6 pad">
+	        <div class="current">
+	          <span class="strings">Current</span><br>
+	          <span id="currentGrade" class="strings">C-</span>
+	        </div>
+	      </div>
+		  </div><!-- end of row -->
+		</div>
+		<hr>
+
+			<label for="textinput-g">Contact Mrs. Smith:</label>
+				<input id="eng-teacher" type="text" name="textinput-g" id="textinput-g" placeholder="Message" value="">
+					
+					<div data-role="controlgroup1">
+						<input type="checkbox" name="checkbox-1-b" id="checkbox-1-b">
+							<label for="checkbox-1-b">Homework <span class="right">85%</span></label>
+						<input type="checkbox" name="checkbox-2-b" id="checkbox-2-b">
+							<label for="checkbox-2-b">Quizes/Test <span class="right">70%</span></label>
+						<input type="checkbox" name="checkbox-3-b" id="checkbox-3-b">
+							<label for="checkbox-3-b">Extra Credit <span class="right">10%</span></label>
+					</div>
+
+		</div>
+
+	<div id="hist" data-role="collapsible">
+		<h3>U.S. History</h3>
+
+		<div class="container-fluid scoreboard">
+			<div class="row-fluid">
+	      <div class="col-xs-6 col-md-6 col-lg-6 pad">
+	        <div class="goal">
+	          <span class="strings">Goal</span><br>
+	          <span id="goalGrade" class="strings">A-</span>
+	        </div>
+	      </div>
+	      <div class="col-xs-6 col-md-6 col-lg-6 pad">
+	        <div class="current">
+	          <span class="strings">Current</span><br>
+	          <span id="currentGrade" class="strings">C-</span>
+	        </div>
+	      </div>
+		  </div><!-- end of row -->
+		</div>
+		<hr>
+
+			<label for="textinput-h">Contact Mr. Lopez:</label>
+				<input id="hist-teacher" type="text" name="textinput-h" id="textinput-h" placeholder="Message" value="">
+					
+					<div data-role="controlgroup1">
+						<input type="checkbox" name="checkbox-1-c" id="checkbox-1-c">
+							<label for="checkbox-1-c">Homework <span class="right">85%</span></label>
+						<input type="checkbox" name="checkbox-2-c" id="checkbox-2-c">
+							<label for="checkbox-2-c">Quizes/Test <span class="right">70%</span></label>
+						<input type="checkbox" name="checkbox-3-c" id="checkbox-3-c">
+							<label for="checkbox-3-c">Extra Credit <span class="right">10%</span></label>
+					</div>
+
+		</div>
+
+	<div id="math" data-role="collapsible">
+		<h3>Math</h3>
+
+		<div class="container-fluid scoreboard">
+			<div class="row-fluid">
+	      <div class="col-xs-6 col-md-6 col-lg-6 pad">
+	        <div class="goal">
+	          <span class="strings">Goal</span><br>
+	          <span id="goalGrade" class="strings">A-</span>
+	        </div>
+	      </div>
+	      <div class="col-xs-6 col-md-6 col-lg-6 pad">
+	        <div class="current">
+	          <span class="strings">Current</span><br>
+	          <span id="currentGrade" class="strings">C-</span>
+	        </div>
+	      </div>
+		  </div><!-- end of row -->
+		</div>
+		<hr>
+
+			<label for="textinput-i">Contact Mr. Jackson:</label>
+				<input id="math-teacher" type="text" name="textinput-i" id="textinput-i" placeholder="Message" value="">
+					
+					<div data-role="controlgroup1">
+						<input type="checkbox" name="checkbox-1-d" id="checkbox-1-d">
+							<label for="checkbox-1-d">Homework <span class="right">85%</span></label>
+						<input type="checkbox" name="checkbox-2-d" id="checkbox-2-d">
+							<label for="checkbox-2-d">Quizes/Test <span class="right">70%</span></label>
+						<input type="checkbox" name="checkbox-3-d" id="checkbox-3-d">
+							<label for="checkbox-3-d">Extra Credit <span class="right">10%</span></label>
+					</div>
+
+		</div>
+
+	<div id="bio" data-role="collapsible">
+		<h3>Biology</h3>
+
+		<div class="container-fluid scoreboard">
+			<div class="row-fluid">
+	      <div class="col-xs-6 col-md-6 col-lg-6 pad">
+	        <div class="goal">
+	          <span class="strings">Goal</span><br>
+	          <span id="goalGrade" class="strings">A-</span>
+	        </div>
+	      </div>
+	      <div class="col-xs-6 col-md-6 col-lg-6 pad">
+	        <div class="current">
+	          <span class="strings">Current</span><br>
+	          <span id="currentGrade" class="strings">C-</span>
+	        </div>
+	      </div>
+		  </div><!-- end of row -->
+		</div>
+		<hr>
+
+			<label for="textinput-j">Contact Mr. Hoansburg:</label>
+				<input id="bio-teacher" type="text" name="textinput-j" id="textinput-j" placeholder="Message" value="">
+					
+					<div data-role="controlgroup1">
+						<input type="checkbox" name="checkbox-1-e" id="checkbox-1-e">
+							<label for="checkbox-1-e">Homework <span class="right">85%</span></label>
+						<input type="checkbox" name="checkbox-2-e" id="checkbox-2-e">
+							<label for="checkbox-2-e">Quizes/Test <span class="right">70%</span></label>
+						<input type="checkbox" name="checkbox-3-e" id="checkbox-3-e">
+							<label for="checkbox-3-e">Extra Credit <span class="right">10%</span></label>
+					</div>
+
+		</div>
+
+<div id="pe" data-role="collapsible">
+		<h3>Physical Education</h3>
+
+		<div class="container-fluid scoreboard">
+			<div class="row-fluid">
+	      <div class="col-xs-6 col-md-6 col-lg-6 pad">
+	        <div class="goal">
+	          <span class="strings">Goal</span><br>
+	          <span id="goalGrade" class="strings">A-</span>
+	        </div>
+	      </div>
+	      <div class="col-xs-6 col-md-6 col-lg-6 pad">
+	        <div class="current">
+	          <span class="strings">Current</span><br>
+	          <span id="currentGrade" class="strings">C-</span>
+	        </div>
+	      </div>
+		  </div><!-- end of row -->
+		</div>
+		<hr>
+
+			<label for="textinput-k">Contact Mr. James:</label>
+				<input id="pe-teacher" type="text" name="textinput-k" id="textinput-k" placeholder="Message" value="">
+					
+					<div data-role="controlgroup1">
+						<input type="checkbox" name="checkbox-1-f" id="checkbox-1-f">
+							<label for="checkbox-1-f">Homework <span class="right">85%</span></label>
+						<input type="checkbox" name="checkbox-2-f" id="checkbox-2-f">
+							<label for="checkbox-2-f">Quizes/Test <span class="right">70%</span></label>
+						<input type="checkbox" name="checkbox-3-f" id="checkbox-3-f">
+							<label for="checkbox-3-f">Extra Credit <span class="right">10%</span></label>
+					</div>
+
+		</div>
+		<hr>
+
 
 	</div><!-- /content -->
 
-</div><!-- /page -->
+	<div class="graph bottom">
+		<h3>Overall GPA</h3>
+		<svg id="fillgauge1" onclick="gauge1.update(NewValue());"></svg>
+	</div>
+	</div><!-- /page -->
 
-<div id="footer" data-id="footer" data-position="fixed" data-fullscreen="true" data-tap-toggle="false">
-	<div data-role="controlgroup" class="control ui-btn-left" data-type="horizontal" data-mini="true">
-    	<a href="#" class="prev ui-btn ui-btn-icon-notext ui-icon-carat-l">Previous</a>
-    	<a href="#" class="next ui-btn ui-btn-icon-notext ui-icon-carat-r">Next</a>
+</div><!-- end of row -->
+
+    
+<nav class="navbar navbar-default navbar-fixed-bottom">
+  <div class="row nav-row">
+        <div data-role="controlgroup" class="control ui-btn-top" data-type="horizontal" data-mini="true">
+          <a href="#" class="prev ui-btn ui-btn-icon-notext ui-icon-carat-l ui-btn-inline ui-corner-all">Previous</a>
+          <a href="#" class="next ui-btn ui-btn-icon-notext ui-icon-carat-r ui-btn-inline ui-corner-all">Next</a>
+        </div>
+      <div class="col-xs-3 col-md-2 col-lg-3 links">
+
+          <a href="newyork.html" id="">
+            <span id="home" class="ui-icon-home ui-btn-icon-top ui-corner-all"></span>
+          </a>
+      </div>
+      
+      <div class="col-xs-3 col-md-2 col-lg-3 links">
+        <a href="buenosaires.html" id="class">
+          <span class="ui-icon-bullets ui-btn-icon-top ui-corner-all"></span>
+        </a>
+      </div>
+     
+      <div class="col-xs-3 col-md-2 col-lg-3 links">
+        <a href="capetown.html" id="profile">
+          <span class="ui-icon-user ui-btn-icon-top ui-corner-all"></span>
+        </a>
+      </div>
+
+    <div class="col-xs-3 col-md-2 col-lg-3 links">
+      <a href="paris.html" tabindex="0" id = "settings help"> 
+        <span class="ui-icon-gear ui-btn-icon-top ui-corner-all"></span>
+      </a>
     </div>
 
-	<a href="#trivia-paris" id="trivia-button" data-rel="popup" class="trivia-btn ui-btn ui-btn-right ui-btn-icon-left ui-icon-info ui-mini ui-corner-all">Trivia</a>
-</div><!-- /footer -->
+  </div>
+</nav>
+</body>
+<script language="JavaScript">
+   
+    var config1 = liquidFillGaugeDefaultSettings();
+    config1.circleColor = "#5154D0";
+    config1.textColor = "#045681";
+    config1.waveTextColor = "#A4DBf8";
+    config1.waveColor = "#252773";
+    config1.circleThickness = 0.1;
+    config1.textVertPosition = 0.2;
+    config1.waveAnimateTime = 1000;
+    config1.textSize = 3;
+    var gauge1= loadLiquidFillGauge("fillgauge1", 2.5, config1);
+    var test = $("#goalGpa").text();
+    var test1 = $("#currentGpa").text();
+        console.log("tester",test)
+        console.log("testera",test1)
+function NewValue(){
+        return 85
+       
+    }
+</script>
+ 
+
+
+        
+
+
+
+
 
 </body>
 </html>

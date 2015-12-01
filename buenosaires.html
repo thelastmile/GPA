@@ -6,23 +6,28 @@
 	<title>Alert Page</title>
 	<link rel="stylesheet" type="text/css" hre="css/main_lib/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> 
-  <script src="css/js/jquery.min.js"></script>
 
 	<link rel="stylesheet" href="../css/themes/default/jquery.mobile-1.4.5.min.css">
 	<link rel="stylesheet" href="css/themes/theme-classic/theme-classic.css">
 	<link rel="stylesheet" href="../_assets/css/jqm-demos.css">
 	<link rel="stylesheet" href="swipe-page.css">
 	<link rel="shortcut icon" href="../favicon.ico">
+
+  <script src="css/js/jquery.min.js"></script>
 	<script src="../js/jquery.js"></script>
 	<script src="../_assets/js/index.js"></script>
 	<script src="../js/jquery.mobile-1.4.5.min.js"></script>
 	<script src="swipe-page.js"></script>
-	<!-- //custom -->
-	<link rel="stylesheet" href="alert/gpa.css">
 
 	<!-- //body content -->
-	<link rel="stylesheet" href="css/home.css">
-	<script src="js/home/customize.js"></script> 
+	<script src="css/main_lib/d3.min.js" charset="utf-8"></script>
+  <script src="css/main_lib/nv.d3.js"></script>
+  <link href="css/nv.d3.css" rel="stylesheet" type="text/css">
+  <!-- // <script src="js/home/customize.js"></script>  -->
+  <script src="js/home/localStorage_test.js"></script>
+  <script src="js/home/home.js"></script> 
+  <link rel="stylesheet" href="alert/gpa.css">
+  <link rel="stylesheet" href="css/home.css">
 </head>
 <script>
 		$( document ).on( "pagecreate", function() {
@@ -66,38 +71,36 @@
 <body>
 
 <div id="header" data-role="header" data-id="header" data-position="fixed" data-fullscreen="true" data-tap-toggle="false">
-	<div id="o-wrapper" class="o-wrapper"></div>
-    <div class="row header">
-      <div class="col-xs-2 col-md-2">
-				<a href="#panel-overlay">
-					<span class="ui-btn ui-icon-bars ui-shadow ui-corner-all ui-btn-inline ui-btn-icon-notext"></span>
-				</a>
+	<div class="row header">
+
+      <div class="col-xs-6 col-md-6 noPad">
+        <img id="logo" src="image/gpawht.png">
       </div>
-    	<div class="col-xs-6 col-md-6">
-    		<img id="logo" src="image/logo.png">
-    	</div>
-			<div class="col-xs-2 col-md-2">
-				<a href="inbox/inbox.html" id="alert" class="ui-btn ui-icon-alert ui-shadow ui-corner-all ui-btn-inline ui-btn-icon-notext"></a>
-					<span class="badge">2</span>
-
-			</div>
-			<div class="col-xs-2 col-md-2">
-						<a id="" class="">
-							<span class="ui-btn ui-icon-search ui-shadow ui-corner-all ui-btn-inline ui-btn-icon-notext"></span>
-		          <!-- <span class="ui-icon-search ui-btn-icon-top ui-corner-all"></span> -->
-		        </a>
-						
-
-			</div>
-	</div>
-	<h1>Alert Settings</h1>
+      <div class="col-xs-2 col-md-2 links">
+        <a id="menu" href="#panel-overlay1" class="nav_btn  ui-icon-bars ui-btn-icon-notext">
+        </a>
+      </div>
+      <div class="col-xs-2 col-md-2 links">
+        <a id="alert" href="inbox/inbox.html" class="nav_btn  ui-icon-alert ui-btn-icon-notext">
+          <span class="alertNum">2</span>
+        </a>
+      </div>
+      <div class="col-xs-2 col-md-2 links">
+        <a href="#" class="nav_btn ui-icon-mail ui-btn-icon-notext">
+          <span class="alertInbox">4</span>
+        </a>
+        
+      </div>
     
+    </div>
+    <!-- <h1>Home</h1> -->
+
 </div><!-- /header -->
 
 <div data-role="page" id="buenosaires" class="demo-page" data-title="Alert Settings" data-dom-cache="true" data-theme="b" data-prev="newyork" data-next="paris">
 
 	<div role="main" class="ui-content">
-		<h3 class="strings midd">Customize Your Alerts</h3>
+		<h3 class="strings midd">Customize Alerts</h3>
 
 		<div id="ui-body-test" class="ui-body ui-body-a ui-corner-all" style="margin-bottom:1em;">
 			
@@ -230,44 +233,41 @@
 	</div>
 </div><!-- /page -->
 
+    
 <nav class="navbar navbar-default navbar-fixed-bottom">
   <div class="row nav-row">
-				<div data-role="controlgroup" class="control ui-btn-top" data-type="horizontal" data-mini="true">
-		      <a href="#" class="prev ui-btn ui-btn-icon-notext ui-icon-carat-l ui-btn-inline ui-corner-all">Previous</a>
-		      <a href="#" class="next ui-btn ui-btn-icon-notext ui-icon-carat-r ui-btn-inline ui-corner-all">Next</a>
-		    </div>
-      <div class="col-xs-3 col-md-2">
+        <div data-role="controlgroup" class="control ui-btn-top" data-type="horizontal" data-mini="true">
+          <a href="#" class="prev ui-btn ui-btn-icon-notext ui-icon-carat-l ui-btn-inline ui-corner-all">Previous</a>
+          <a href="#" class="next ui-btn ui-btn-icon-notext ui-icon-carat-r ui-btn-inline ui-corner-all">Next</a>
+        </div>
+      <div class="col-xs-3 col-md-2 col-lg-3 links">
 
-	        <a href="newyork.html" id="" class="">
-	        <span class="ui-btn ui-icon-home ui-shadow ui-corner-all ui-btn-inline ui-btn-icon-notext"></span>
-	        <!-- <span class="ui-icon-home ui-btn-icon-top ui-corner-all"></span> -->
-	        </a>
+          <a href="newyork.html" id="">
+            <span id="home" class="ui-icon-home ui-btn-icon-top ui-corner-all"></span>
+          </a>
       </div>
       
-      <div class="col-xs-3 col-md-2 ">
-        <a href="buenosaires.html" id="" class="">
-        	<span class="ui-btn ui-icon-bullets ui-shadow ui-corner-all ui-btn-inline ui-btn-icon-notext"></span>
-          <!-- <span class="ui-icon-bullets ui-btn-icon-top ui-corner-all"></span> -->
+      <div class="col-xs-3 col-md-2 col-lg-3 links">
+        <a href="buenosaires.html" id="class">
+          <span class="ui-icon-bullets ui-btn-icon-top ui-corner-all"></span>
         </a>
-	    </div>
+      </div>
      
-      <div class="col-xs-3 col-md-2">
-        <a href="capetown.html" id="" class="">
-          <span class="ui-btn ui-icon-user ui-shadow ui-corner-all ui-btn-inline ui-btn-icon-notext"></span>
-          <!-- <span class="ui-icon-user ui-btn-icon-top ui-corner-all"></span> -->
+      <div class="col-xs-3 col-md-2 col-lg-3 links">
+        <a href="capetown.html" id="profile">
+          <span class="ui-icon-user ui-btn-icon-top ui-corner-all"></span>
         </a>
       </div>
 
-    <div class="col-xs-3 col-md-2">
-	    <a href="paris.html" tabindex="0" id = "settings" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover"> 
-	    	<span class="ui-btn ui-icon-gear ui-shadow ui-corner-all ui-btn-inline ui-btn-icon-notext"></span>
-	    					<!-- <span class="ui-icon-gear ui-btn-icon-top ui-corner-all"></span> -->
+    <div class="col-xs-3 col-md-2 col-lg-3 links">
+      <a href="paris.html" tabindex="0" id = "settings help"> 
+        <span class="ui-icon-gear ui-btn-icon-top ui-corner-all"></span>
+      </a>
     </div>
 
-	</div>
-
-	
-</div><!-- /footer -->
+  </div>
+</nav>
+</body>
 
 </body>
 </html>

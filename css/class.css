@@ -1,0 +1,43 @@
+*{
+	/*outline: 1px solid red;*/
+}
+h1{
+	color: #252773;
+	
+}
+h3{
+	color: grey;
+}
+.bottom{
+	margin-bottom: 5em;
+}
+.marTop{
+	margin-top: 1em;
+}
+.right{
+	float: right;
+}
+.container-fluid{
+	background-color: #252773;
+}
+.ui-collapsible-heading-toggle{
+	background-color: #5154D0!important;
+}
+
+.link{
+	color: grey;
+	font-weight: bolder;
+	font-size: 85%;
+}
+#checkbox-1-a{
+	background-color: red;
+}
+.scoreboard{
+	border:1px solid white;
+}
+.graph{
+	margin-left: 30%;
+}
+#header{
+	background-color: #252773
+}

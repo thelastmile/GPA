@@ -66,10 +66,9 @@ $( document ).on( "pageshow", ".demo-page", function() {
 	var thePage = $( this ),
 		title = thePage.jqmData( "title" ),
 		next = thePage.jqmData( "next" ),
-		prev = thePage.jqmData( "prev" );
-
-	// Point the "Trivia" button to the popup for the current page.
-	$( "#trivia-button" ).attr( "href", "#" + thePage.find( ".trivia" ).attr( "id" ) );
+		prev = thePage.jqmData( "prev" ),
+		body = thePage.jqmData( "ui-content");
+		// console.log(body)
 
 	// We use the same header on each page
 	// so we have to update the title

@@ -1,29 +1,77 @@
-/*.gpa_head{
-	background-color: #2864A9;
-}
-*/
-#oddInbox{
-	
-	background-color: #7ABEDA;
-}
-#evenInbox{
-	background-color: #BDCFE4;
-}
-#carat_head{
-	background-color: blue;
-}
-#font-color{
-	color: blue;
-}
-h1{
-	font-size: 1.5em;
-	text-align: center;
-	color: white;
+.ui-page-theme-a .ui-btn{
+    background-color: #4A4E65;
 }
 #header{
-	background-color: #2864A9;
+
+	background-color: #252773;
+}
+
+#logo{
+	height: 40px;
+	width: 65px;
+}
+
+.oddInbox{
+	
+	background-color: red;
+}
+
+.evenInbox{
+
+	background-color: #2F2B2F;
+}
+
+#font-color{
+	color: white;
+	text-shadow:none;
+}
+
+.topic{
+	color: blue;
+	text-shadow:none;
+}
+
+.marB{
+	margin-bottom: 20%;
+}
+
+p{
+	color: white;
+	text-shadow:none;
+}
+.navbar-default{
+	background-color: #252773;
 }
 .team{
-	position: absolute;
-	bottom: 0%;
+	top: 32px;
+	position:relative;
+	font-size: 8px;
+	margin-left: 143px;
+	text-decoration: none;
+	text-shadow:none;
+	color: #8889A7;
 }
+
+/*active inbox layout*/
+
+.ui-content .ui-listview{
+	margin:0;
+}
+
+/*Inside color in all the buttons*/
+
+.ui-btn-icon-left:after, .ui-btn-icon-right:after, .ui-btn-icon-top:after, .ui-btn-icon-bottom:after, .ui-btn-icon-notext:after{
+
+	background-color: #7001FE;
+}
+/*Inside Hamburger*/
+
+.ui-page-theme-a .ui-body-inherit{
+
+	text-shadow:none;
+	color: #1313DC;
+	background-color: #6F377D;
+
+
+}
+

@@ -3,88 +3,161 @@
 }
 .goal,.current{
 	text-align: center;
-	width: 70%;
-	margin-left: 25%;
-	border: 3px dotted #2864A9;
-	padding: 2%;
-	background-color: #EEEEEE;
+	width: 100%;
+	height: 10em;
+	/*border:3px solid #5154D0;*/
+	padding: 0;
+	/*background-color: #EEEEEE;*/
 }
-.pad{
-	padding: 2%;
+.strong,.weak{
+	margin: 0;
+
 }
+
 .warnings{
 	text-align: center;
+	/*background-color: #5154D0;*/
+	background-color: rgb(59,59,78);
+	height: 10.5em;
 }
-.warnings ul li{
+/*.warnings ul li{
 	list-style: none;
 	font-size: 2em;
-}
+}*/
 .warnings ul li a{
 	text-decoration: none;
 }
 .bad{
-   /*text-shadow: 1px 1px 2px black, 0 0 1em red, 0 0 0.2em red;*/
    color: red!important;
-   font-size: 75%;
-   /*font: 1.5em Georgia, "Bitstream Charter", "URW Bookman L", "Century Schoolbook L", serif;*/
+   font-size: 13px;
 }
 .mid{
-	/*text-shadow: 1px 1px 2px black, 0 0 1em yellow, 0 0 0.2em yellow;*/
   color: yellow!important;
-  font-size: 75%;
-  /*font: 1.5em Georgia, "Bitstream Charter", "URW Bookman L", "Century Schoolbook L", serif;*/
+  font-size: 13px;
 }
 .good{
-  /*text-shadow: 1px 1px 2px lightgreen, 0 0 1em green, 0 0 0.2em green;*/
   color: green!important;
-  font-size: 75%;
-  /*font: 1.5em Georgia, "Bitstream Charter", "URW Bookman L", "Century Schoolbook L", serif;*/
+  font-size: 13px;
 }
 
 .attention{
-	background-color: #2864A9;
 	color: white;
 	font-size: 1em;
 	font-weight: 900;
-	border: 2px solid #EEEEEE;
-	border-radius: 5%;
+	text-decoration: underline;
 }
-.back{
-	/*background-color: #50B6AA;*/
-}
+
 body{
 	 /*background: linear-gradient(to bottom, rgb(29, 31, 44)10%, rgba(29, 31, 44, 0.96)21%, rgba(59,70,124,0.7) ), url(../../image/coach.png),url(../../image/alert1.png)!important;*/
 }
-
 .test{
 	margin-bottom: 10%;
 }
-.gd{
-	background-color: green;
-}
-.md{
-	background-color: yellow;
-}
-.bd{
-	background-color: red;
-}
-text {
-  font: 12px sans-serif;
-  font-weight: bolder;
+.nvd3 .nv-axis{
+
 }
 svg {
-  display: block;
+  /*display: block;*/
 }
 #chart1, svg {
   margin: 0px;
-  padding: 0px;
+  padding: 15px;
   height: 100%;
   width: 100%;
 }
+.nv-legend-text{
+	font-size: 1.8em!important;
+}
+text{
+	font-size: 1.9em!important;
+
+}
 hr{
 	width: 80%;
-	border: 1px solid #2864A9;
+	border: 1px solid #252773;
 }
 .marTop{
 	margin-top: 25%!important;
+}
+.mar{
+	margin-top: 2%;
+}
+.ui-btn{
+	background-color: #5154D0!important;
+	background:#252773;
+}
+.ui-checkbox-on.ui-btn-b:after{
+	background-color: #252773!important;
+};
+.nav_btn{
+	background:none;
+	background-color: #252773
+}
+.links{
+	border:1.5px solid #50518C;
+	height: 4.3em;
+}
+.links:hover{
+	background-color: #5154D0;
+}
+.alertNum{
+	position: relative;
+	left: 1em;
+	top: .5em;
+  min-width: 10px;
+  padding: 3px 7px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  background-color: red;
+  border-radius: 10px;
+}
+.alertInbox{
+	position: relative;
+	left: 1em;
+	top: .5em;
+  min-width: 10px;
+  padding: 3px 7px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  background-color: red;
+  border-radius: 10px;	
+}
+.outer{
+	background-color: #252773;
+	padding: 0;
+	border: 3px solid #4E4E4E;
+
+}
+.container-header{
+	/*background-color: #5154D0;*/
+	background-color: grey;
+	text-align: center;
+	color: white;
+	padding-top: 1.5%;
+	padding-bottom: 1%;
+}
+#name{
+	background-color: #252773
+}
+ul li{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+#goalGpa,#currentGpa{
+	font-weight: bolder;
+	font-size: 1.5em;
+}
+ul li a{
+	font-size: 13px;
 }

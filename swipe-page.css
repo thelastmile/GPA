@@ -3,27 +3,23 @@
 	/*outline: 1px solid red;*/
 }
 .ui-btn{
-	background: #2864A9!important;
+	/*background: #2864A9!important;*/
 	background-image: none!important;
 }
 .ui-content{
-	margin-top: 18%;
-	width: 90%;
-	margin-left: 4%;
+	margin-top: 22%;
+	width: 85%;
+	margin-left: 5%;
 }
-/*.control{
-	position: absolute;
-	left: 40%;
-	bottom: 100%;
-}*/
+
 .navbar-default{
-	background-color: #2864A9;
+	background-color: #252773;
 	border-color:#EEEEEE;
 }
 /*#newyork { background-image: url("../_assets/img/newyork.jpg")!important; }*/
 /*#buenosaires { background-image: url("../_assets/img/buenosaires.jpg"); }*/
 /*#paris { background-image: url("../_assets/img/paris.jpg"); }*/
-#capetown { background-image: url("../_assets/img/capetown.jpg"); }
+/*#capetown { background-image: url("../_assets/img/capetown.jpg"); }*/
 #seoul { background-image: url("../_assets/img/seoul.jpg"); }
 #sydney { background-image: url("../_assets/img/sydney.jpg"); }
 /* Background settings */
@@ -52,46 +48,33 @@ small {
 	color: #666;
 }
 .ui-bar-b{
-	background:#2864A9;
-	/*background-image: linear-gradient( #6facd5 , #497bae);*/
-  /*border-color: #456f9a;*/
+	background:#252773;
   color: #fff;
   text-shadow: 0 1px 0 #3e6790;
   font-weight: bold;
+  border-bottom: 2px solid #5154D0;
 }
 img{
-	width: 25%;
+	width: 75%;
 	height: auto;
 }
-#alert{
-	position: absolute;
-	left: 35%;
-	color: #2864A9;
-	padding: 0;
-}
-.badge{
-	position: relative;
-	left: 1em;
-	background-color: red; 
-}
-#logo{
-	margin-left: 55%;
-	
-}
+
 .secColor{
 	background: #EEEEEE;
 }
 .report{
-	color: #2864A9;
+	color: #252773;
 	text-align: center;
 }
 .strings{
-	color: #2864A9;
+	color: white;
 }
 .base{
 	color: #EEEEEE;
 }
-
+.noPad{
+	padding: 0;
+}
 .goal,.current{
 	height: 5em;
 }
@@ -108,8 +91,8 @@ img{
 .ui-header-fullscreen{
 	opacity: 1;
 }
-#menu,#search,#home,#class,#profile,#help{
-	color: #2864A9;
+#menu,#home,#class,#profile,#help{
+	color: #252773;
 }
 .bottom{
 	margin-bottom: 10%;
