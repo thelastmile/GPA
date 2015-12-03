@@ -16,37 +16,36 @@ $(document).ready(function(){
     $( document ).on( "pageshow", "#paris", function(event) {
     	console.log("how me the jnkaj");
 
-    	
-    	console.log(val)
-
 	    if ($('#fillgauge1').length) {
 	    	console.log(val)
-	        var gauge1 = loadLiquidFillGauge("fillgauge1",2.9, config1);
+	    	var config1 = liquidFillGaugeDefaultSettings();
+		        config1.circleColor = "#5154D0";
+		        config1.textColor = "#808080";
+		        config1.waveTextColor = "#808080";
+		        config1.waveColor = "#252773";
+		        config1.circleThickness = 0.1;
+		        config1.textVertPosition = 0.2;
+		        config1.waveAnimateTime = 1000;
+		        config1.textSize = 3;
 
-			    var config1 = liquidFillGaugeDefaultSettings();
-			        config1.circleColor = "#5154D0";
-			        config1.textColor = "#808080";
-			        config1.waveTextColor = "#808080";
-			        config1.waveColor = "#252773";
-			        config1.circleThickness = 0.1;
-			        config1.textVertPosition = 0.2;
-			        config1.waveAnimateTime = 1000;
-			        config1.textSize = 3;
-			  
-			  $('#fillgauge1').on('click',function(){
-			  		console.log("the clicks work")
-			  		console.log(val);
-			        if(val === 2.9) {
-			            $('.info').html('Current GPA');
-			            gauge1.update(oldVal());        
-			            console.log("showing current gpa")
-			        } else {
-			            $('.info').html('Target GPA');
-			            gauge1.update(NewValue());        
-			            console.log("showing target gpa")
-			        }
-			    });   
-	    	}  
+	        var gauge1 = loadLiquidFillGauge("fillgauge1",val, config1);
+		  
+		  	$('#fillgauge1').on('click',function(){
+		  		console.log("the clicks work")
+		  		console.log(val);
+		        if(val === 2.9) {
+		        	val = 3.6;
+		            $('.info').html('Current GPA');
+		            gauge1.update(val);        
+		            console.log("showing current gpa")
+		        } else {
+		        	val = 2.9;
+		            $('.info').html('Target GPA');
+		            gauge1.update(val);        
+		            console.log("showing target gpa")
+		        }
+		    });   
+    	}  
 
     });
 
@@ -594,29 +593,22 @@ function liquidFillGaugeDefaultSettings(){
         waveTextColor: "#A4DBf8" // The color of the value text when the wave overlaps it.
     };
 }
-function oldVal(){
-	console.log("called")
-	return 50;
-}
-function NewValue(){
-    return 90
-       
-}
  
 function loadLiquidFillGauge(elementId, value, config) {
+	console.log("val in here")
+	console.log(value);
+
     // console.log("start")
     if(config == null) config = liquidFillGaugeDefaultSettings();
 
-    if (value == 0) {
-        // console.log("its this")
-        value = 2.9;
-    }
+    console.log(config)
 
     var gauge = d3.select("#" + elementId);
     var radius = Math.min(parseInt(gauge.style("width")), parseInt(gauge.style("height")))/2;
     var locationX = parseInt(gauge.style("width"))/2 - radius;
     var locationY = parseInt(gauge.style("height"))/2 - radius;
     var fillPercent = Math.max(config.minValue, Math.min(config.maxValue, value))/config.maxValue;
+    console.log(fillPercent);
 
     var waveHeightScale;
     if(config.waveHeightScaling){
@@ -778,6 +770,8 @@ function loadLiquidFillGauge(elementId, value, config) {
     // Make the wave rise. wave and waveGroup are separate so that horizontal and vertical movement can be controlled independently.
     var waveGroupXPosition = fillCircleMargin+fillCircleRadius*2-waveClipWidth;
     if(config.waveRise){
+    	console.log("rising")
+    	console.log(waveHeight);
         waveGroup.attr('transform','translate('+waveGroupXPosition+','+waveRiseScale(0)+')')
             .transition()
             .duration(config.waveRiseTime)
@@ -804,6 +798,8 @@ function loadLiquidFillGauge(elementId, value, config) {
 
     function GaugeUpdater(){
         this.update = function(value){
+        	console.log("updating here");
+        	console.log(value);
             var newFinalValue = parseFloat(value).toFixed(2);
             var textRounderUpdater = function(value){ return Math.round(value); };
             if(parseFloat(newFinalValue) != parseFloat(textRounderUpdater(newFinalValue))){
