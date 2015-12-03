@@ -1,4 +1,4 @@
-$(document).ready(function(){
+var gpaPageLoad = function() {
 	//VARIABLES FOR THE LOCAL STORAGE
 	console.log("hey there");
 	var local_storage_path = 'gpa_app.alert';
@@ -13,66 +13,19 @@ $(document).ready(function(){
 
 	var val = 2.9;
 
-    $( document ).on( "pageshow", "#paris", function(event) {
-    	console.log("how me the jnkaj");
-
-	    if ($('#fillgauge1').length) {
-	    	console.log(val)
-	    	var config1 = liquidFillGaugeDefaultSettings();
-		        config1.circleColor = "#5154D0";
-		        config1.textColor = "#808080";
-		        config1.waveTextColor = "#808080";
-		        config1.waveColor = "#252773";
-		        config1.circleThickness = 0.1;
-		        config1.textVertPosition = 0.2;
-		        config1.waveAnimateTime = 1000;
-		        config1.textSize = 3;
-
-	        var gauge1 = loadLiquidFillGauge("fillgauge1",val, config1);
-		  
-		  	$('#fillgauge1').on('click',function(){
-		  		console.log("the clicks work")
-		  		console.log(val);
-		        if(val === 2.9) {
-		        	val = 3.6;
-		            $('.info').html('Current GPA');
-		            gauge1.update(val);        
-		            console.log("showing current gpa")
-		        } else {
-		        	val = 2.9;
-		            $('.info').html('Target GPA');
-		            gauge1.update(val);        
-		            console.log("showing target gpa")
-		        }
-		    });   
-    	}  
-
-    });
-
-    $(document).on("pageshow", "#newyork", function(event) {
-    	console.log("working?")
-    	initPage() 
-			changeStorage();
-			getAndSetGrade();
-			transferData();
-			calculateGPA();
-			buildChart(); 
-			// console.log("hello localStorage_test.js") 
-			// console.log("called right here")
-    })
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-//CREATED AN GLOBAL OBJECT THAT CAN STORE ALL VALUES JUST IN CASE THE LOCAL STORAGE DOESN'T WORK
-var golbalObj = [
-	{alertData: 0},
-	{currData: 0}
-];
+	//CREATED AN GLOBAL OBJECT THAT CAN STORE ALL VALUES JUST IN CASE THE LOCAL STORAGE DOESN'T WORK
+	var golbalObj = [
+		{alertData: 0},
+		{currData: 0}
+	];
 
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-var initPage = function (){
+	var initPage = function (){
 			$('#gpa').text(currAlerts[0].currAlert)
 				var gpa = Number($('#gpa').text());
 			$('#increaseGpa').on('click',function(){
@@ -576,8 +529,8 @@ function liquidFillGaugeDefaultSettings(){
         circleThickness: 0.05, // The outer circle thickness as a percentage of it's radius.
         circleFillGap: 0.05, // The size of the gap between the outer circle and wave circle as a percentage of the outer circles radius.
         circleColor: "#178BCA", // The color of the outer circle.
-        waveHeight: .1, // The wave height as a percentage of the radius of the wave circle.
-        waveCount: 2, // The number of full waves per width of the wave circle.
+        waveHeight: 0.05, // The wave height as a percentage of the radius of the wave circle.
+        waveCount: 1, // The number of full waves per width of the wave circle.
         waveRiseTime: 1000, // The amount of time in milliseconds for the wave to rise from 0 to it's final height.
         waveAnimateTime: 18000, // The amount of time in milliseconds for a full wave to enter the wave circle.
         waveRise: true, // Control if the wave should rise from 0 to it's full height, or start at it's full height.
@@ -588,26 +541,24 @@ function liquidFillGaugeDefaultSettings(){
         textVertPosition: .5, // The height at which to display the percentage text withing the wave circle. 0 = bottom, 1 = top.
         textSize: 1, // The relative height of the text to display in the wave circle. 1 = 50%
         valueCountUp: true, // If true, the displayed value counts up from 0 to it's final value upon loading. If false, the final value is displayed.
-        displayPercent: false, // If true, a % symbol is displayed after the value.
+        displayPercent: true, // If true, a % symbol is displayed after the value.
         textColor: "#045681", // The color of the value text when the wave does not overlap it.
         waveTextColor: "#A4DBf8" // The color of the value text when the wave overlaps it.
     };
 }
- 
+
 function loadLiquidFillGauge(elementId, value, config) {
-	console.log("val in here")
-	console.log(value);
-
-    // console.log("start")
     if(config == null) config = liquidFillGaugeDefaultSettings();
-
-    console.log(config)
 
     var gauge = d3.select("#" + elementId);
     var radius = Math.min(parseInt(gauge.style("width")), parseInt(gauge.style("height")))/2;
     var locationX = parseInt(gauge.style("width"))/2 - radius;
     var locationY = parseInt(gauge.style("height"))/2 - radius;
     var fillPercent = Math.max(config.minValue, Math.min(config.maxValue, value))/config.maxValue;
+
+    console.log(radius);
+    console.log(locationX);
+    console.log(locationY);
     console.log(fillPercent);
 
     var waveHeightScale;
@@ -624,13 +575,12 @@ function loadLiquidFillGauge(elementId, value, config) {
     var textPixels = (config.textSize*radius/2);
     var textFinalValue = parseFloat(value).toFixed(2);
     var textStartValue = config.valueCountUp?config.minValue:textFinalValue;
-    // var percentText = config.displayPercent?"":"B";
-    // console.log(value);
+    var percentText = config.displayPercent?"%":"";
     var circleThickness = config.circleThickness * radius;
     var circleFillGap = config.circleFillGap * radius;
     var fillCircleMargin = circleThickness + circleFillGap;
     var fillCircleRadius = radius - fillCircleMargin;
-    var waveHeight = fillCircleRadius*waveHeightScale(fillPercent*2);
+    var waveHeight = fillCircleRadius*waveHeightScale(fillPercent*100);
 
     var waveLength = fillCircleRadius*2/config.waveCount;
     var waveClipCount = 1+config.waveCount;
@@ -642,7 +592,7 @@ function loadLiquidFillGauge(elementId, value, config) {
         textRounder = function(value){ return parseFloat(value).toFixed(1); };
     }
     if(parseFloat(textFinalValue) != parseFloat(textRounder(textFinalValue))){
-        textRounder = function(value){ return parseFloat(value).toFixed(1); };
+        textRounder = function(value){ return parseFloat(value).toFixed(2); };
     }
 
     // Data for building the clip wave area.
@@ -690,31 +640,9 @@ function loadLiquidFillGauge(elementId, value, config) {
         .style("fill", config.circleColor)
         .attr('transform','translate('+radius+','+radius+')');
 
-    function start(){
-        // console.log(textFinalValue)
-        return Number(textFinalValue).toFixed(1)
-        
-    }
-// GPA GOAL GRADE
-    function test1(){
-        var local_storage_path = 'gpa_app.alert';
-        var grade_path = 'gpa_grades';
-        var ave_path = 'gpa_averages';
-
-        //pull array from local storage
-        var currAlerts = JSON.parse(localStorage.getItem(local_storage_path));
-        var grades = JSON.parse(localStorage.getItem(grade_path));
-        var averages = JSON.parse(localStorage.getItem(ave_path));
-    
-      // console.log(currAlerts[0].currAlert)
-
-      return currAlerts[0].currAlert
-       
-    }
-
     // Text where the wave does not overlap.
     var text1 = gaugeGroup.append("text")
-        .text(start())
+        .text(textRounder(textStartValue) + percentText)
         .attr("class", "liquidFillGaugeText")
         .attr("text-anchor", "middle")
         .attr("font-size", textPixels + "px")
@@ -745,7 +673,7 @@ function loadLiquidFillGauge(elementId, value, config) {
 
     // Text where the wave does overlap.
     var text2 = fillCircleGroup.append("text")
-        .text(test1())
+        .text(textRounder(textStartValue) + percentText)
         .attr("class", "liquidFillGaugeText")
         .attr("text-anchor", "middle")
         .attr("font-size", textPixels + "px")
@@ -756,8 +684,7 @@ function loadLiquidFillGauge(elementId, value, config) {
     if(config.valueCountUp){
         var textTween = function(){
             var i = d3.interpolate(this.textContent, textFinalValue);
-            // console.log(textFinalValue, start())
-            // console.log(function(t) { this.textContent = textRounder(i(t)) })
+            return function(t) { this.textContent = textRounder(i(t)) + percentText; }
         };
         text1.transition()
             .duration(config.waveRiseTime)
@@ -770,8 +697,6 @@ function loadLiquidFillGauge(elementId, value, config) {
     // Make the wave rise. wave and waveGroup are separate so that horizontal and vertical movement can be controlled independently.
     var waveGroupXPosition = fillCircleMargin+fillCircleRadius*2-waveClipWidth;
     if(config.waveRise){
-    	console.log("rising")
-    	console.log(waveHeight);
         waveGroup.attr('transform','translate('+waveGroupXPosition+','+waveRiseScale(0)+')')
             .transition()
             .duration(config.waveRiseTime)
@@ -798,8 +723,7 @@ function loadLiquidFillGauge(elementId, value, config) {
 
     function GaugeUpdater(){
         this.update = function(value){
-        	console.log("updating here");
-        	console.log(value);
+        	console.log("updating");
             var newFinalValue = parseFloat(value).toFixed(2);
             var textRounderUpdater = function(value){ return Math.round(value); };
             if(parseFloat(newFinalValue) != parseFloat(textRounderUpdater(newFinalValue))){
@@ -811,7 +735,7 @@ function loadLiquidFillGauge(elementId, value, config) {
 
             var textTween = function(){
                 var i = d3.interpolate(this.textContent, parseFloat(value).toFixed(2));
-                // console.log(function(t) { this.textContent = textRounderUpdater(i(t)) })
+                return function(t) { this.textContent = textRounderUpdater(i(t)) + percentText; }
             };
 
             text1.transition()
@@ -867,5 +791,85 @@ function loadLiquidFillGauge(elementId, value, config) {
 }
 
 
+	if ($("#newyork")) {
+		initPage() 
+		changeStorage();
+		getAndSetGrade();
+		transferData();
+		calculateGPA();
+		buildChart(); 
+		// console.log("hello localStorage_test.js") 
+		// console.log("called right here")
+	}
 
+	if ($('#fillgauge1').length) {
+		console.log("how mewrqej");
+
+		var gauge1 = loadLiquidFillGauge("fillgauge1", 55);
+	    var config1 = liquidFillGaugeDefaultSettings();
+	    config1.circleColor = "red"/*"#FF7777";*/
+	    config1.textColor = "#FF4444";
+	    config1.waveTextColor = "#FFAAAA";
+	    config1.waveColor = "#FFDDDD";
+	    config1.circleThickness = 0.2;
+	    config1.textVertPosition = 0.2;
+	    config1.waveAnimateTime = 1000;
+	    
+	    
+	   
+
+	    function NewValue(){
+	        if(Math.random() > .5){
+	            return Math.round(Math.random()*100);
+	        } else {
+	            return (Math.random()*100).toFixed(1);
+	        }
+	    }
+
+	// 	console.log(val)
+	// 	var config1 = liquidFillGaugeDefaultSettings();
+	   //      config1.circleColor = "#5154D0";
+	   //      config1.textColor = "#808080";
+	   //      config1.waveTextColor = "#808080";
+	   //      config1.waveColor = "#252773";
+	   //      config1.circleThickness = 0.1;
+	   //      config1.textVertPosition = 0.2;
+	   //      config1.waveAnimateTime = 1000;
+	   //      config1.textSize = 3;
+
+	//     var gauge1 = loadLiquidFillGauge("fillgauge1",val, config1);
+	  
+	  	$('#fillgauge1').on('click',function(){
+	  		console.log("the clicks work")
+	  		console.log(val);
+
+	  		gauge1.update(NewValue());
+
+	        // if(val === 2.9) {
+	        // 	val = 3.6;
+	        //     $('.info').html('Current GPA');
+	        //     gauge1.update(val);        
+	        //     console.log("showing current gpa")
+	        // } else {
+	        // 	val = 2.9;
+	        //     $('.info').html('Target GPA');
+	        //     gauge1.update(val);        
+	        //     console.log("showing target gpa")
+	        // }
+	    });   
+	}  
+
+}
+
+$( document ).on( "pageshow", "#paris", function(event) {
+	gpaPageLoad();
+});
+
+$(document).on("pageshow", "#newyork", function(event) {
+	console.log("working?")
+	gpaPageLoad();
+})
+
+$(document).ready(function(){
+	gpaPageLoad()
 });
