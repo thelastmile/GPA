@@ -1,0 +1,220 @@
+*{
+	/*outline:  1px solid red;*/
+}
+/*.goal,.current{
+	text-align: center;
+	width: 70%;
+	margin-left: 25%;
+	border: 3px dotted #2864A9;
+	padding: 2%;
+	background-color: #EEEEEE;
+}*/
+/*.ui-block-c{
+	position: auto;
+}
+.pad{
+	padding: 2%;
+}
+.warnings{
+	text-align: center;
+}
+.warnings ul li{
+	list-style: none;
+	font-size: 3em;
+}
+.warnings ul li a{
+	text-decoration: none;
+}*/
+/*.bad{*/
+   /*text-shadow: 1px 1px 2px black, 0 0 1em red, 0 0 0.2em red;*/
+  /* color: red!important;
+   font-size: 75%;*/
+   /*font: 1.5em Georgia, "Bitstream Charter", "URW Bookman L", "Century Schoolbook L", serif;*/
+/*}*/
+/*.mid{*/
+	/*text-shadow: 1px 1px 2px black, 0 0 1em yellow, 0 0 0.2em yellow;*/
+  /*color: yellow!important;*/
+  /*font-size: 75%;*/
+  /*font: 1.5em Georgia, "Bitstream Charter", "URW Bookman L", "Century Schoolbook L", serif;*/
+/*}*/
+/*.good{*/
+  /*text-shadow: 1px 1px 2px lightgreen, 0 0 1em green, 0 0 0.2em green;*/
+  /*color: green!important;*/
+  /*font-size: 75%;*/
+  /*font: 1.5em Georgia, "Bitstream Charter", "URW Bookman L", "Century Schoolbook L", serif;*/
+/*}*/
+
+/*.attention{
+	background-color: #2864A9;
+	color: white;
+	font-size: 1em;
+	font-weight: 900;
+	border: 2px solid #EEEEEE;
+	border-radius: 5%;
+}*/
+.back{
+	/*background-color: #50B6AA;*/
+}
+body{
+	 /*background: linear-gradient(to bottom, rgb(29, 31, 44)10%, rgba(29, 31, 44, 0.96)21%, rgba(59,70,124,0.7) ), url(../../image/coach.png),url(../../image/alert1.png)!important;*/
+}
+
+/*.test{
+	margin-bottom: 10%;
+}*/
+/*.gd{
+	background-color: green;
+}*/
+/*.md{
+	background-color: yellow;
+}*/
+/*.bd{
+	background-color: red;
+}*/
+/*text {
+  font: 12px sans-serif;
+  font-weight: bolder;
+}*/
+/*svg {
+  display: block;
+}*/
+/*#chart1, svg {
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  width: 100%;
+}*/
+/*hr{
+	width: 80%;
+	border: 1px solid #2864A9;
+}
+.marTop{
+	margin-top: 25%!important;
+}*/
+/*new revisions*/
+.strings{
+	color:red;
+}
+.goal,.current{
+	text-align: center;
+	width: 70%;
+	margin-left: 25%;
+	border: 3px solid #2864A9;
+	padding: 2%;
+	background-color: #EEEEEE;
+}
+.header{
+	background-color: #252773;
+	/*height:65px;*/
+}
+#logo{
+	/*margin-left: 55%;*/
+	text-align: center;
+	position: relative;
+	top:10; 
+	margin:9px;
+	width: 103px;
+	height: auto;	
+}
+.top_nav{
+	/*float:right;*/
+}
+/*.col-xs-3{
+	float:right;
+}*/
+/*.ui-btn{
+	background: #2864A9!important;
+	background-image: none!important;
+}*/
+/*border*/
+/*.goal,.current{
+	text-align: center;
+	width: 70%;
+	margin-left: 25%;
+	border: 3px dotted #2864A9;
+	padding: 2%;
+	background-color: #EEEEEE;
+}*/
+/*.attention{
+	background-color: #2864A9;
+	color: white;
+	font-size: 1em;
+	font-weight: 900;
+	border: 2px solid #EEEEEE;
+	border-radius: 5%;
+}*/
+.bad{
+   /*text-shadow: 1px 1px 2px black, 0 0 1em red, 0 0 0.2em red;*/
+ /*  color: red!important;
+   font-size: 75%;*/
+   /*font: 1.5em Georgia, "Bitstream Charter", "URW Bookman L", "Century Schoolbook L", serif;*/
+}
+.mid{
+	/*text-shadow: 1px 1px 2px black, 0 0 1em yellow, 0 0 0.2em yellow;*/
+  /*color: yellow!important;
+  font-size: 75%;*/
+  /*font: 1.5em Georgia, "Bitstream Charter", "URW Bookman L", "Century Schoolbook L", serif;*/
+}
+.good{
+  /*text-shadow: 1px 1px 2px lightgreen, 0 0 1em green, 0 0 0.2em green;*/
+  /*color: green!important;*/
+  /*font-size: 75%;*/
+  /*font: 1.5em Georgia, "Bitstream Charter", "URW Bookman L", "Century Schoolbook L", serif;*/
+}
+/*.score_board_border{
+	background-color: blue;
+}*/
+
+/*.ui-icon {
+height: 5em;
+margin: 0;
+padding: 0;
+
+}*/
+.nav_btn{
+	float:right;	
+	margin:0;
+	padding:0;
+	height:5em;
+	width:4em;
+	background-size: 18px 18px;
+}
+/*.ui-icon-myicon:after {
+    background-image: url("../_assets/img/glyphish-icons/21-skull.png");
+    /* Make your icon fit */
+   
+/*}*/
+
+.row-fluid, .border{
+	background-color: grey;
+	border: 5px solid #4E4E4E;
+}
+.name_head{
+	background-color: #252773;
+	color:white;
+}
+.content{
+	background-color: #252773;
+	color:white;
+
+}
+.set_gpa{
+	font-size:2em;
+	font-weight: bolder;
+}
+.light{
+	background-color: rgb(59,59,78);
+}
+.bold{
+	font-weight: bolder;
+	font-size: 18px;
+}
+.float_left, .float_right{
+	/*border:3px solid #4E4E4E;*/
+	/*background-color: #403A3A;*/
+/*	background:linear-gradient();*/
+}
+.navbar-default{
+	background-color:#252773;
+	/*border-color: rgb(59,59,78);*/
+}

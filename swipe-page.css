@@ -7,7 +7,7 @@
 	background-image: none!important;
 }
 .ui-content{
-	margin-top: 22%;
+	/*margin-top: 22%;*/
 	width: 85%;
 	margin-left: 5%;
 }
@@ -16,13 +16,6 @@
 	background-color: #252773;
 	border-color:#EEEEEE;
 }
-/*#newyork { background-image: url("../_assets/img/newyork.jpg")!important; }*/
-/*#buenosaires { background-image: url("../_assets/img/buenosaires.jpg"); }*/
-/*#paris { background-image: url("../_assets/img/paris.jpg"); }*/
-/*#capetown { background-image: url("../_assets/img/capetown.jpg"); }*/
-#seoul { background-image: url("../_assets/img/seoul.jpg"); }
-#sydney { background-image: url("../_assets/img/sydney.jpg"); }
-/* Background settings */
 .demo-page {
 	background-size: cover;
 	background-position: center center;
@@ -104,3 +97,14 @@ img{
 .team a:hover{
 	color: black;
 }
+/*////////////////////////////////////////////////*/
+/*buttons css*/
+.ui-flipswitch-active{
+	background-color: #5154D0!important;
+	border-color:#252773!important; 
+}
+h3{
+	color: grey;
+}
+/*////Custom*/
+.ui-page { -webkit-backface-visibility: hidden; }

@@ -2,33 +2,212 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Cape Town</title>
-	<link rel="stylesheet" href="../css/themes/default/jquery.mobile-1.4.5.min.css">
-	<link rel="stylesheet" href="../_assets/css/jqm-demos.css">
-	<link rel="stylesheet" href="swipe-page.css">
-	<link rel="shortcut icon" href="../favicon.ico">
-	<script src="../js/jquery.js"></script>
-	<script src="../_assets/js/index.js"></script>
-	<script src="../js/jquery.mobile-1.4.5.min.js"></script>
-	<script src="swipe-page.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Profile</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> 
+
+  <link rel="stylesheet" href="css/themes/default/jquery.mobile-1.4.5.min.css">
+  <link rel="stylesheet" href="css/themes/theme-classic/theme-classic.css">
+
+  <!-- //body content -->
+  <script src="js/jquery.js"></script>
+  <script src="css/js/jquery.min.js"></script>
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+  <script src="swipe-page.js"></script>
+
+  <!-- //Graphs -->
+  <script src="css/main_lib/d3.min.js" charset="utf-8"></script>
+  <script src="css/main_lib/nv.d3.js"></script>
+  <link href="css/nv.d3.css" rel="stylesheet" type="text/css">
+  <script src="js/home/localStorage_test.js"></script>
+  <link rel="stylesheet" href="css/main.css">
+  <script type="text/javascript" src="lib/bootstrap.js"></script>
+
 </head>
 <body>
 
 <div id="header" data-role="header" data-id="header" data-position="fixed" data-fullscreen="true" data-tap-toggle="false">
-	<h1>Profile</h1>
-   
-</div><!-- /header -->
+	<div class="row header">
+    <div class="col-xs-6 col-md-6 noPad">
+      <img id="logo" src="image/gpawht.png">
+    </div>
+    <div class="col-xs-2 col-md-2 links">
+      <a id="menu" href="#panel-overlay4" class="nav_btn  ui-icon-bars ui-btn-icon-notext">
+      </a>
+    </div>
+    <div class="col-xs-2 col-md-2 links">
+      <a id="alert" href="inbox/inbox.html" class="nav_btn  ui-icon-alert ui-btn-icon-notext">
+        <span class="alertNum">2</span>
+      </a>
+    </div>
+    <div class="col-xs-2 col-md-2 links">
+      <a href="#" class="nav_btn ui-icon-mail ui-btn-icon-notext">
+        <span class="alertInbox">4</span>
+      </a>
+      
+    </div>
+  
+  </div>
+    <!-- <h1>Home</h1> -->
+
+</div><!-- /h- /header -->
 
 <div data-role="page" id="capetown" class="demo-page" data-title="Profile" data-dom-cache="true" data-theme="b" data-prev="paris" data-next="seoul">
 
-	<div role="main" class="ui-content">
+	<div role="main" class="ui-content top b">
+
+    <div class="row-fluid"><!--  begin row one -->
+      <div class="col-xs-3 col-md-3"> 
+        <img id="stu" src="image/gpa.png">
+      </div>
+
+      <div class="col-xs-6 col-md-6">
+        <div class="row"><p style="text-align:center;">Jason Jones</p></div>
+          <div class="col-xs-4 col-md-4">
+            <p>Goal</p>
+          </div>          
+          <div class="col-xs-4 col-md-4">
+            <!-- <ul> -->
+              <p>Age</p>
+              <p>Sport</p>
+              <p>Stats</p>
+            <!-- </ul> -->
+          </div>
+          <div class="col-xs-4 col-md-4">
+            <p>Currnet</p>
+          </div>
+      </div>
+
+      <div class="col-xs-3 col-md-3">
+        <p>School Ranking:</p>
+        <p>GPA Ranking:</p>
+        <img src="image/gpa.ico">
+      </div>
+
+    </div><!--  end row one -->
+
+    <section class="row"> <!-- carousel row -->
+      <section class="col-md-12 col-sm-12 col-xs-12" style="padding:3em; margin-top:2em;"> 
+        <p>GPA Picture Gallery</p>
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+          </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <img src="image/alert.png" alt="alert">
+            <div class="carousel-caption">
+              <p>Slide one</p>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="image/coach.png"  alt="coach">
+            <div class="carousel-caption">
+              <p>Slide 2</p>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="image/help.png" alt="help">
+            <div class="carousel-caption">
+              <p>Slide 3</p >
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="image/help1.png" alt="help1">
+            <div class="carousel-caption">
+              <p>lide 4</p >
+            </div>
+          </div>                   
+        </div>
+
+        <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>        
+      </section>  <!-- end of section "picture" -->       
+    </section>  <!-- end of " carousel row" -->
+
+    <div class="row-fliud b"><!-- Begin row three -->
+      <div class="col-md-6 col-sm-6 col-xs-6">
+        <p>TOP 3 COLLEGE RECOMMENDED:</p>
+        <p>Scholarships Available:</p>
+        <p>Last Year Record:</p>
+        <p>Chances:</p>
+      </div>
+      <div class="col-md-6 col-sm-6 col-xs-6">
+        <p>TOP 3 CAREER RECOMMENDATIONS:</p>
+        <p>1. Engineering:</p>
+        <p>Location:</p>
+        <p>Chances:</p>
+      </div>
+    </div><!-- End Row three -->
+		
+
+
+
+
+
+
 
 	
 	</div><!-- /content -->
-
+<div data-role="panel" id="panel-overlay4" data-display="overlay">
+    <ul data-role="listview">
+      <li data-icon="delete"><a href="#" data-rel="close">Close</a></li>
+      <li><a href="#">List item</a></li>
+      <li><a href="#">List item</a></li>
+      <li><a href="#">List item</a></li>
+    </ul>
+    <br>
+    <button class="ui-btn ui-corner-all ui-shadow">Button</button>
+  </div>
 </div><!-- /page -->
+    
+<nav class="navbar navbar-default navbar-fixed-bottom">
+  <div class="row nav-row">
+       
+      <div class="col-xs-3 col-md-2 col-lg-3 links">
 
+          <a href="newyork.html" id="">
+            <span id="home" class="ui-icon-home ui-btn-icon-top ui-corner-all"></span>
+          </a>
+      </div>
+      
+      <div class="col-xs-3 col-md-2 col-lg-3 links">
+        <a href="buenosaires.html" id="class">
+          <span class="ui-icon-bullets ui-btn-icon-top ui-corner-all"></span>
+        </a>
+      </div>
+     
+      <div class="col-xs-3 col-md-2 col-lg-3 links">
+        <a href="capetown.html" id="profile">
+          <span class="ui-icon-user ui-btn-icon-top ui-corner-all"></span>
+        </a>
+      </div>
+
+    <div class="col-xs-3 col-md-2 col-lg-3 links">
+      <a href="paris.html" tabindex="0" id = "settings help"> 
+        <span class="ui-icon-gear ui-btn-icon-top ui-corner-all"></span>
+      </a>
+    </div>
+
+  </div>
+</nav>
 
 
 </body>

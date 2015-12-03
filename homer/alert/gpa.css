@@ -1,0 +1,19 @@
+.cen{
+	margin-left: 25%;
+}
+#gpa,#daysB4,#daysMissed,#missedAssign,#pracMiss,#gameDay{
+	text-align: center;
+	font-size: 1.8em;
+}
+.switch{
+	margin-top: 20%;
+}
+.top{
+	margin-top: 5%; 
+}
+.bottom{
+	margin-bottom: 30%;
+}
+.midd{
+	text-align: center;
+}

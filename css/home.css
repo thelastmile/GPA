@@ -20,10 +20,7 @@
 	background-color: rgb(59,59,78);
 	height: 10.5em;
 }
-/*.warnings ul li{
-	list-style: none;
-	font-size: 2em;
-}*/
+
 .warnings ul li a{
 	text-decoration: none;
 }
@@ -61,7 +58,6 @@ svg {
 }
 #chart1, svg {
   margin: 0px;
-  padding: 15px;
   height: 100%;
   width: 100%;
 }
@@ -84,7 +80,7 @@ hr{
 }
 .ui-btn{
 	background-color: #5154D0!important;
-	background:#252773;
+	background:#5154D0!important;
 }
 .ui-checkbox-on.ui-btn-b:after{
 	background-color: #252773!important;
@@ -147,7 +143,8 @@ hr{
 	padding-bottom: 1%;
 }
 #name{
-	background-color: #252773
+	background-color: #252773;
+	color: white;
 }
 ul li{
 	list-style: none;

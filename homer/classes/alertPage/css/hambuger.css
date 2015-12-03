@@ -1,0 +1,36 @@
+.nvd3.nv-pie.nv-chart-donut2 .nv-pie-title
+{
+    fill: gray;
+}
+
+.nvd3.nv-pie.nv-chart-donut1 .nv-pie-title
+{
+    opacity: 0.4;
+    fill: green;
+}
+.c-button{	
+	color: rgb(255,122,0);
+  font-size: 5em;
+  border:none;                   
+}
+.c-menu {
+    z-index: 200;
+    background-color: hsla(26, 79%, 56%, 0.69);
+    transition: transform .3s;
+}
+.c-menu{
+
+}
+.c-menu__link{
+font-size: 3em;
+}
+.c-menu__close {
+    color: hsl(0, 100%, 100%);
+    background-color: hsla(26, 79%, 56%, 0.69);
+    border: none;
+    cursor: pointer;
+    height: 15em;
+}
+.c-mask, .c-menu {
+    position: fixed;
+}

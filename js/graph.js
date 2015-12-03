@@ -7,19 +7,53 @@
 
  */
 $(document).ready(function(){
+    function hello(){
+        console.log("hello")
+    }
+    $('.data').hide();
 
-    $( document ).on( "pageshow", function(event) {
-        // renderData(averages)
-    })
+  
 
-    var local_storage_path = 'gpa_app.alert';
-    var grade_path = 'gpa_grades';
-    var ave_path = 'gpa_averages';
+    var val = 0;
 
-    //pull array from local storage
-    var currAlerts = JSON.parse(localStorage.getItem(local_storage_path));
-    var grades = JSON.parse(localStorage.getItem(grade_path));
-    var averages = JSON.parse(localStorage.getItem(ave_path));
+    var config1 = liquidFillGaugeDefaultSettings();
+        config1.circleColor = "#5154D0";
+        config1.textColor = "#808080";
+        config1.waveTextColor = "#808080";
+        config1.waveColor = "#252773";
+        config1.circleThickness = 0.1;
+        config1.textVertPosition = 0.2;
+        config1.waveAnimateTime = 1000;
+        config1.textSize = 3;
+    function val(num){
+        return num;
+    }
+
+    console.log("called right here")
+    if ($('#fillgauge1').length) {
+        var gauge1= loadLiquidFillGauge("fillgauge1",val, config1);
+    }
+       
+    $('#fillgauge1').on('click',function(){
+        if (val === val) {
+            $('.info').html('Current GPA');
+            gauge1.update(NewValue());        
+            console.log("showing current gpa")
+        } else {
+            $('.info').html('Target GPA');
+            gauge1.update(NewValue());        
+            console.log("showing target gpa")
+        }
+    });   
+
+    setTimeout(function(){
+        var updatedGpa = $('.data').text();
+        console.log("test",updatedGpa)
+        val = Number(updatedGpa);
+        console.log("val",val)
+        console.log("hey3")
+    },3002);
+
 });//end
 
 
@@ -48,9 +82,19 @@ function liquidFillGaugeDefaultSettings(){
     };
 }
 
+function NewValue(){
+    return 90
+       
+}
+ 
 function loadLiquidFillGauge(elementId, value, config) {
+    console.log("start")
     if(config == null) config = liquidFillGaugeDefaultSettings();
 
+    if (value == 0) {
+        console.log("its this")
+        value = 2.9;
+    }
 
     var gauge = d3.select("#" + elementId);
     var radius = Math.min(parseInt(gauge.style("width")), parseInt(gauge.style("height")))/2;
@@ -139,37 +183,50 @@ function loadLiquidFillGauge(elementId, value, config) {
         .attr('transform','translate('+radius+','+radius+')');
 
     function start(){
-        if(textFinalValue <= 59){
-            return "F";
-        }else if(textFinalValue >= 60 && textFinalValue <= 63){
-            return "D-";
-        }else if(textFinalValue >= 64 && textFinalValue <= 66){
-            return "D";
-        }else if(textFinalValue >= 67 && textFinalValue <= 69){
-            return "D+";
-        }else if(textFinalValue >= 70 && textFinalValue <= 73){
-            return "C-";
-        }else if(textFinalValue >= 74 && textFinalValue <= 76){
-            return "C";
-        }else if(textFinalValue >= 77 && textFinalValue <= 79){
-            return "C+";
-        }else if(textFinalValue >= 80 && textFinalValue <= 83){
-            return "B-";
-        }else if(textFinalValue >= 84 && textFinalValue <= 86){
-            return "B";
-        }else if(textFinalValue >= 87 && textFinalValue <= 89){
-            return "B+";
-        }else if(textFinalValue >= 90 && textFinalValue <= 93){
-            return "A-";
-        }else if(textFinalValue >= 94 && textFinalValue <= 96){
-            return "A";
-        }else if(textFinalValue >= 97 && textFinalValue <= 100){
-            return "A+";
-        }
+        console.log(textFinalValue)
+        return Number(textFinalValue).toFixed(1)
+        // if(textFinalValue <= 59){
+        //     return "F";
+        // }else if(textFinalValue >= 60 && textFinalValue <= 63){
+        //     return "D-";
+        // }else if(textFinalValue >= 64 && textFinalValue <= 66){
+        //     return "D";
+        // }else if(textFinalValue >= 67 && textFinalValue <= 69){
+        //     return "D+";
+        // }else if(textFinalValue >= 70 && textFinalValue <= 73){
+        //     return "C-";
+        // }else if(textFinalValue >= 74 && textFinalValue <= 76){
+        //     return "C";
+        // }else if(textFinalValue >= 77 && textFinalValue <= 79){
+        //     return "C+";
+        // }else if(textFinalValue >= 80 && textFinalValue <= 83){
+        //     return "B-";
+        // }else if(textFinalValue >= 84 && textFinalValue <= 86){
+        //     return "B";
+        // }else if(textFinalValue >= 87 && textFinalValue <= 89){
+        //     return "B+";
+        // }else if(textFinalValue >= 90 && textFinalValue <= 93){
+        //     return "A-";
+        // }else if(textFinalValue >= 94 && textFinalValue <= 96){
+        //     return "A";
+        // }else if(textFinalValue >= 97 && textFinalValue <= 100){
+        //     return "A+";
+        // }
     }
 // GPA GOAL GRADE
     function test1(){
-      return "B"
+        var local_storage_path = 'gpa_app.alert';
+        var grade_path = 'gpa_grades';
+        var ave_path = 'gpa_averages';
+
+        //pull array from local storage
+        var currAlerts = JSON.parse(localStorage.getItem(local_storage_path));
+        var grades = JSON.parse(localStorage.getItem(grade_path));
+        var averages = JSON.parse(localStorage.getItem(ave_path));
+    
+      console.log(currAlerts[0].currAlert)
+
+      return currAlerts[0].currAlert
        // if(newFinalValue <= 59){
        //      return "F";
        //  }else if(newFinalValue >= 60 && newFinalValue <= 63){

@@ -39,143 +39,10 @@ $(document).ready(function(){
 	gradeObj();
 
 	$(document).on('pageshow', function(){
-		initPage()
+		// initPage()
 		// console.log()
 	})
-///////////////////////////GRADE POINT AVERAGE//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	var initPage = function (){
-			populateStorage()
 
-			$('#gpa').text(currAlerts[0].currAlert)
-				var gpa = Number($('#gpa').text());
-			$('#increaseGpa').on('click',function(){
-				if(gpa <= 4.4){
-					gpa += .1;
-					var	newAlert = gpa;
-					$('#gpa').html(newAlert.toFixed(1))
-				}
-			});
-			$('#decreaseGpa').on('click',function(){
-				if(gpa >= 2.0){
-					gpa -= .1;
-					var newAlert = gpa;
-					$('#gpa').html(newAlert.toFixed(1))
-				}
-			});
-
-			// check activate or deactivate
-
-		$('.ui-flipswitch').on('click',function(e){
-			var $input = $(this).children('input'),
-				inputVal = $input.prop('checked'),
-				id = $input.attr('id'),
-				newId = parseInt(id.split(' ')[0]);
-				if(inputVal) {
-					currAlerts1 = true;
-					currAlerts[newId].active = currAlerts1;
-				}else if(!inputVal) {
-					currAlerts1 = false;
-					currAlerts[newId].active = currAlerts1;
-				}
-		})
-
-		//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////UPCOMING TEST/QUIZ////////////////////////////////////////
-			var daysb4 = currAlerts[1].numOfDays;
-			var num = daysb4; 
-			$('#daysB4').html(num)
-			//setting alerts days b4 test//
-			$('#addNum').on('click',function(){
-				if(num < 250){
-					num += 1;
-					var newAlert1 = num;
-					$('#daysB4').html(newAlert1)
-				}
-			});
-			$('#subNum').on('click',function(){
-				if(num > 0){
-					num -= 1;
-					var newAlert1 = num;
-					$('#daysB4').html(newAlert1)
-				}
-			});
-
-		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////ATTENDANCE//////////////////////////////////////////////
-			var numDaysMissed = currAlerts[2].daysMissed;
-			var upDate2 = numDaysMissed 
-			$('#daysMissed').html(upDate2)
-
-			$('#addDays').on('click',function(){
-				if(upDate2 < 15){
-					upDate2 += 1;
-					var newAlert2 = upDate2;
-					$('#daysMissed').html(newAlert2)
-				}
-			});
-			$('#subDays').on('click',function(){
-				if(upDate2 > 0){
-					upDate2 -= 1;
-					var newAlert2 = upDate2;
-					$('#daysMissed').html(newAlert2)
-				}
-			});// END OF ATTENDANCE
-		///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////ASSSIGNMENTS DUE/////////////////////////////////////
-			var currAssign = currAlerts[3].missedAssign;
-			$('#missedAssign').html(currAssign)
-			var upDateAssign;
-			// increase count
-			$('#increaseAssign').on('click',function(){
-				if(currAssign < 5){
-					currAssign += 1;
-					upDateAssign = currAssign;
-					$('#missedAssign').html(upDateAssign);
-				}
-			});
-			// decrease count
-			$('#decreaseAssign').on('click',function(){
-				if(currAssign > 0){
-					currAssign -= 1;
-					upDateAssign = currAssign;
-					$('#missedAssign').html(upDateAssign)
-				}
-			});
-		// END OF ASSIGNMENTS
-		/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////PRACTICES MISSED///////////////////////////////////////
-			var pracMiss = currAlerts[4].pracMiss;
-			var upDateMiss = pracMiss; 
-			$('#pracMiss').html(upDateMiss);
-
-			$('#addPrac').on('click',function(){
-				if(upDateMiss < 15){
-					upDateMiss += 1;
-					var newAlert3 = upDateMiss;
-					$('#pracMiss').html(newAlert3)
-				}
-			});
-			$('#subPrac').on('click',function(){
-				if(upDateMiss > 0){
-					upDateMiss -= 1;
-					var newAlert3 = upDateMiss;
-					$('#pracMiss').html(newAlert3)
-				}
-			});//END OF PRACTICE
-		//////////////////////////////////////////////////////////////////////////////////////////////////////////////////GAME DAY//////////////////////////////////////////////////////
-			var gameDay = currAlerts[5].gameDate;
-			var game = gameDay; 
-			$('#gameDay').html(game)
-			$('#add').on('click',function(){
-				if(game < 15){
-					game += 1;
-					var newAlert4 = game;
-					$('#gameDay').html(newAlert4)
-				}
-			});
-			$('#sub').on('click',function(){
-				if(game > 0){
-					game -= 1;
-					var newAlert4 = game;
-					$('#gameDay').html(newAlert4)
-				}
-			});//END OF GAME DAY
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 		///ONLY USED TO POPULATE STORAGE IF THE STORAGE IS EMPTY//////////
@@ -207,15 +74,7 @@ $(document).ready(function(){
 		};
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	
-	function randomNum(){
-		var num = Math.ceil(Math.random() * 100)
-		if(num < 60){
-			return num + 40;
-		}else{
-			return num;
-		}
-	}
-
+	
 
 // 	// variables for the localStorage
 // 	var eco,eng,hist,math,bio,pe;
@@ -372,8 +231,8 @@ $(document).ready(function(){
 
 		}
 		
-	}
-	initPage()
+	// }
+	// initPage()
 	// renderData(currAlerts)
 })//END
 

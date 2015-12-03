@@ -4,30 +4,24 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Alert Page</title>
-	<link rel="stylesheet" type="text/css" hre="css/main_lib/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> 
 
-	<link rel="stylesheet" href="../css/themes/default/jquery.mobile-1.4.5.min.css">
-	<link rel="stylesheet" href="css/themes/theme-classic/theme-classic.css">
-	<link rel="stylesheet" href="../_assets/css/jqm-demos.css">
-	<link rel="stylesheet" href="swipe-page.css">
-	<link rel="shortcut icon" href="../favicon.ico">
+  <link rel="stylesheet" href="css/themes/default/jquery.mobile-1.4.5.min.css">
+  <link rel="stylesheet" href="css/themes/theme-classic/theme-classic.css">
 
+  <!-- //body content -->
+  <script src="js/jquery.js"></script>
   <script src="css/js/jquery.min.js"></script>
-	<script src="../js/jquery.js"></script>
-	<script src="../_assets/js/index.js"></script>
-	<script src="../js/jquery.mobile-1.4.5.min.js"></script>
-	<script src="swipe-page.js"></script>
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+  <script src="swipe-page.js"></script>
 
-	<!-- //body content -->
-	<script src="css/main_lib/d3.min.js" charset="utf-8"></script>
+  <!-- //Graphs -->
+  <script src="css/main_lib/d3.min.js" charset="utf-8"></script>
   <script src="css/main_lib/nv.d3.js"></script>
   <link href="css/nv.d3.css" rel="stylesheet" type="text/css">
-  <!-- // <script src="js/home/customize.js"></script>  -->
   <script src="js/home/localStorage_test.js"></script>
-  <script src="js/home/home.js"></script> 
-  <link rel="stylesheet" href="alert/gpa.css">
-  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/main.css">
+  
 </head>
 <script>
 		$( document ).on( "pagecreate", function() {
@@ -99,8 +93,8 @@
 
 <div data-role="page" id="buenosaires" class="demo-page" data-title="Alert Settings" data-dom-cache="true" data-theme="b" data-prev="newyork" data-next="paris">
 
-	<div role="main" class="ui-content">
-		<h3 class="strings midd">Customize Alerts</h3>
+	<div role="main" class="ui-content marTop">
+		<h3 class="midd">Customize Alerts</h3>
 
 		<div id="ui-body-test" class="ui-body ui-body-a ui-corner-all" style="margin-bottom:1em;">
 			
@@ -141,7 +135,7 @@
 			
 			<div class="row-fluid top">
 				<div class="col-xs-6 col-md-6">
-					<p>Unexcused Abesence:</p>
+					<p>Unexcused Absence:</p>
 					<form class="switch flip-checkbox-3">
 						<label for="flip-checkbox-3"></label>
 						<input type="checkbox" data-role="flipswitch" name="flip-checkbox-3" id="2 flip-checkbox-3">
@@ -206,10 +200,10 @@
 
 <div class="row-fluid">
   <div class="col-xs-6 col-md-6">
-    <button type="button" class="btn btn-primary directions" id="save">Save changes</button>
+    <button type="button" class="btn btn-primary directions" id="save">Save</button>
   </div>
   <div class="col-xs-6 col-md-6">
-    <button type="button" class="btn btn-primary directions" id="reset">Reset changes</button>
+    <button type="button" class="btn btn-primary directions" id="reset">Reset</button>
   </div>
 </div>
 
@@ -236,10 +230,7 @@
     
 <nav class="navbar navbar-default navbar-fixed-bottom">
   <div class="row nav-row">
-        <div data-role="controlgroup" class="control ui-btn-top" data-type="horizontal" data-mini="true">
-          <a href="#" class="prev ui-btn ui-btn-icon-notext ui-icon-carat-l ui-btn-inline ui-corner-all">Previous</a>
-          <a href="#" class="next ui-btn ui-btn-icon-notext ui-icon-carat-r ui-btn-inline ui-corner-all">Next</a>
-        </div>
+        
       <div class="col-xs-3 col-md-2 col-lg-3 links">
 
           <a href="newyork.html" id="">

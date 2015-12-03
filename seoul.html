@@ -3,31 +3,103 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Rankings</title>
+	<title>Highlights</title>
+	<link rel="stylesheet" type="text/css" hre="css/main_lib/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> 
+
 	<link rel="stylesheet" href="../css/themes/default/jquery.mobile-1.4.5.min.css">
-	<link rel="stylesheet" href="../_assets/css/jqm-demos.css">
-	<link rel="stylesheet" href="swipe-page.css">
-	<link rel="shortcut icon" href="../favicon.ico">
+	<link rel="stylesheet" href="css/themes/theme-classic/theme-classic.css">
+  
+  <link rel="stylesheet" href="css/home.css">
 	<script src="../js/jquery.js"></script>
 	<script src="../_assets/js/index.js"></script>
+	<link rel="stylesheet" href="../_assets/css/jqm-demos.css">
 	<script src="../js/jquery.mobile-1.4.5.min.js"></script>
 	<script src="swipe-page.js"></script>
+	<link rel="stylesheet" href="swipe-page.css">
+	<script src="css/main_lib/d3.min.js" charset="utf-8"></script>
+  <script src="css/main_lib/nv.d3.js"></script>
+	<script src="js/home/localStorage_test.js"></script>
 </head>
 <body>
 
 <div id="header" data-role="header" data-id="header" data-position="fixed" data-fullscreen="true" data-tap-toggle="false">
-	<h1>Rankings</h1>
-</div><!-- /header -->
+	<div class="row header">
+    <div class="col-xs-6 col-md-6 noPad">
+      <img id="logo" src="image/gpawht.png">
+    </div>
+    <div class="col-xs-2 col-md-2 links">
+      <a id="menu" href="#panel-overlay5" class="nav_btn  ui-icon-bars ui-btn-icon-notext">
+      </a>
+    </div>
+    <div class="col-xs-2 col-md-2 links">
+      <a id="alert" href="inbox/inbox.html" class="nav_btn  ui-icon-alert ui-btn-icon-notext">
+        <span class="alertNum">2</span>
+      </a>
+    </div>
+    <div class="col-xs-2 col-md-2 links">
+      <a href="#" class="nav_btn ui-icon-mail ui-btn-icon-notext">
+        <span class="alertInbox">4</span>
+      </a>
+      
+    </div>
+  
+  </div>
+    <!-- <h1>Home</h1> -->
 
-<div data-role="page" id="seoul" class="demo-page" data-title="Rankings" data-dom-cache="true" data-theme="b" data-prev="capetown" data-next="sydney">
+</div><!-- header -->
+
+<div data-role="page" id="seoul" class="demo-page" data-title="Rankings" data-dom-cache="true" data-theme="b" data-prev="capetown">
 
 	<div role="main" class="ui-content">
 
 
 	</div><!-- /content -->
 
+  <div data-role="panel" id="panel-overlay5" data-display="overlay">
+    <ul data-role="listview">
+      <li data-icon="delete"><a href="#" data-rel="close">Close</a></li>
+      <li><a href="#">List item</a></li>
+      <li><a href="#">List item</a></li>
+      <li><a href="#">List item</a></li>
+    </ul>
+    <br>
+    <button class="ui-btn ui-corner-all ui-shadow">Button</button>
+  </div>
 </div><!-- /page -->
+<nav class="navbar navbar-default navbar-fixed-bottom">
+  <div class="row nav-row">
+        <div data-role="controlgroup" class="control ui-btn-top" data-type="horizontal" data-mini="true">
+          <a href="#" class="prev ui-btn ui-btn-icon-notext ui-icon-carat-l ui-btn-inline ui-corner-all">Previous</a>
+          <a href="#" class="next ui-btn ui-btn-icon-notext ui-icon-carat-r ui-btn-inline ui-corner-all">Next</a>
+        </div>
+      <div class="col-xs-3 col-md-2 col-lg-3 links">
 
+          <a href="newyork.html" id="">
+            <span id="home" class="ui-icon-home ui-btn-icon-top ui-corner-all"></span>
+          </a>
+      </div>
+      
+      <div class="col-xs-3 col-md-2 col-lg-3 links">
+        <a href="buenosaires.html" id="class">
+          <span class="ui-icon-bullets ui-btn-icon-top ui-corner-all"></span>
+        </a>
+      </div>
+     
+      <div class="col-xs-3 col-md-2 col-lg-3 links">
+        <a href="capetown.html" id="profile">
+          <span class="ui-icon-user ui-btn-icon-top ui-corner-all"></span>
+        </a>
+      </div>
+
+    <div class="col-xs-3 col-md-2 col-lg-3 links">
+      <a href="paris.html" tabindex="0" id = "settings help"> 
+        <span class="ui-icon-gear ui-btn-icon-top ui-corner-all"></span>
+      </a>
+    </div>
+
+  </div>
+</nav>
 
 </body>
 </html>

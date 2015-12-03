@@ -1,0 +1,422 @@
+/*//PROFILE CSS*/
+.carousel-indicators .active{
+    position: relative;
+    left: 15em;
+    top: -22em;
+    color: blue;
+  
+}
+
+.carousel-indicators li{
+    position: relative;
+    left: 15em;
+    top: -22em;
+    color: blue;
+  
+}
+
+.carousel-control{
+  right:150%;
+}
+.top{
+	margin-top: 22%;
+}
+.b{
+	margin-bottom: 30%!important;
+	
+}
+#stu{
+	width: 100%;
+	height: auto;
+	border:1px solid grey;
+	border-radius: 15px;
+}
+
+/*//HOME CSS*/
+*{
+	/*outline: 1px solid red;*/
+}
+
+.goal,.current{
+	text-align: center;
+	width: 100%;
+	height: 10em;
+	padding: 0;
+}
+.strong,.weak{
+	margin: 0;
+}
+.warnings{
+	text-align: center;
+	background-color: #0C0C48;
+	height: 10.5em;
+}
+.warnings ul li a{
+	text-decoration: none;
+}
+.bad{
+   color: red!important;
+   font-size: 13px;
+}
+.mid{
+  color: yellow!important;
+  font-size: 13px;
+}
+.good{
+  color: green!important;
+  font-size: 13px;
+}
+.attention{
+	color: white;
+	font-size: 1em;
+	font-weight: 900;
+	text-decoration: underline;
+}
+.test{
+	margin-bottom: 10%;
+}
+#chart1, svg {
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+  /*padding-right: 12px;*/
+}
+.nv-legend-text{
+	font-size: 1.8em!important;
+}
+text{
+	font-size: 1.9em!important;
+}
+hr{
+	width: 80%;
+	border: 1px solid #252773;
+}
+.marTop{
+	margin-top: 25%!important;
+}
+.mar{
+	margin-top: 2%;
+}
+.ui-btn{
+	background-color: #5154D0!important;
+	background:#5154D0!important;
+}
+.ui-checkbox-on.ui-btn-b:after{
+	background-color: #252773!important;
+}
+.nav_btn{
+	background:none;
+	background-color: #252773
+}
+.links{
+	border:1.5px solid #50518C;
+	height: 4.3em;
+}
+.links:hover{
+	background-color: #5154D0;
+}
+.alertNum{
+	position: relative;
+	left: 1em;
+	top: .5em;
+  min-width: 10px;
+  padding: 3px 7px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  background-color: red;
+  border-radius: 10px;
+}
+.alertInbox{
+	position: relative;
+	left: 1em;
+	top: .5em;
+  min-width: 10px;
+  padding: 3px 7px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  background-color: red;
+  border-radius: 10px;	
+}
+.outer{
+	background-color: #252773;
+	padding: 0;
+	border-radius: 8px;
+	overflow: hidden;
+	/*border: 3px solid #4E4E4E;*/
+
+}
+.container-header{
+	/*background-color: #5154D0;*/
+	background-color: #0C0C48;
+	text-align: center;
+	color: white;
+	padding-top: 1.5%;
+	padding-bottom: 1%;
+}
+#name{
+	background-color: #252773;
+	color: white;
+}
+ul li{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+#goalGpa,#currentGpa{
+	font-weight: bolder;
+	font-size: 1.5em;
+}
+ul li a{
+	font-size: 13px;
+}
+/*//CLASS CSS*/
+*{
+	/*outline: 1px solid red;*/
+}
+h1{
+	color: #252773;
+}
+h3{
+	color: grey;
+}
+.bottom{
+	margin-bottom: 5em;
+}
+.marTop{
+	margin-top: 1em;
+}
+.right{
+	float: right;
+}
+.container-fluid{
+	background-color: #252773;
+}
+.ui-collapsible-heading-toggle{
+	background-color: #5154D0!important;
+}
+
+.link{
+	color: grey;
+	font-weight: bolder;
+	font-size: 85%;
+}
+#checkbox-1-a{
+	background-color: red;
+}
+.scoreboard{
+	border:1px solid white;
+}
+.graph{
+	text-align: center;
+}
+.graph svg{
+	margin-bottom: 1em;
+	/*padding-bottom: 5em;*/
+}
+#header{
+	background-color: #252773
+}
+.space{
+	margin-top: 22%;
+}
+.uniform{
+	width: 85%;
+	margin-left: 5%;
+}
+.info{
+	color: #5154D0;
+}
+
+/*//SWIPE-PAGE CSS*/
+/* Set the background image sources */
+*{
+	/*outline: 1px solid red;*/
+}
+.ui-btn{
+	/*background: #2864A9!important;*/
+	background-image: none!important;
+}
+.ui-content{
+	/*margin-top: 22%;*/
+	width: 85%;
+	margin-left: 5%;
+}
+
+.navbar-default{
+	background-color: #252773;
+	border-color:#EEEEEE;
+}
+.demo-page {
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+/* Transparent footer */
+.demo-page .ui-footer {
+	background: none;
+	border: none;
+	bottom: 0;
+}
+/* The footer won't have a height because there are only two absolute positioned elements in it.
+So we position the buttons from the bottom. */
+.control.ui-btn-left,
+.trivia-btn.ui-btn-right {
+	top: auto;
+	bottom: 7px;
+	margin: 0;
+}
+/* Custom styling for the trivia source */
+small {
+	font-size: .75em;
+	color: #666;
+}
+.ui-bar-b{
+	background:#252773;
+  color: #fff;
+  text-shadow: 0 1px 0 #3e6790;
+  font-weight: bold;
+  border-bottom: 2px solid #5154D0;
+}
+img{
+	width: 75%;
+	height: auto;
+}
+
+.secColor{
+	background: #EEEEEE;
+}
+.report{
+	text-align: center;
+}
+.strings{
+	color: white;
+}
+.base{
+	color: #EEEEEE;
+}
+.noPad{
+	padding: 0;
+}
+.goal,.current{
+	height: 5em;
+}
+.prev{
+	position: absolute;
+	bottom: 90%;
+	left: 2%;
+}
+.next{
+	position: absolute;
+	left: 90%;
+	bottom: 90%
+}
+.ui-header-fullscreen{
+	opacity: 1;
+}
+#menu,#home,#class,#profile,#help{
+	color: #252773;
+}
+.bottom{
+	margin-bottom: 36%;
+}
+.team{
+	color: #2864A9;
+	font-size: .6em;
+}
+.team a:hover{
+	color: black;
+}
+/*////////////////////////////////////////////////*/
+/*buttons css*/
+.ui-flipswitch-active{
+	background-color: #5154D0!important;
+	border-color:#252773!important; 
+}
+h3{
+	color: grey;
+}
+/*////Custom*/
+.ui-page { -webkit-backface-visibility: hidden; }
+/*//INBOX*/
+.ui-page-theme-a .ui-btn{
+    background-color: #4A4E65;
+}
+#header{
+
+	background-color: #252773;
+}
+
+#logo{
+	width: 75%;
+	height: auto;
+}
+
+.oddInbox{
+	
+	background-color: red;
+}
+
+.evenInbox{
+
+	background-color: #2F2B2F;
+}
+
+#font-color{
+	color: white;
+	text-shadow:none;
+}
+
+.topic{
+	color: blue;
+	text-shadow:none;
+}
+
+.marB{
+	margin-bottom: 20%;
+}
+
+p{
+	color: white;
+	text-shadow:none;
+}
+.navbar-default{
+	background-color: #252773;
+}
+.team{
+	top: 32px;
+	position:relative;
+	font-size: 8px;
+	margin-left: 143px;
+	text-decoration: none;
+	text-shadow:none;
+	color: #8889A7;
+}
+
+/*active inbox layout*/
+
+.ui-content .ui-listview{
+	margin:0;
+}
+
+
+/*Inside Hamburger*/
+
+.ui-page-theme-a .ui-body-inherit{
+
+	text-shadow:none;
+	color: #1313DC;
+	background-color: #6F377D;
+
+
+}
+

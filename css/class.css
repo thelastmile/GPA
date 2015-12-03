@@ -3,7 +3,6 @@
 }
 h1{
 	color: #252773;
-	
 }
 h3{
 	color: grey;
@@ -36,8 +35,22 @@ h3{
 	border:1px solid white;
 }
 .graph{
-	margin-left: 30%;
+	text-align: center;
+}
+.graph svg{
+	margin-bottom: 1em;
+	/*padding-bottom: 5em;*/
 }
 #header{
 	background-color: #252773
+}
+.space{
+	margin-top: 22%;
+}
+.uniform{
+	width: 85%;
+	margin-left: 5%;
+}
+.info{
+	color: #5154D0;
 }

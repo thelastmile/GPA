@@ -4,29 +4,24 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Home Page</title>
-  <link rel="stylesheet" type="text/css" hre="css/main_lib/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> 
 
   <link rel="stylesheet" href="css/themes/default/jquery.mobile-1.4.5.min.css">
   <link rel="stylesheet" href="css/themes/theme-classic/theme-classic.css">
-  <link rel="stylesheet" href="swipe-page.css">
 
   <!-- //body content -->
-  <link rel="stylesheet" href="css/home.css">
   <script src="js/jquery.js"></script>
   <script src="css/js/jquery.min.js"></script>
-  <script src="_assets/js/index.js"></script>
   <script src="js/jquery.mobile-1.4.5.min.js"></script>
-  <script src="swipe-page.js"></script>
+  <script src="swipe-page.js"></script> 
 
   <!-- //Graphs -->
   <script src="css/main_lib/d3.min.js" charset="utf-8"></script>
   <script src="css/main_lib/nv.d3.js"></script>
   <link href="css/nv.d3.css" rel="stylesheet" type="text/css">
-  <script src="js/home/customize.js"></script> 
   <script src="js/home/localStorage_test.js"></script>
-  <script src="js/home/home.js"></script> 
-  <link rel="stylesheet" href="alert/gpa.css">
+  <!-- // <script src="js/graph.js"></script> -->
+  <link rel="stylesheet" href="css/main.css">
   
 </head>
 
@@ -37,14 +32,14 @@
     <div class="row header">
 
       <div class="col-xs-6 col-md-6 noPad">
-        <img id="logo" src="image/gpawht.png">
+        <a href="newyork.html"><img id="logo" src="image/gpawht.png"></a>
       </div>
       <div class="col-xs-2 col-md-2 links">
         <a id="menu" href="#panel-overlay1" class="nav_btn  ui-icon-bars ui-btn-icon-notext">
         </a>
       </div>
       <div class="col-xs-2 col-md-2 links">
-        <a id="alert" href="inbox/inbox.html" class="nav_btn  ui-icon-alert ui-btn-icon-notext">
+        <a id="alert" href="#" class="nav_btn  ui-icon-alert ui-btn-icon-notext">
           <span class="alertNum">2</span>
         </a>
       </div>
@@ -61,7 +56,7 @@
 </div><!-- /header -->
 
 <div data-role="page" id="newyork" class="demo-page" data-title="Home" data-dom-cache="true" data-theme="ui-page-theme-b" data-next="buenosaires">  
-  <div role="main" class="ui-content bottom">
+  <div role="main" class="ui-content marTop bottom">
   
   <div class="container-fluid outer">
     <div class="row-fluid container-header"> 
@@ -127,10 +122,7 @@
     
 <nav class="navbar navbar-default navbar-fixed-bottom">
   <div class="row nav-row">
-        <div data-role="controlgroup" class="control ui-btn-top" data-type="horizontal" data-mini="true">
-          <a href="#" class="prev ui-btn ui-btn-icon-notext ui-icon-carat-l ui-btn-inline ui-corner-all">Previous</a>
-          <a href="#" class="next ui-btn ui-btn-icon-notext ui-icon-carat-r ui-btn-inline ui-corner-all">Next</a>
-        </div>
+        
       <div class="col-xs-3 col-md-2 col-lg-3 links">
 
           <a href="newyork.html" id="">
@@ -139,7 +131,7 @@
       </div>
       
       <div class="col-xs-3 col-md-2 col-lg-3 links">
-        <a href="buenosaires.html" id="class">
+        <a href="paris.html" id="class">
           <span class="ui-icon-bullets ui-btn-icon-top ui-corner-all"></span>
         </a>
       </div>
@@ -151,7 +143,7 @@
       </div>
 
     <div class="col-xs-3 col-md-2 col-lg-3 links">
-      <a href="paris.html" tabindex="0" id = "settings help"> 
+      <a href="buenosaires.html" tabindex="0" id = "settings help"> 
         <span class="ui-icon-gear ui-btn-icon-top ui-corner-all"></span>
       </a>
     </div>

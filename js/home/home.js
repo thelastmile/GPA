@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $( document ).on( "pageshow", function(event) {
-        // renderData(averages)
+    	console.log("hello home.js")
     })
 
     
