@@ -1,51 +1,17 @@
-/*//PROFILE CSS*/
-.carousel-indicators .active{
-    position: relative;
-    left: 15em;
-    top: -22em;
-    color: blue;
-  
-}
-
-.carousel-indicators li{
-    position: relative;
-    left: 15em;
-    top: -22em;
-    color: blue;
-  
-}
-
-.carousel-control{
-  right:150%;
-}
-.top{
-	margin-top: 22%;
-}
-.b{
-	margin-bottom: 30%!important;
-	
-}
-#stu{
-	width: 100%;
-	height: auto;
-	border:1px solid grey;
-	border-radius: 15px;
-}
-
 /*//HOME CSS*/
 *{
 	/*outline: 1px solid red;*/
 }
-
 .goal,.current{
 	text-align: center;
 	width: 100%;
 	height: 10em;
+	height: 5em;
 	padding: 0;
 }
-.strong,.weak{
+/*.strong,.weak{
 	margin: 0;
-}
+}*/
 .warnings{
 	text-align: center;
 	background-color: #0C0C48;
@@ -58,10 +24,6 @@
    color: red!important;
    font-size: 13px;
 }
-.mid{
-  color: yellow!important;
-  font-size: 13px;
-}
 .good{
   color: green!important;
   font-size: 13px;
@@ -72,14 +34,16 @@
 	font-weight: 900;
 	text-decoration: underline;
 }
-.test{
+.spaceB{
 	margin-bottom: 10%;
 }
 #chart1, svg {
   margin: 0px;
   height: 100%;
   width: 100%;
-  /*padding-right: 12px;*/
+}
+svg:nth-child(1){
+  padding: 12px;
 }
 .nv-legend-text{
 	font-size: 1.8em!important;
@@ -94,12 +58,20 @@ hr{
 .marTop{
 	margin-top: 25%!important;
 }
-.mar{
+.mar4Score{
 	margin-top: 2%;
 }
 .ui-btn{
 	background-color: #5154D0!important;
 	background:#5154D0!important;
+	color: #252773;
+	border-color: #252773;
+}
+.ui-btn:hover{
+	color: white;
+}
+#panel-overlay1{
+	background-color: #252773;
 }
 .ui-checkbox-on.ui-btn-b:after{
 	background-color: #252773!important;
@@ -152,11 +124,8 @@ hr{
 	padding: 0;
 	border-radius: 8px;
 	overflow: hidden;
-	/*border: 3px solid #4E4E4E;*/
-
 }
 .container-header{
-	/*background-color: #5154D0;*/
 	background-color: #0C0C48;
 	text-align: center;
 	color: white;
@@ -166,11 +135,10 @@ hr{
 #name{
 	background-color: #252773;
 	color: white;
+	font-weight: bolder;
 }
 ul li{
 	list-style: none;
-	padding: 0;
-	margin: 0;
 }
 #goalGpa,#currentGpa{
 	font-weight: bolder;
@@ -179,52 +147,96 @@ ul li{
 ul li a{
 	font-size: 13px;
 }
-/*//CLASS CSS*/
-*{
-	/*outline: 1px solid red;*/
+
+/*//SWIPE-PAGE CSS*/
+
+.ui-content{
+	width: 85%;
+	margin-left: 5%;
+	overflow: hidden;
+
 }
+
+.demo-page {
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.ui-bar-b{
+	background:#252773;
+  color: #fff;
+  font-weight: bold;
+  border-bottom: 2px solid #5154D0;
+}
+img{
+	width: 75%;
+	height: auto;
+}
+.strings{
+	color: white;
+}
+.noPad{
+	padding: 0;
+}
+.ui-header-fullscreen{
+	opacity: 1;
+}
+.team{
+	color: grey;
+	font-size: .6em;
+}
+.team a:hover{
+	color: black;
+}
+/*/////ALERT PAGE CSS///////////////////////////////////*/
+.ui-flipswitch-active{
+	background-color: #5154D0!important;
+	border-color:#252773!important; 
+}
+.cusGoal{
+	font-size: bolder;
+}
+.cusGoal strong{
+	font-size: 1.2em
+}
+.base{
+	text-align: center;
+	font-size: 1.5em;
+	font-weight: bolder;
+}
+.cen{
+	float: right;
+}
+
+
+/*//CLASS CSS///////////////////////////////////////////*/
 h1{
 	color: #252773;
+	text-align: center;
 }
 h3{
 	color: grey;
 }
-.bottom{
-	margin-bottom: 5em;
+.bigger{
+	font-size: 1.5em;
+	font-weight: bolder;
 }
-.marTop{
-	margin-top: 1em;
-}
-.right{
-	float: right;
-}
+
 .container-fluid{
 	background-color: #252773;
 }
 .ui-collapsible-heading-toggle{
 	background-color: #5154D0!important;
 }
-
-.link{
-	color: grey;
-	font-weight: bolder;
-	font-size: 85%;
-}
-#checkbox-1-a{
-	background-color: red;
-}
 .scoreboard{
-	border:1px solid white;
+	border:2px solid #5154D0;
 }
 .graph{
 	text-align: center;
 }
 .graph svg{
 	margin-bottom: 1em;
-	/*padding-bottom: 5em;*/
-}
-#header{
-	background-color: #252773
 }
 .space{
 	margin-top: 22%;
@@ -233,190 +245,133 @@ h3{
 	width: 85%;
 	margin-left: 5%;
 }
-.info{
-	color: #5154D0;
+optgroup, option{
+	background-color: #5154D0;
 }
-
-/*//SWIPE-PAGE CSS*/
-/* Set the background image sources */
-*{
-	/*outline: 1px solid red;*/
+.noMar{
+	margin-bottom: 0;
 }
-.ui-btn{
-	/*background: #2864A9!important;*/
-	background-image: none!important;
+.ui-field-contain{
+	padding-bottom: 0;
 }
-.ui-content{
-	/*margin-top: 22%;*/
-	width: 85%;
-	margin-left: 5%;
-}
-
-.navbar-default{
-	background-color: #252773;
-	border-color:#EEEEEE;
-}
-.demo-page {
-	background-size: cover;
-	background-position: center center;
-	background-repeat: no-repeat;
-}
-/* Transparent footer */
-.demo-page .ui-footer {
-	background: none;
-	border: none;
-	bottom: 0;
-}
-/* The footer won't have a height because there are only two absolute positioned elements in it.
-So we position the buttons from the bottom. */
-.control.ui-btn-left,
-.trivia-btn.ui-btn-right {
-	top: auto;
-	bottom: 7px;
-	margin: 0;
-}
-/* Custom styling for the trivia source */
-small {
-	font-size: .75em;
-	color: #666;
-}
-.ui-bar-b{
-	background:#252773;
-  color: #fff;
-  text-shadow: 0 1px 0 #3e6790;
-  font-weight: bold;
-  border-bottom: 2px solid #5154D0;
-}
-img{
-	width: 75%;
-	height: auto;
-}
-
-.secColor{
-	background: #EEEEEE;
-}
-.report{
-	text-align: center;
-}
-.strings{
-	color: white;
-}
-.base{
-	color: #EEEEEE;
-}
-.noPad{
-	padding: 0;
-}
-.goal,.current{
-	height: 5em;
-}
-.prev{
-	position: absolute;
-	bottom: 90%;
-	left: 2%;
-}
-.next{
-	position: absolute;
-	left: 90%;
-	bottom: 90%
-}
-.ui-header-fullscreen{
-	opacity: 1;
-}
-#menu,#home,#class,#profile,#help{
+.ui-page { -webkit-backface-visibility: hidden; }
+.listview li a{
 	color: #252773;
 }
-.bottom{
-	margin-bottom: 36%;
-}
-.team{
-	color: #2864A9;
-	font-size: .6em;
-}
-.team a:hover{
-	color: black;
-}
-/*////////////////////////////////////////////////*/
-/*buttons css*/
-.ui-flipswitch-active{
-	background-color: #5154D0!important;
-	border-color:#252773!important; 
-}
-h3{
-	color: grey;
-}
-/*////Custom*/
-.ui-page { -webkit-backface-visibility: hidden; }
-/*//INBOX*/
-.ui-page-theme-a .ui-btn{
-    background-color: #4A4E65;
-}
-#header{
+/*//INBOX//////////////////////////////////////////////////////////*/
 
-	background-color: #252773;
+.newMessages{
+	margin-top: 0;
+	padding-bottom: 20px;
+	text-align: center;
+	font-weight: bolder;
+	color: #252773;
 }
-
+.ui-page-theme-a .ui-btn, html .ui-bar-a .ui-btn, html .ui-body-a .ui-btn, html body .ui-group-theme-a .ui-btn, html head+body .ui-btn.ui-btn-a, .ui-page-theme-a .ui-btn:visited, html .ui-bar-a .ui-btn:visited, html .ui-body-a .ui-btn:visited, html body .ui-group-theme-a .ui-btn:visited, html head+body .ui-btn.ui-btn-a:visited{
+	background-color: none!important;
+	border-color: none!important;
+	color: white!important;
+	text-shadow:none!important;
+}
 #logo{
 	width: 75%;
 	height: auto;
 }
-
-.oddInbox{
-	
-	background-color: red;
-}
-
 .evenInbox{
-
 	background-color: #2F2B2F;
 }
-
 #font-color{
-	color: white;
+	color: #252773;
 	text-shadow:none;
 }
-
 .topic{
-	color: blue;
-	text-shadow:none;
+	color: white;
+	text-shadow:none!important;
 }
-
+.message{
+	width: 100%!important;
+}
 .marB{
 	margin-bottom: 20%;
 }
-
+.noFloat{
+	float: none;
+}
 p{
 	color: white;
 	text-shadow:none;
 }
 .navbar-default{
 	background-color: #252773;
+	border-color:#5154D0;
 }
-.team{
-	top: 32px;
-	position:relative;
-	font-size: 8px;
-	margin-left: 143px;
-	text-decoration: none;
-	text-shadow:none;
-	color: #8889A7;
+.reply{
+	margin-top: 2em; 
+	margin-bottom: 5em;
 }
 
-/*active inbox layout*/
+/*//PROFILE CSS///////////////////////////////*/
 
-.ui-content .ui-listview{
-	margin:0;
+.carousel-indicators .active{
+    position: relative;
+    left: 15em;
+    top: -22em;
+    color: blue;
+  
+}
+.carousel-indicators li{
+    position: relative;
+    left: 15em;
+    top: -22em;
+    color: blue; 
+}
+.carousel-control{
+  right:150%;
+}
+.top{
+	margin-top: 22%;
+}
+.bottom{
+	margin-bottom: 5em;
 }
 
-
-/*Inside Hamburger*/
-
-.ui-page-theme-a .ui-body-inherit{
-
-	text-shadow:none;
-	color: #1313DC;
-	background-color: #6F377D;
-
-
+#stu{
+	width: 100%;
+	height: auto;
+	border:1px solid grey;
+	border-radius: 15px;
 }
-
+.proName{
+	text-align: center;
+}
+.back{
+	background-color: #252773;
+}
+.across{
+	width: 100%;
+}
+.noPadRL{
+	padding-right: 0!important;
+	padding-left:  0!important;
+}
+.mid{
+	padding-left: 35%;
+	font-weight: bolder;
+	font-size: 1.5em;
+}
+.cent{
+	text-align: center;
+	font-weight: bolder;
+}
+.backDrop{
+	background-color: #5154D0;
+	/*margin-top: 5%;*/
+}
+h4 span{
+	font-size: 1.3em;
+}
+.title{
+	text-align: center;
+	color: #282773;
+	margin-bottom: 0;
+}

@@ -11,16 +11,15 @@
 
   <!-- //body content -->
   <script src="js/jquery.js"></script>
-  <script src="css/js/jquery.min.js"></script>
+  <script src="js/main_lib/jquery.min.js"></script>
   <script src="js/jquery.mobile-1.4.5.min.js"></script>
   <script src="swipe-page.js"></script> 
 
   <!-- //Graphs -->
-  <script src="css/main_lib/d3.min.js" charset="utf-8"></script>
-  <script src="css/main_lib/nv.d3.js"></script>
+  <script src="js/main_lib/d3.min.js" charset="utf-8"></script>
+  <script src="js/main_lib/nv.d3.js"></script>
   <link href="css/nv.d3.css" rel="stylesheet" type="text/css">
   <script src="js/home/localStorage_test.js"></script>
-  <!-- // <script src="js/graph.js"></script> -->
   <link rel="stylesheet" href="css/main.css">
   
 </head>
@@ -35,19 +34,18 @@
         <a href="newyork.html"><img id="logo" src="image/gpawht.png"></a>
       </div>
       <div class="col-xs-2 col-md-2 links">
-        <a id="menu" href="#panel-overlay1" class="nav_btn  ui-icon-bars ui-btn-icon-notext">
-        </a>
-      </div>
-      <div class="col-xs-2 col-md-2 links">
-        <a id="alert" href="#" class="nav_btn  ui-icon-alert ui-btn-icon-notext">
-          <span class="alertNum">2</span>
+          <a id="alert" href="alertModule.html" data-rel="dialog" data-transition="flip" class="nav_btn  ui-icon-alert ui-btn-icon-notext">
+          <span class="alertNum">1</span>
         </a>
       </div>
       <div class="col-xs-2 col-md-2 links">
         <a href="inbox/inbox.html" class="nav_btn ui-icon-mail ui-btn-icon-notext">
           <span class="alertInbox">4</span>
+        </a> 
+      </div>
+      <div class="col-xs-2 col-md-2 links">
+        <a id="menu" href="#panel-overlay1" class="nav_btn  ui-icon-bars ui-btn-icon-notext">
         </a>
-        
       </div>
     
     </div>
@@ -56,17 +54,17 @@
 </div><!-- /header -->
 
 <div data-role="page" id="newyork" class="demo-page" data-title="Home" data-dom-cache="true" data-theme="ui-page-theme-b" data-next="buenosaires">  
-  <div role="main" class="ui-content marTop bottom">
+  <div role="main" class="ui-content marTop bottom noPad">
   
   <div class="container-fluid outer">
     <div class="row-fluid container-header"> 
       <h3 id="name">Jason Jones</h3>
     </div>
     <div class="row-fluid noPad">
-      <div class="col-xs-4 col-md-4 col-lg-4 noPad mar">
+      <div class="col-xs-4 col-md-4 col-lg-4 noPad mar4Score">
         <div class="goal">
           <span class="strings">Goal</span><br>
-          <span id="goalGpa" class="strings"></span>
+          <span id="goalGpa" class="goalGpa strings"></span>
         </div>
       </div>
       <div class="col-xs-4 col-md-4 col-lg-4 noPad">
@@ -81,10 +79,10 @@
 
 
       </div>
-      <div class="col-xs-4 col-md-4 col-lg-4 noPad mar">
+      <div class="col-xs-4 col-md-4 col-lg-4 noPad mar4Score">
         <div class="current">
           <span class="strings">Current</span><br>
-          <span id="currentGpa" class="strings"></span>
+          <span id="currentGpa" class="currentGpa strings"></span>
         </div>
       </div>
     </div><!-- end of row -->
@@ -97,8 +95,8 @@
   <br>
 
   <div class="row-fluid">
-    <div class="col-xs-12 col-md-12 noPad">
-    <h1 class="report">Semester Overview</h1>
+    <div class="col-xs-12 col-md-12 spaceB noPad">
+    <h1>Semester Overview</h1>
       <div id="chart1" class='with-transitions'>
           <svg></svg>
       </div>
@@ -108,11 +106,20 @@
    </div><!-- /content -->
 
   <div data-role="panel" id="panel-overlay1" data-display="overlay">
-    <ul data-role="listview">
+     <ul data-role="listview">
       <li data-icon="delete"><a href="#" data-rel="close">Close</a></li>
-      <li><a href="#">List item</a></li>
-      <li><a href="#">List item</a></li>
-      <li><a href="#">List item</a></li>
+      <li><h3><center>GPA Students</center></h3></li>
+      <li><a href="#">Jason Jones</a></li>
+      <li><a href="#">Laila Jones</a></li>
+      <li><h3><center>Resources</center></h3></li>
+      <li><a href="#">Teachers</a></li>
+      <li><a href="#">Coaches</a></li>
+      <li><a href="#">Tutors</a></li>
+        <li><h3><center>Misc.</center></h3></li>
+      <li><a href="#">Videos</a></li>
+      <li><a href="#">Forums</a></li>
+      <li><a href="#">Blogs</a></li>
+         
     </ul>
     <br>
     <button class="ui-btn ui-corner-all ui-shadow">Button</button>

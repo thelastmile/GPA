@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	//VARIABLES FOR THE LOCAL STORAGE
-	console.log("hey there");
+	console.log("data render");
 	var local_storage_path = 'gpa_app.alert';
 	var grade_path = 'gpa_grades';
 	var ave_path = 'gpa_averages';
@@ -14,10 +14,10 @@ $(document).ready(function(){
 	var val = 2.9;
 
     $( document ).on( "pageshow", "#paris", function(event) {
-    	console.log("how me the jnkaj");
-
+    	console.log("paris is on display");
+    		clickEvents()
     	
-    	console.log(val)
+    	// console.log(val)
 
 	    if ($('#fillgauge1').length) {
 	    	console.log(val)
@@ -51,15 +51,41 @@ $(document).ready(function(){
     });
 
     $(document).on("pageshow", "#newyork", function(event) {
-    	console.log("working?")
+    	console.log("newyork is on the display")
     	initPage() 
 			changeStorage();
 			getAndSetGrade();
 			transferData();
 			calculateGPA();
 			buildChart(); 
-			// console.log("hello localStorage_test.js") 
-			// console.log("called right here")
+    })
+    $(document).on("pageshow", "#buenosaires", function(event) {
+    	console.log("buenosaires is on the display")
+    	initPage() 
+			changeStorage();
+			getAndSetGrade();
+			transferData();
+			calculateGPA();
+			buildChart(); 
+    })
+    $(document).on("pageshow", "#capetown", function(event) {
+    	console.log("capetown is on the display")
+    	initPage() 
+			changeStorage();
+			getAndSetGrade();
+			transferData();
+			calculateGPA();
+			buildChart(); 
+    })
+     $(document).on("pageshow", ".inbox", function(event) {
+    	console.log("inbox is on the display")
+    	window.location.reload()
+    	initPage() 
+			changeStorage();
+			getAndSetGrade();
+			transferData();
+			calculateGPA();
+			buildChart(); 
     })
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -428,9 +454,9 @@ var initPage = function (){
 			
 			// console.log(goalSet,currSet)
 
-      $('#goalGpa').html(goalSet.toFixed(1))
-      $('#currentGpa').html(currSet.toFixed(1))
-      $('.data').html(currSet.toFixed(1))
+      $('.goalGpa').html(goalSet.toFixed(1))
+      $('.currentGpa').html(currSet.toFixed(1))
+      // $('.data').html(currSet.toFixed(1))
 
 			// console.log(averages[0].currentGpa)
 			transferData(goalSet,currSet);
@@ -524,7 +550,7 @@ var initPage = function (){
         return [
             {
                 values: sin,
-                key: "Goal Gpa",
+                key: "Goal gpa",
                 color: "#ff7f0e",
                 strokeWidth: 3.5
             },
@@ -544,7 +570,7 @@ var initPage = function (){
             {
                 area:true,
                 values: sin2,
-                key: "Current GPA",
+                key: "Current gpa",
                 color: "#2864A9",
                 fillOpacity: .2
             }
@@ -557,8 +583,35 @@ var initPage = function (){
         ];
     };
   }
-      $('.data').hide();
+      // $('.data').hide();
 
+function clickEvents(){
+
+$('#eco-teacher').on('change',function(){
+	alert('Your message was sent');
+	$("#eco-teacher").val('')
+})
+$('#eng-teacher').on('change',function(){
+	alert('Your message was sent');
+	$("#eng-teacher").val('')
+})
+$('#hist-teacher').on('change',function(){
+	alert('Your message was sent');
+	$("#hist-teacher").val('')
+})
+$('#math-teacher').on('change',function(){
+	alert('Your message was sent');
+	$("#math-teacher").val('')
+})
+$('#bio-teacher').on('change',function(){
+	alert('Your message was sent');
+	$("#bio-teacher").val('')
+})
+$('#pe-teacher').on('change',function(){
+	alert('Your message was sent');
+	$("#pe-teacher").val('')
+})
+}
   
 
     // setTimeout(function(){

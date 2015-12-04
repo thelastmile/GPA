@@ -6,10 +6,12 @@
 	<title>GPA_Inbox</title>
     <link rel="stylesheet" type="text/css" hre="../css/main_lib/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"> 
-    <script src="../css/js/jquery.min.js"></script>
+    <script src="../js/jquery.min.js"></script>
 
-	<link rel="stylesheet" href="jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" href="../css/main.css">
     <script src="jquery.js"></script>
+
     <!-- //body content -->
     <link rel="stylesheet" href="../css/main.css">
     <script src="jquery.mobile-1.4.5.min.js"></script>
@@ -135,23 +137,19 @@
 
 <body>
 
-<div data-role="page" id="demo-page" data-title="Inbox">
+<div data-role="page" id="demo-page" class="inbox" data-title="Inbox">
     <div id="header" data-role="header" data-position="fixed-top" data-theme="b">
         <div class="row header">
 
       <div class="col-xs-6 col-md-6 noPad">
         <img id="logo" src="../image/gpawht.png">
       </div>
-      <div class="col-xs-2 col-md-2 links">
+      <div class="col-xs-3 col-md-3 links">
         <a id="menu" href="#panel-overlay1" class="nav_btn  ui-icon-bars ui-btn-icon-notext">
         </a>
       </div>
-      <div class="col-xs-2 col-md-2 links">
-        <a id="alert" href="inbox/inbox.html" class="nav_btn  ui-icon-alert ui-btn-icon-notext">
-          <span class="alertNum">2</span>
-        </a>
-      </div>
-      <div class="col-xs-2 col-md-2 links">
+     
+      <div class="col-xs-3 col-md-3 links">
         <a href="../newyork.html" class="ui-shadow ui-corner-all ui-icon-back ui-btn-icon-notext">
         </a>
 
@@ -163,7 +161,8 @@
 
 </div><!-- /header -->
 
-    <div role="main" class="ui-content marB">
+    <div role="main" class="ui-content">
+        <h3 class="newMessages">4 New Messages!</h3>
 
         <ul id="list" class="touch" data-role="listview" data-icon="false" data-split-icon="delete">
             <li>
@@ -206,107 +205,10 @@
                 <a href="#" class="delete">Delete</a>
             </li>
 
-            <li>
-                <a class = "oddInbox" href="#demo-mail">
-                    <h3 id="font-color">Donielle Berg</h3>
-                    <p class="topic"><strong>History Teacher</strong></p>
-                    <p>Jason is doing better on his Quizzes. Thanks</p>
-                    <p class="ui-li-aside">1:24PM</p>
-                </a>
-                <a href="#" class="delete">Delete</a>
-            </li>
-
-            <li>
-                <a class = "evenInbox" href="#demo-mail">
-                    <h3 id="font-color">David Lee</h3>
-                    <p class="topic"><strong>Math Teacher</strong></p>
-                    <p>Jason is really improving on his Algebra.</p>
-                    <p class="ui-li-aside">11:24AM</p>
-                </a>
-                <a href="#" class="delete">Delete</a>
-            </li>
-
-            <li>
-                <a class = "oddInbox" href="#demo-mail">
-                    <h3 id="font-color">Natrina Gandana</h3>
-                    <p class="topic"><strong>TLM Planner</strong></p>
-                    <p>In preparation for Jason's upcoming conference in Boston, we need to start gathering a list of sponsors and speakers.</p>
-                    <p class="ui-li-aside">9:18AM</p>
-                </a>
-                <a href="#" class="delete">Delete</a>
-            </li>
-
-            <li>
-                <a class ="evenInbox"href="#demo-mail">
-                    <h3 id="font-color">Hans</h3>
-                    <p class="topic"><strong>Technical Instructor</strong></p>
-                    <p>Jason should prepare his App for DEMO DAY! </p>
-                    <p class="ui-li-aside">4:48PM</p>
-                </a>
-                <a href="#" class="delete">Delete</a>
-            </li>
-
-            <li>
-                <a class ="oddInbox"href="#demo-mail">
-                    <h3 id="font-color">Pearson Publishing</h3>
-                    <p class="topic"><strong>Sponsor</strong></p>
-                    <p>As someone who has purchased student's books from our 4-for-3 Store, you may be interested in these featured books.</p>
-                    <p class="ui-li-aside">4:37PM</p>
-                </a>
-                <a href="#" class="delete">Delete</a>
-            </li>
-
-            <li>
-                <a class ="evenInbox"href="#demo-mail">
-                    <h3 id="font-color">Ali'i Jones</h3>
-                    <p class="topic"><strong>Father</strong></p>
-                    <p>Grades look better Jason, keep up the good work!</p>
-                    <p class="ui-li-aside">3:24PM</p>
-                </a>
-                <a href="#" class="delete">Delete</a>
-            </li>
-
-            <li>
-                <a class ="oddInbox"href="#demo-mail">
-                    <h3 id="font-color">NIKE</h3>
-                    <p class="topic"><strong>Team Sponsor</strong></p>
-                    <p>Jason performed Great at the combine!</p>
-                    <p class="ui-li-aside">2:52PM</p>
-                </a>
-                <a href="#" class="delete">Delete</a>
-            </li>
-
-            <li>
-                <a class ="evenInbox"href="#demo-mail">
-                    <h3 id="font-color">Riley Publishing</h3>
-                    <p class="topic"><strong>Sponsor</strong></p>
-                    <p>We are looking to expand our catalog collection into this school District</p>
-                    <p class="ui-li-aside">1:24PM</p>
-                </a>
-                <a href="#" class="delete">Delete</a>
-            </li>
-
-            <li>
-                <a class ="oddInbox"href="#demo-mail">
-                    <h3 id="font-color">S.A.T. Schedule</h3>
-                    <p class="topic"><strong>Testing</strong></p>
-                    <p>Jason has been invited for early testing on Tuesday.</p>
-                    <p class="ui-li-aside">11:24AM</p>
-                </a>
-                <a href="#" class="delete">Delete</a>
-            </li>
-
-            <li>
-                <a class ="evenInbox"href="#demo-mail">
-                    <h3 id="font-color">G.P.A. Team</h3>
-                    <p class="topic"><strong>Demo Day</strong></p>
-                    <p>In preparation for the upcoming Demo Day practice is Monday!
-                    <p class="ui-li-aside">9:18AM</p>
-                </a>
-                <a href="#" class="delete">Delete</a>
-            </li>
-        </ul>
-
+          </ul>
+          <div class="reply">
+            <input id="" type="text" name="textinput-a" id="textinput-a" placeholder="Message" value="">
+          </div>
 
     <div id="confirm"  data-role="popup" data-theme="b">
 
@@ -318,6 +220,9 @@
             </div>
             <div class="ui-block-b">
                 <a id="cancel" class="ui-btn ui-corner-all ui-mini ui-btn-a" data-rel="back">Cancel</a>
+            </div>
+            <div class="ui-block-c noFloat">
+                <a id="message" class="ui-btn ui-corner-all ui-mini ui-btn-a" data-rel="back">Reply</a>
             </div>
         </div>
 
@@ -349,8 +254,10 @@
  
 
     
+    
 <nav class="navbar navbar-default navbar-fixed-bottom">
   <div class="row nav-row">
+        
       <div class="col-xs-3 col-md-2 col-lg-3 links">
 
           <a href="../newyork.html" id="">
