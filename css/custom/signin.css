@@ -68,4 +68,16 @@ a{
   color: white;
   font-weight: bold;
 
-} 
+}
+
+/*mobile warning for index page*/
+.mobile-warning{
+  color:yellow;
+  font-size: 1em;
+  font-weight: bold;
+}
+@media only screen and (max-width: 400px){ 
+  .mobile-warning{
+    display: none;
+  }
+} /* min-width 641px, medium screens */

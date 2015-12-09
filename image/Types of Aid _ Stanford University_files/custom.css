@@ -1,0 +1,678 @@
+/*********************************
+Headline Headers
+**********************************/
+h2 i {
+	  color: #5f574f;
+}
+h3 i {
+	  color: #dad7cb;
+}
+h4 i {
+	  color: #dad7cb;
+}
+/*********************************
+Navigation
+**********************************/
+body.home #nav-home a, body.nav-1 #nav-1 a, body.nav-2 #nav-2 a, body.nav-3 #nav-3 a, body.nav-4 #nav-4 a, body.nav-5 #nav-5 a, body.nav-6 #nav-6 a, body.nav-7 #nav-7 a {
+	color: #820000;
+	border-bottom: 0
+}
+.navbar {
+	border: 0
+}
+.navbar {
+	margin: 0;
+	min-height: 2.3em
+}
+.navbar .nav>li {
+	display: block;
+	position: relative;
+	padding: 0 15px 0 0
+}
+.navbar .nav>li:last-child {
+	padding-right: 0
+}
+.navbar .nav>li>a {
+	font-size: 1.4em;
+	font-weight: 300;
+	padding: 5px 0 6px 0;
+	margin-right: 30px;
+	line-height: 1em;
+	border-bottom: 0
+}
+.navbar .navbar-collapse {
+	padding: 0;
+	max-height: none
+}
+.navbar .menu-text {
+	display: none
+}
+#gateway-nav h4 {
+	text-transform: uppercase;
+	display: none
+}
+#gateways {
+	margin: 0;
+	padding-top: 5px;
+	padding-right: 5px;
+	z-index: 9999;
+	list-style: none;
+	position: relative
+}
+#gateways li {
+	display: inline;
+	padding-bottom: 0;
+	padding-right: 20px
+}
+#gateways li a {
+	font-size: .9em;
+	text-transform: uppercase;
+	padding-bottom: 4px;
+	color: #2e2d29
+}
+.nav-pills>li {
+	border-radius: 6px;
+	margin-right: 2px
+}
+
+@media(max-width:767px) {
+}
+
+@media(max-width:991px) {
+.navbar {
+	margin: 5px 0 3px 0
+}
+.navbar .menu-text {
+	display: inline;
+	text-transform: uppercase;
+	left: 50px;
+	top: 7px;
+	position: absolute;
+	color: #820000;
+	font-size: .85em;
+	font-weight: 700
+}
+.navbar .navbar-toggle {
+	background-color: #8c1515;
+	border: 0;
+	float: none;
+	margin-bottom: 0;
+	margin-right: 0;
+	margin-top: 1px;
+	padding: 7px 10px
+}
+.navbar .navbar-toggle span.icon-bar {
+	background-color: white
+}
+.navbar .navbar-toggle:hover {
+	background-color: #5f574f
+}
+.navbar button.collapsed {
+	background-color: #8c1515!important
+}
+.navbar .navbar-collapse {
+	width: 100%
+}
+.navbar .navbar-collapse.in {
+	overflow-y: visible
+}
+.navbar .nav {
+	margin: 8px 0 15px 0
+}
+.navbar .nav>li {
+	display: block;
+	padding-right: 0
+}
+.navbar .nav>li>a, .navbar .nav>li>a:focus, .navbar .nav>li>a:hover {
+	display: block;
+	border-radius: 3px;
+	padding: 9px 15px;
+	margin-right: 0;
+	width: 100%
+}
+.navbar .nav>li>a:hover, .navbar .nav>li>a:focus {
+	background-color: #fbfbf9;
+	border-bottom: 0
+}
+.navbar #gateway-nav {
+	width: 100%;
+	margin-bottom: 15px;
+	border-radius: 3px;
+	padding: .5em 0;
+	background-color: #fbfbf9
+}
+.navbar #gateway-nav h4 {
+	display: block;
+	margin-bottom: 0;
+	padding-left: 15px;
+	color: #820000;
+	font-size: .85em;
+	font-weight: 700;
+	cursor: pointer
+}
+.navbar #gateway-nav h4 span {
+	padding: 0 .5em;
+	font-size: 1.5em
+}
+.navbar #gateways {
+	margin: 0 0 0 1.4em;
+	list-style: none;
+	position: relative;
+	display: none
+}
+.navbar #gateways.pull-right {
+	float: none!important
+}
+.navbar #gateways li {
+	display: block;
+	list-style: none
+}
+.navbar #gateways li a {
+	font-size: .85em;
+	text-transform: uppercase;
+	font-weight: 700;
+	display: block;
+	border-radius: 3px;
+	padding: 9px 15px
+}
+.navbar #gateways li a:focus, .navbar #gateways li a:hover {
+	text-decoration: none;
+	background-color: #f2f1eb;
+	border-bottom: 0;
+	padding-bottom: 9px
+}
+#sidebar-second {
+	border-top: 1px solid #d5d0c0;
+	padding-top: 15px;
+	margin-top: 30px
+}
+}
+
+@media(min-width:768px) {
+}
+
+@media(min-width:992px) {
+#nav-search {
+	float: right;
+	margin: -65px 0 0 0
+}
+.navbar .nav li a {
+	border-bottom: 2px solid #f2f1eb
+}
+.navbar .nav li a:hover {
+	border-bottom: 2px solid #5f574f;
+	color: inherit
+}
+#gateways li a:hover {
+	border-bottom: solid 2px #5f574f;
+	color: inherit
+}
+#gateways li:last-child {
+	padding-right: 0
+}
+body.home #nav-home a, body.nav-1 #nav-1 a, body.nav-2 #nav-2 a, body.nav-3 #nav-3 a, body.nav-4 #nav-4 a, body.nav-5 #nav-5 a, body.nav-6 #nav-6 a, body.nav-7 #nav-7 a {
+	border-bottom: 2px solid #8c1515
+}
+}
+
+@media(min-width:992px) and (max-width:1199px) {
+.navbar .nav>li {
+	padding: 0 10px 0 0
+}
+.navbar .nav>li>a {
+	font-size: 1.3em
+}
+#gateways li {
+	padding-right: 10px
+}
+#gateways li a {
+	font-size: .8em
+}
+}
+/*********************************
+Homepage
+**********************************/
+.home #su-wrap #su-content #content .row #sidebar-second .well img {
+	border: none;
+}
+/*********************************
+Calendar
+**********************************/
+#event-list h3, #event-list h4 {
+	font-size: 12px;
+	padding-bottom: 10px;
+	margin-bottom: 0
+}
+#event-list .event-date {
+	vertical-align: top;
+	width: 60px;
+	padding-right: 15px
+}
+#event-list .event-date .event-month {
+	padding-left: 3px;
+	font-weight: 400;
+	font-size: 1.1em;
+	text-transform: uppercase;
+	display: block;
+	text-align: center;
+	line-height: 1.1;
+	letter-spacing: 1px
+}
+#event-list .event-date .event-day {
+	font-weight: 200;
+	display: block;
+	text-align: center;
+	font-size: 2.2em;
+	color: #820000;
+	line-height: .8
+}
+#event-list .more-link {
+	padding-left: 57px
+}
+/*********************************
+Button Style Overides
+**********************************/
+.btn-four {
+	background-color: #B3995D;
+	border-color: #414649;
+	color: #fff;
+	text-decoration: none
+}
+.btn-four:hover, .btn-four:focus, .btn-four:active {
+	background-color: #D2C295;
+	border-color: #414649;
+	color: #000;
+	text-decoration: none
+}
+.btn-five {
+	background-color: #175E54;
+	border-color: #414649;
+	color: #fff;
+	text-decoration: none
+}
+.btn-five:hover, .btn-five:focus, .btn-five:active {
+	background-color: #009B76;
+	border-color: #414649;
+	color: #fff;
+	text-decoration: none
+}
+.btn-six {
+	background-color: #C00000;
+	border-color: #414649;
+	color: #fff;
+	text-decoration: none
+}
+.btn-six:hover, .btn-six:focus, .btn-six:active {
+	background-color: #E00000;
+	border-color: #414649;
+	color: #fff;
+	text-decoration: none
+}
+.btn-seven {
+	background-color: #c3120a;
+	border-color: #8C1515;
+	color: #fff;
+	text-decoration: none
+}
+.btn-seven:hover, .btn-seven:focus, .btn-seven:active {
+	background-color: #E00000;
+	border-color: #d81209;
+	color: #fff;
+	text-decoration: none
+}
+.btn-eight {
+	background-color: #565347;
+	border-color: #414649;
+	color: #fff;
+	text-decoration: none
+}
+.btn-eight:hover, .btn-eight:focus, .btn-eight:active {
+	background-color: #8a887d;
+	border-color: #414649;
+	color: #fff;
+	text-decoration: none
+}
+/*********************************
+Homepage Overides
+**********************************/
+#feature-banner .feature-caption {
+	width: 435px
+}
+
+@media(max-width:991px) {
+#feature-banner .feature-caption {
+	width: 100%
+}
+}
+/*********************************
+Data Tables
+**********************************/
+#main-content table {
+	width: 99%;
+	margin: 0 0 1em 0;
+	border: 1px solid #666;
+}
+#main-content caption {
+	font-size: 120%;
+	font-weight: bold;
+	text-align: left;
+}
+#main-content tr {
+	background-color: #f8f6ea;
+}
+#main-content tr.odd {
+	background-color: #eee6cb;
+}
+#main-content td {
+	vertical-align: top;
+	padding: 8px;
+	border: 1px solid #c4bfa9;
+}
+#main-content th {
+	background-color: #c4bfa9;
+	padding: 8px;
+	border: 2px solid #666;
+}
+#main-content tbody th {
+	text-align: left;
+}
+/*********************************
+Data Tables - light design
+**********************************/
+#main-content table.light-design {
+	border: none;
+}
+#main-content table.light-design td {
+	border: none;
+	border-bottom: 1px solid #D5D2C5;
+	padding: 1em 1em 1em 0;
+}
+#main-content table.light-design tr {
+	background-color: #fbfbf9;
+	;
+}
+#main-content table.light-design th {
+	background-color: #F2F1EB;
+	border: none;
+	border-bottom: 1px solid #D5D2C5;
+	color: #555;
+}
+#main-content table.light-design tbody th {
+	text-align: left;
+}
+/*********************************
+FAQ 
+**********************************/
+#faqs {
+	position: relative;
+}
+#faqs h3 {
+	cursor: pointer;
+}
+#faqs h3 {
+	color: #81785A;
+}
+#faqs h3.active {
+	color: #000000;
+}
+#faqs h3:hover {
+	color: #990000;
+}
+#faqs .question {
+	cursor: pointer;
+}
+#faqs .question {
+	color: #81785A;
+	font-weight: 600;
+}
+#faqs .question:hover {
+	color: #990000;
+}
+#faqs div {
+	position: relative;
+}
+#faqs div p {
+	padding: 0;
+	margin-bottom: 15px;
+}
+/*********************************
+YouTube Embedded iframe Videos
+**********************************/
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 25px;
+	margin: 75px;
+	height: 0;
+}
+.videoWrapper iframe, .videoWrapper object, .videoWrapper embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+/*********************************
+Google CSE Search Results
+**********************************/
+#cse-search-results table {
+	width: 100%;
+	margin: none;
+	border: none;
+}
+#cse-search-results caption {
+	font-size: 100%;
+	font-weight: bold;
+	text-align: left;
+	border-bottom: none;
+}
+#cse-search-results tr {
+	background-color: #FBFBF9;
+}
+#cse-search-results tr.odd {
+	background-color: #FBFBF9;
+}
+#cse-search-results td {
+	vertical-align: top;
+	padding: none;
+	border-right: none;
+	border: none;
+}
+#cse-search-results th {
+	background-color: #FBFBF9;
+	padding: none
+}
+#cse-search-results tbody th {
+	text-align: left;
+}
+.gsc-above-wrapper-area {
+	height: 20px;
+}
+.gsc-control-cse, .gsc-control-cse-en {
+	margin-top: -40px;
+}
+.gsc-results .gsc-cursor-box {
+	text-align: center;
+	width: 99%;
+	margin-left: auto;
+	margin-right: auto;
+}
+/*********************************
+GFS Search Box
+**********************************/
+#searchBox {
+	float: left;
+	background-color: #f2f1eb;
+	border-radius: 5px;
+	line-height: 0;
+	moz-border-radius: 5px;
+	overflow: hidden;
+	padding: 4px 5px 5px 5px;
+	webkit-border-radius: 5px;
+}
+#searchBox .form-text {
+	height: 1em;
+	margin: 0;
+	padding: 5px;
+}
+#searchBox .form-item, #search .form-submit {
+	display: inline-block;
+	margin: 0px;
+}
+#searchBox .form-text {
+	width: 95%;
+}
+#searchBox .search-item {
+	float: left;
+}
+#searchBox .form-text {
+	border: none;
+	color: #827252;
+	height: 26px;
+	margin: 0;
+	padding: 0 0 0 5px;
+}
+#searchBox .form-submit {
+	background: url(http://financialaid.stanford.edu/images/searchbutton.png) center no-repeat !important;
+	border: none;
+	box-shadow: none;
+	cursor: pointer;
+	height: 26px;
+	margin: 1px 0 0 -22px;
+	padding: 0px;
+	text-indent: -9999px;
+	text-shadow: none;
+	width: 26px;
+}
+input:focus {
+	outline: none;
+}
+/*********************************
+Tree Menu http://www.bootply.com/7MtWXj6CIB
+**********************************/
+/* indent 2nd level */
+.list-unstyled li > ul > li {
+	margin-left: 10px;
+}
+.list-unstyled li > ul > li > a {
+	position: relative;
+	display: block;
+	padding: 10px 23px
+}
+/* 10.MediaLinks */
+/*********************************************************************/
+/*  MediaLinks Style Sheet created by John Foliot - Stanford Online Accessibility Program         
+/*  Released under Creative Commons Attribution-Share Alike 3.0 United States License           
+/*                                                                                                                                    
+/*  Notes: Providing visual cues to users that a link is  to a document ("PDF, Word, etc.")            
+/*  provides useful decision-making information.  It addresses certain cognitive disabilities 
+/*  and is a best-practices recommendation.  This style sheet checks for file extensions and
+/*  automatically appends an icon after the link.  For even better accessibility, content authors
+/*  should also indicate via the title attribute that the link is to a certain file type:
+/*      <a href ="pathtofile.pdf" title="Links to a PDF file">PDF File [245 kb]</a> 
+/* 
+/*  Current file extensions supported: PDF, DOC, DOCX, XLS, PPT      
+/*
+/*  There are also times when you wish to signal that a link in your document is to a page
+/*  or site external to your website.  To do that, simply add the following class information
+/*  to your link:
+/*     <a href="pathtoexternallink" class="external">The outside site</a>                                                            
+/*                                                                                                      
+/*********************************************************************/
+/* External Link */
+a.external {
+	background-image: url("https://web.stanford.edu/stanfordmodern/images/medialinks/external_gray.gif");
+	background-position: right;
+	background-repeat: no-repeat;
+	padding-right: 18px;
+	padding-bottom: 3px;
+}
+a.external:focus, a.external:hover {
+	background-image: url("https://web.stanford.edu/stanfordmodern/images/medialinks/external.gif");
+	color: #820000;
+}
+a.external_shaded_bkg {
+	background-image: url("https://financialaid.stanford.edu/assets/cardinal/images/external_gray_shaded_bkg.gif");
+	background-position: right;
+	background-repeat: no-repeat;
+	padding-right: 18px;
+	padding-bottom: 3px;
+}
+a.external_shaded_bkg:focus, a.external_shaded_bkg:hover {
+	background-image: url("https://financialaid.stanford.edu/assets/cardinal/images/external_shaded_bkg.gif");
+	color: #820000;
+}
+/* PDF */
+a[href$='.pdf'] {
+	background-image: url("https://web.stanford.edu/stanfordmodern/images/medialinks/pdf_gray.gif");
+	background-position: right;
+	background-repeat: no-repeat;
+	padding-right: 18px;
+}
+a[href$='.pdf']:focus, a[href$='.pdf']:hover {
+	background-image: url("https://web.stanford.edu/stanfordmodern/images/medialinks/pdf.gif");
+	color: #820000;
+}
+/* Word Document */
+a[href$='.doc'] {
+	background-image: url("https://web.stanford.edu/stanfordmodern/images/medialinks/word_gray.gif");
+	background-position: right;
+	background-repeat: no-repeat;
+	padding-right: 18px;
+}
+a[href$='.doc']:focus, a[href$='.doc']:hover {
+	background-image: url("https://web.stanford.edu/stanfordmodern/images/medialinks/word.gif");
+	color: #820000;
+}
+a[href$='.docx'] {
+	background-image: url("http://web.stanford.edu/stanfordmodern/images/medialinks/word_gray.gif");
+	background-position: right;
+	background-repeat: no-repeat;
+	padding-right: 18px;
+}
+a[href$='.docx']:focus, a[href$='.docx']:hover {
+	background-image: url("https://web.stanford.edu/stanfordmodern/images/medialinks/word.gif");
+	color: #820000;
+}
+/* Excel Spreadsheet */
+a[href$='.xls'] {
+	background-image: url("https://web.stanford.edu/stanfordmodern/images/medialinks/excel_gray.gif");
+	background-position: right;
+	background-repeat: no-repeat;
+	padding-right: 18px;
+}
+a[href$='.xls']:focus, a[href$='.xls']:hover {
+	background-image: url("https://web.stanford.edu/stanfordmodern/images/medialinks/excel.gif");
+	color: #820000;
+}
+a[href$='.xlsx'] {
+	background-image: url("https://web.stanford.edu/stanfordmodern/images/medialinks/excel_gray.gif");
+	background-position: right;
+	background-repeat: no-repeat;
+	padding-right: 18px;
+}
+a[href$='.xlsx']:focus, a[href$='.xlsx']:hover {
+	background-image: url("https://web.stanford.edu/stanfordmodern/images/medialinks/excel.gif");
+	color: #820000;
+}
+/* Powerpoint Presentation */
+a[href$='.ppt'] {
+	background-image: url("https://web.stanford.edu/stanfordmodern/images/medialinks/ppt_gray.gif");
+	background-position: right;
+	background-repeat: no-repeat;
+	padding-right: 18px;
+}
+a[href$='.ppt']:focus, a[href$='.ppt']:hover {
+	background-image: url("https://web.stanford.edu/stanfordmodern/images/medialinks/ppt.gif");
+	color: #820000;
+}
+a[href$='.pptx'] {
+	background-image: url("https://web.stanford.edu/stanfordmodern/images/medialinks/ppt_gray.gif");
+	background-position: right;
+	background-repeat: no-repeat;
+	padding-right: 18px;
+}
+a[href$='.pptx']:focus, a[href$='.pptx']:hover {
+	background-image: url("https://web.stanford.edu/stanfordmodern/images/medialinks/ppt.gif");
+	color: #820000;
+}

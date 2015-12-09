@@ -152,7 +152,7 @@ ul li a{
 
 .ui-content{
 	width: 85%;
-	margin-left: 5%;
+	margin-left: 7%;
 	overflow: hidden;
 
 }
@@ -222,7 +222,6 @@ h3{
 	font-size: 1.5em;
 	font-weight: bolder;
 }
-
 .container-fluid{
 	background-color: #252773;
 }
@@ -236,7 +235,7 @@ h3{
 	text-align: center;
 }
 .graph svg{
-	margin-bottom: 1em;
+	/*margin-bottom: 1em;*/
 }
 .space{
 	margin-top: 22%;
@@ -251,12 +250,19 @@ optgroup, option{
 .noMar{
 	margin-bottom: 0;
 }
+.lilMar{
+	/*margin-left: 7%;*/
+}
 .ui-field-contain{
 	padding-bottom: 0;
 }
 .ui-page { -webkit-backface-visibility: hidden; }
 .listview li a{
 	color: #252773;
+}
+#fillgauge1{
+	padding-left: 30%;
+	width: 100%;
 }
 /*//INBOX//////////////////////////////////////////////////////////*/
 
@@ -328,6 +334,7 @@ p{
 .carousel-control{
   right:150%;
 }
+/*/////*/
 .top{
 	margin-top: 22%;
 }
@@ -365,7 +372,6 @@ p{
 }
 .backDrop{
 	background-color: #5154D0;
-	/*margin-top: 5%;*/
 }
 h4 span{
 	font-size: 1.3em;
@@ -374,4 +380,72 @@ h4 span{
 	text-align: center;
 	color: #282773;
 	margin-bottom: 0;
+}
+.popphoto{
+	height: 5em;
+	border:3px solid #252773;
+}
+h5{
+	color: #5154D0;
+	width: 105%;
+	font-weight: bolder;
+	font-size: 1em;
+	/*text-align: center;*/
+}
+.data{
+	color: #252773;
+	font-weight: bold;
+}
+.data1{
+	color: white;
+	font-weight: bold;
+}
+.bor{
+	border: .5em solid #252773;
+}
+.center{
+	text-align: center;
+	margin-bottom: 5%;
+}
+.smaller{
+	font-size: 1em;
+}
+/*//HIGHLIGHTS PAGE///*/
+.data3{
+	color: white;
+	font-weight: bold;
+}
+video{
+	width:100%;
+}
+.spaceB{
+	margin-bottom: 2em;
+}
+.dark{
+	color: white;
+	font-family: "purisa";
+}
+#vid1,#vid2,#vid3,#vid4,#vid5{
+	height: 11em;
+	width: 13em;
+	border: 3px solid #5154D0;
+	margin-left: 15%;
+}
+/*/////alerts*/
+.ui-title{
+	color: white;
+}
+#badAlert{
+	color: red!important;
+}
+.white{
+	color: white;
+}
+
+/*////inbox*/
+#confirm{
+	position:absolute;
+	top: 30%;
+	background-color: #222;
+	padding: 5%;
 }

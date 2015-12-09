@@ -70,10 +70,6 @@
         <a href="newyork.html"><img id="logo" src="image/gpawht.png"></a>
       </div>
       <div class="col-xs-2 col-md-2 links">
-        <a id="menu" href="#panel-overlay2" class="nav_btn  ui-icon-bars ui-btn-icon-notext">
-        </a>
-      </div>
-      <div class="col-xs-2 col-md-2 links">
           <a id="alert" href="alertModule.html" data-rel="dialog" data-transition="flip" class="nav_btn  ui-icon-alert ui-btn-icon-notext">
           <span class="alertNum">1</span>
         </a>
@@ -82,7 +78,10 @@
         <a href="inbox/inbox.html" class="nav_btn ui-icon-mail ui-btn-icon-notext">
           <span class="alertInbox">4</span>
         </a>
-        
+      </div>
+      <div class="col-xs-2 col-md-2 links">
+        <a id="menu" href="#panel-overlay2" class="nav_btn  ui-icon-bars ui-btn-icon-notext">
+        </a>
       </div>
     
     </div>
@@ -90,7 +89,7 @@
 
 </div><!-- /header -->
 <div data-role="page" id="buenosaires" class="demo-page" data-title="Alert Settings" data-dom-cache="true" data-theme="b" data-prev="newyork" data-next="paris">
-
+	    
 	<div role="main" class="ui-content marTop bottom noPad">
 		<h1>Customize Alerts</h1>
 
@@ -213,7 +212,7 @@
   </div> -->
 
 	</div><!-- /content -->
-  <div data-role="panel" id="panel-overlay" data-display="overlay">
+  <div data-role="panel" id="panel-overlay2" data-display="overlay">
 		 <ul data-role="listview">
       <li data-icon="delete"><a href="#" data-rel="close">Close</a></li>
             <li><h3><center>GPA Students</center></h3></li>
@@ -246,7 +245,7 @@
       </div>
       
       <div class="col-xs-3 col-md-2 col-lg-3 links">
-        <a href="buenosaires.html" id="class">
+	      <a href="paris.html" tabindex="0" id = "settings help"> 
           <span class="ui-icon-bullets ui-btn-icon-top ui-corner-all"></span>
         </a>
       </div>
@@ -258,7 +257,7 @@
       </div>
 
     <div class="col-xs-3 col-md-2 col-lg-3 links">
-      <a href="paris.html" tabindex="0" id = "settings help"> 
+      <a href="buenosaires.html" id="class">
         <span class="ui-icon-gear ui-btn-icon-top ui-corner-all"></span>
       </a>
     </div>

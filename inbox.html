@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>GPA_Inbox</title>
+    <link rel="stylesheet" type="text/css" hre="../css/main_lib/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"> 
+    <script src="../js/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" href="../css/main.css">
+    <script src="jquery.js"></script>
+
+    <!-- //body content -->
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="jquery.mobile-1.4.5.min.js"></script>
+	
+</head>
+
+
+<body>
+
+<div data-role="page" id="demo-page1" class="inbox" data-title="Inbox">
+    <div id="header" data-role="header" data-position="fixed-top" data-theme="b">
+        <div class="row header">
+
+      <div class="col-xs-6 col-md-6 noPad">
+        <img id="logo" src="../image/gpawht.png">
+      </div>
+      <div class="col-xs-3 col-md-3 links">
+        <a id="menu" href="#panel-overlay1" class="nav_btn  ui-icon-bars ui-btn-icon-notext">
+        </a>
+      </div>
+     
+      <div class="col-xs-3 col-md-3 links">
+        <a href="../newyork.html" class="ui-shadow ui-corner-all ui-icon-back ui-btn-icon-notext">
+        </a>
+
+        
+      </div>
+    
+    </div>
+    <!-- <h1>Home</h1> -->
+
+</div><!-- /header -->
+
+    <div role="main" class="ui-content">
+        <h3 class="newMessages">4 New Messages!</h3>
+
+        <ul id="list" class="touch" data-role="listview" data-icon="false" data-split-icon="delete">
+            <li>
+                <a class = "oddInbox" href="#demo-mail">
+                    <h3 id="font-color">Beverly Parenti</h3>
+                    <p class="topic"><strong>English Teacher</strong></p>
+                    <p>Have Jason always be mindful of his grammar! </p>
+                    <p class="ui-li-aside">4:48PM</p>
+                </a>
+                <a href="#" class="delete">Delete</a>
+            </li>
+
+            <li>
+                <a class = "evenInbox" href="#demo-mail">
+                    <h3 id="font-color">Chris Redlitz</h3>
+                    <p class="topic"><strong>Football Coach</strong></p>
+                    <p>Be sure to remind Jason that the game will be on Saturday!</p>
+                    <p class="ui-li-aside">4:37PM</p>
+                </a>
+                <a href="#" class="delete">Delete</a>
+            </li>
+
+            <li>
+                <a class = "oddInbox" href="#demo-mail">
+                    <h3 id="font-color">Jon Gripshover</h3>
+                    <p class="topic"><strong>Economics Teacher</strong></p>
+                    <p>Jason is improving on his test scores, he looks great!</p>
+                    <p class="ui-li-aside">3:24PM</p>
+                </a>
+                <a href="#" class="delete">Delete</a>
+            </li>
+
+            <li>
+                <a class = "evenInbox" href="#demo-mail">
+                    <h3 id="font-color">Wes Bailey</h3>
+                    <p class="topic"><strong>Tutor</strong></p>
+                    <p>Study hall will be held in the main auditorium after practice</p>
+                    <p class="ui-li-aside">2:52PM</p>
+                </a>
+                <a href="#" class="delete">Delete</a>
+            </li>
+
+          </ul>
+          <div class="reply">
+            <input id="" type="text" name="textinput-a" id="textinput-a" placeholder="Message" value="">
+          </div>
+
+    <div id="confirm"  data-role="popup" data-theme="b">
+
+        <p id="question">Are you sure you want to delete:</p>
+
+        <div class="ui-grid-a">
+            <div class="ui-block-a">
+                <a id="yes" class="ui-btn ui-corner-all ui-mini ui-btn-a" data-rel="back">Yes</a>
+            </div>
+            <div class="ui-block-b">
+                <a id="cancel" class="ui-btn ui-corner-all ui-mini ui-btn-a" data-rel="back">Cancel</a>
+            </div>
+            <div class="ui-block-c noFloat">
+                <a id="message" class="ui-btn ui-corner-all ui-mini ui-btn-a" data-rel="back">Reply</a>
+            </div>
+        </div>
+
+    </div><!-- /popup -->
+   
+</div><!-- /content -->
+
+
+  <div data-role="panel" id="panel-overlay1" data-display="overlay">
+        <ul data-role="listview">
+            <li data-icon="delete"><a href="#" data-rel="close">Close</a></li>
+              <li><h3><center>GPA Students</center></h3></li>
+            <li><a href="#">Jason Jones</a></li>
+            <li><a href="#">Laila Jones</a></li>
+            <li><h3><center>Resources</center></h3></li>
+            <li><a href="#">Teachers</a></li>
+            <li><a href="#">Coaches</a></li>
+            <li><a href="#">Tutors</a></li>
+            <li><h3><center>Misc.</center></h3></li>
+            <li><a href="#">Videos</a></li>
+            <li><a href="#">Forums</a></li>
+            <li><a href="#">Blogs</a></li>    
+        </ul>
+        <br>
+        <button class="ui-btn ui-corner-all ui-shadow">Button</button>
+    </div>
+
+</div><!-- /page -->
+ 
+
+    
+    
+<nav class="navbar navbar-default navbar-fixed-bottom">
+  <div class="row nav-row">
+        
+      <div class="col-xs-3 col-md-2 col-lg-3 links">
+
+          <a href="../newyork.html" id="">
+            <span id="home" class="ui-icon-home ui-btn-icon-top ui-corner-all"></span>
+          </a>
+      </div>
+      
+      <div class="col-xs-3 col-md-2 col-lg-3 links">
+        <a href="../paris.html" id="class">
+          <span class="ui-icon-bullets ui-btn-icon-top ui-corner-all"></span>
+        </a>
+      </div>
+     
+      <div class="col-xs-3 col-md-2 col-lg-3 links">
+        <a href="../capetown.html" id="profile">
+          <span class="ui-icon-user ui-btn-icon-top ui-corner-all"></span>
+        </a>
+      </div>
+
+    <div class="col-xs-3 col-md-2 col-lg-3 links">
+      <a href="../buenosaires.html" tabindex="0" id = "settings help"> 
+        <span class="ui-icon-gear ui-btn-icon-top ui-corner-all"></span>
+      </a>
+    </div>
+
+  </div>
+</nav>
+</body>
+</html>

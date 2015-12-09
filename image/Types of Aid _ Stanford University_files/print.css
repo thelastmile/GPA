@@ -1,0 +1,12 @@
+#header, #footer, #sidebar-first, #sidebar-second {
+	display: none;
+}
+.col-md-push-3 {
+	left: 0%;
+}
+.col-md-6 {
+	width: 7.8in;
+}
+#main-content {
+	width: 7.8in;
+}

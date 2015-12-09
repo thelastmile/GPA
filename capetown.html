@@ -21,7 +21,6 @@
   <link href="css/nv.d3.css" rel="stylesheet" type="text/css">
   <script src="js/home/localStorage_test.js"></script>
   <link rel="stylesheet" href="css/main.css">
-  <script type="text/javascript" src="lib/bootstrap.js"></script>
 
 </head>
 <body>
@@ -31,10 +30,6 @@
 
       <div class="col-xs-6 col-md-6 noPad">
         <a href="newyork.html"><img id="logo" src="image/gpawht.png"></a>
-      </div>
-      <div class="col-xs-2 col-md-2 links">
-        <a id="menu" href="#panel-overlay4" class="nav_btn  ui-icon-bars ui-btn-icon-notext">
-        </a>
       </div>
       <div class="col-xs-2 col-md-2 links">
           <a id="alert" href="alertModule.html" data-rel="dialog" data-transition="flip" class="nav_btn  ui-icon-alert ui-btn-icon-notext">
@@ -47,6 +42,10 @@
         </a>
         
       </div>
+      <div class="col-xs-2 col-md-2 links">
+        <a id="menu" href="#panel-overlay4" class="nav_btn  ui-icon-bars ui-btn-icon-notext">
+        </a>
+      </div>
     
     </div>
     <!-- <h1>Home</h1> -->
@@ -54,7 +53,7 @@
 </div><!-- /header -->
 
 <div data-role="page" id="capetown" class="demo-page" data-title="Profile" data-dom-cache="true" data-theme="b" data-prev="paris" data-next="seoul">
-
+  
 	<div role="main" class="ui-content marTop bottom noPad">
 
     <div class="row-fluid"><!--  begin row one -->
@@ -86,7 +85,7 @@
       <div class="col-xs-12 col-md-12 backDrop">
         <h4><span>Sport: Football</span></h4>
         <h4><span>Rushing: 503yds</span></h4>
-        <h4><span>Recieving: 765yds</span></h4>
+        <h4><span>Receiving: 765yds</span></h4>
         <h4><span>TD: 15</span></h4>
         <h4><span>Int: 7</span></h4>
         <hr>
@@ -97,124 +96,155 @@
         <h4><span>Shooting: 76%</span></h4>
       </div>
     </div>
-    <div class="row-fluid">
-      <h4 class="title">Recommendations:</h4>
-      <div class="col-xs-12 col-md-12 backDrop">
-       <ol>Top 3 Colleges
-         <li><h4><span>UC Berkeley: 67%</span></h4></li>
-          <li><h4><span>USC: 60%</span></h4></li>
-          <li><h4><span>Stanford: 40%</span></h4></li>
-       </ol>
-      <hr>
-      <ol>Top 3 Employment Fields
-         <li><h4><span>Engineer: 77%</span></h4></li>
-          <li><h4><span>Computer Tech: 60%</span></h4></li>
-          <li><h4><span>Biologist: 40%</span></h4></li>
-       </ol>
+  
+
+<!-- ////row1 -->
+  <div class="row-fluid">
+    <h4 class="title">Recommendations:</h4>
+  </div>
+  <div class="row-fluid">
+    <h4 class="title">Top 3 Colleges:</h4>
+    <hr>
+    <h5>1) UC Berkeley</h5>
+      <div class="col-xs-6 col-md-6 bor noPad">
+        <a href="#popupBerkeley" data-rel="popup" data-position-to="window" data-transition="fade">
+          <img src="image/CalBearMascot.jpg" class="popphoto" style="width:100%">
+        </a>
       </div>
+      <div class="col-xs-6 col-md-6 bor noPad">
+        <a href="#popupParis" data-rel="popup" data-position-to="window" data-transition="fade"><img src="image/ucberkeleycampus.jpg" class="popphoto" style="width:100%"></a>
+      </div>
+  </div>
+  <div class="row-fluid">
+    <div class="col-xs-12 col-md-12">
+      <br>
+      <span class="data">Chances: 67%</span><br>
+      <span class="data">Record: 8-4</span><br>
+      <span class="data">Athletic Scholarships: 15</span><br>
+      <span class="data">Overall Scholarships: 27</span><br>
+      <span class="data">Graduate Rate: 87%</span><br>
+      <span class="data">Pro Rate: 66%</span><br>
+      <span class="data">Major: Computer Science</span><br>
+      <span class="data">Location: Berkeley, California</span><br>
+      <span class="data"></span><br>
     </div>
-
-      <!--   <h4><span>Location: California</span></h4>
-        <h4><span>Athletic Scholarships: 15</span></h4>
-        <h4><span>Record: 8-6</span></h4>
-        <h4><span>Graduate Rate: 77%</span></h4>
-        <h4><span>Pro Rate: 56%</span></h4>
-        <h4><span>USC: 60%</span></h4>
-        <h4><span>Location: California</span></h4>
-        <h4><span>Athletic Scholarships: 13</span></h4>
-        <h4><span>Record: 9-4</span></h4>
-        <h4><span>Graduate Rate: 87%</span></h4>
-        <h4><span>Pro Rate: 66%</span></h4>
-      <hr>
-        <h4><span>USC: 60%</span></h4>
-        <h4><span>Location: California</span></h4>
-        <h4><span>Athletic Scholarships: 13</span></h4>
-        <h4><span>Record: 9-4</span></h4>
-        <h4><span>Graduate Rate: 87%</span></h4>
-        <h4><span>Pro Rate: 66%</span></h4> -->
-
-    <section class="row-fluid"> <!-- carousel row -->
-      <section class="col-md-12 col-sm-12 col-xs-12" style="padding:3em; margin-top:2em;"> 
-        <h3>gpa Gallery</h3>
-        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-
-        <!-- Indicators -->
-          <ol class="carousel-indicators">
-            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-          </ol>
-
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
-          <div class="item active">
-            <img src="image/alert.png" alt="alert">
-            <div class="carousel-caption">
-              <p>Slide one</p>
-            </div>
-          </div>
-
-          <div class="item">
-            <img src="image/coach.png"  alt="coach">
-            <div class="carousel-caption">
-              <p>Slide 2</p>
-            </div>
-          </div>
-
-          <div class="item">
-            <img src="image/help.png" alt="help">
-            <div class="carousel-caption">
-              <p>Slide 3</p >
-            </div>
-          </div>
-
-          <div class="item">
-            <img src="image/help1.png" alt="help1">
-            <div class="carousel-caption">
-              <p>lide 4</p >
-            </div>
-          </div>                   
-        </div>
-
-        <!-- Controls -->
-          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>        
-      </section>  <!-- end of section "picture" -->       
-    </section>  <!-- end of " carousel row" -->
-
-      <!-- Begin row three -->
-<!--     <div class="row-fliud b">
-      <div class="col-md-6 col-sm-6 col-xs-6">
-        <p>TOP 3 COLLEGE RECOMMENDED:</p>
-        <p>Scholarships Available:</p>
-        <p>Last Year Record:</p>
-        <p>Chances:</p>
+  </div>
+<!-- ////row2 -->
+  <div class="row-fluid">
+    <hr>
+    <h5>2) USC</h5>
+      <div class="col-xs-6 col-md-6 bor noPad">
+        <a href="#popupUSC" data-rel="popup" data-position-to="window" data-transition="fade"><img src="image/USCmascotlogo.png" class="popphoto" style="width:100%"></a>
       </div>
-      <div class="col-md-6 col-sm-6 col-xs-6">
-        <p>TOP 3 CAREER RECOMMENDATIONS:</p>
-        <p>1. Engineering:</p>
-        <p>Location:</p>
-        <p>Chances:</p>
+      <div class="col-xs-6 col-md-6 bor noPad">
+        <a href="#popupSydney" data-rel="popup" data-position-to="window" data-transition="fade"><img src="image/USCCampus.jpg" class="popphoto" style="width:100%"></a>
       </div>
+  </div>
+  <div class="row-fluid">
+    <div class="col-xs-12 col-md-12">
+      <br>
+      <span class="data">Chances: 60%</span><br>
+      <span class="data">Record: 8-4</span><br>
+      <span class="data">Athletic Scholarships: 15</span><br>
+      <span class="data">Overall Scholarships: 27</span><br>
+      <span class="data">Graduate Rate: 87%</span><br>
+      <span class="data">Pro Rate: 66%</span><br>
+      <span class="data">Major: Computer Science</span><br>
+      <span class="data">Location: Los Angeles, California</span><br>
+      <span class="data"></span><br>
     </div>
- -->    <!-- End Row three -->
-		
+  </div>
+<!-- ////row3 -->
+  <div class="row-fluid">
+    <hr>
+    <h5>3) Stanford University</h5>
+      <div class="col-xs-6 col-md-6 bor noPad">
+        <a href="#popupStanford" data-rel="popup" data-position-to="window" data-transition="fade"><img src="image/StanfordMascot.jpg" class="popphoto" style="width:100%"></a>
+      </div>
+      <div class="col-xs-6 col-md-6 bor noPad">
+        <a href="#popupNYC" data-rel="popup" data-position-to="window" data-transition="fade"><img src="image/StanfordCampus.jpg" class="popphoto" style="width:100%"></a>
+      </div>
+  </div>
+  <div class="row-fluid">
+    <div class="col-xs-12 col-md-12">
+      <br>
+      <span class="data">Chances: 40%</span><br>
+      <span class="data">Record: 8-4</span><br>
+      <span class="data">Athletic Scholarships: 15</span><br>
+      <span class="data">Overall Scholarships: 27</span><br>
+      <span class="data">Graduate Rate: 87%</span><br>
+      <span class="data">Pro Rate: 66%</span><br>
+      <span class="data">Major: Computer Science</span><br>
+      <span class="data">Location: Palo Alto, California</span><br>
+      <span class="data"></span><br>
+    </div>
+  </div>
+<hr>
+<!-- ////row1 for jobs -->
+  <div class="row-fluid center">
+    <div data-demo-html="true">
+      <a href="#popupNested" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-transition="pop">Top 3 Employment Fields:</a>
 
+      <div data-role="popup" id="popupNested" data-theme="none">
+        <div data-role="collapsibleset" data-theme="b" data-content-theme="a" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" style="margin:0; width:250px;">
 
+          <div data-role="collapsible" data-inset="false">
+          <h2 class="smaller">1) Software Development</h2>
+            <ul data-role="listview">
+              <li><span class="data1">Chances: 70%</span></li>
+              <li><span class="data1">Jobs Availability: 95%</span></li>
+              <li><span class="data1">Salary: $75,000 annually</span></li>
+              <li><span class="data1">Expenses to Live: High</span></li>
+              <li><span class="data1">Advancement Rate: High</span></li>
+              <li><span class="data1">Location: Silicon Valley, California</span></li>
+            </ul>
+          </div><!-- /collapsible -->
+          <div data-role="collapsible" data-inset="false">
+          <h2 class="smaller">2) Computer Repair Tech</h2>
+            <ul data-role="listview">
+              <li><span class="data1">Chances: 59%</span></li>
+              <li><span class="data1">Jobs Availability: 89%</span></li>
+              <li><span class="data1">Salary: $31.00 hour/ $64,480 annually</span></li>
+              <li><span class="data1">Expenses to Live: Med</span></li>
+              <li><span class="data1">Advancement Rate: High</span></li>
+              <li><span class="data1">Location: District of Columbia </span></li>
+            </ul>
+          </div><!-- /collapsible -->
+          <div data-role="collapsible" data-inset="false">
+          <h2 class="smaller">3) Molecular Biologist</h2>
+            <ul data-role="listview">
+              <li><span class="data1">Chances: 49%</span></li>
+              <li><span class="data1">Jobs Availability: 79%</span></li>
+              <li><span class="data1">Salary: $88,480 annually</span></li>
+              <li><span class="data1">Expenses to Live: Med</span></li>
+              <li><span class="data1">Advancement Rate: High</span></li>
+              <li><span class="data1">Location: Bar Harbor,ME </span></li>
+            </ul>
+          </div><!-- /collapsible -->
+        </div><!-- /collapsible set -->
+      </div><!-- /popup -->
+    </div><!--/demo-html -->
+  </div>
 
-
-
-
-
-	
 	</div><!-- /content -->
+  <div data-role="popup" id="popupBerkeley" data-overlay-theme="b" data-theme="b" data-corners="false">
+      <a href="#" data-rel="back" class="ui-btn- ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="image/CalBearMascot.jpg" style="width:100%;">
+    </div>
+    <div data-role="popup" id="popupUSC" data-overlay-theme="b" data-theme="b" data-corners="false">
+      <a href="#" data-rel="back" class="ui-btn- ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="image/USCmascotlogo.png" style="width:100%">
+    </div>
+    <div data-role="popup" id="popupStanford" data-overlay-theme="b" data-theme="b" data-corners="false">
+      <a href="#" data-rel="back" class="ui-btn- ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="image/StanfordMascot.jpg" style="width:100%">
+    </div>
+  <div data-role="popup" id="popupParis" data-overlay-theme="b" data-theme="b" data-corners="false">
+      <a href="#" data-rel="back" class="ui-btn- ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="image/ucberkeleycampus.jpg" style="width:100%;">
+    </div>
+    <div data-role="popup" id="popupSydney" data-overlay-theme="b" data-theme="b" data-corners="false">
+      <a href="#" data-rel="back" class="ui-btn- ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="image/USCCampus.jpg" style="width:100%">
+    </div>
+    <div data-role="popup" id="popupNYC" data-overlay-theme="b" data-theme="b" data-corners="false">
+      <a href="#" data-rel="back" class="ui-btn- ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="image/StanfordCampus.jpg" style="width:100%">
+    </div>
 <div data-role="panel" id="panel-overlay4" data-display="overlay">
     <ul data-role="listview">
       <li data-icon="delete"><a href="#" data-rel="close">Close</a></li>
@@ -247,7 +277,7 @@
       </div>
       
       <div class="col-xs-3 col-md-2 col-lg-3 links">
-        <a href="buenosaires.html" id="class">
+        <a href="paris.html" tabindex="0" id = "settings help"> 
           <span class="ui-icon-bullets ui-btn-icon-top ui-corner-all"></span>
         </a>
       </div>
@@ -259,7 +289,7 @@
       </div>
 
     <div class="col-xs-3 col-md-2 col-lg-3 links">
-      <a href="paris.html" tabindex="0" id = "settings help"> 
+      <a href="buenosaires.html" id="class">
         <span class="ui-icon-gear ui-btn-icon-top ui-corner-all"></span>
       </a>
     </div>
